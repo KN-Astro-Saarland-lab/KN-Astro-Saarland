@@ -11,12 +11,19 @@ header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background: #111;
+
+    /* WICHTIG: Header durchsichtig und über dem Banner */
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .logo {
     height: 50px;
     margin-right: 20px;
+    filter: drop-shadow(0 0 5px black);
 }
 
 nav a {
@@ -24,6 +31,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    text-shadow: 0 0 5px black;
 }
 
 /* HERO – ORIGINAL-BANNER OHNE ZUSCHNEIDEN */
