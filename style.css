@@ -1,54 +1,81 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Kai Nimmrichter – Astrofotografie aus dem Saarland</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* Allgemein */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
 
-<body>
+/* Header – weiß, gleichmäßig verteilt, schwarze Linie */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
 
-<!-- HEADER OBEN -->
-<header>
-    <img src="KN.png" class="logo">
+    background: white;              /* Balken wirklich WEISS */
+    border-bottom: 3px solid black; /* schwarze Linie */
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Galerie.html">Galerie</a>
-        <a href="ueber-mich.html">Über Mich</a>
-        <a href="Gartensternwarte.html">Gartensternwarte</a>
-        <a href="Ausrüstung.html">Ausrüstung</a>
-        <a href="Kontakt.html">Kontakt</a>
-    </nav>
-</header>
+    position: relative;
+    z-index: 10;                    /* Header liegt über dem Banner */
+}
 
-<!-- BANNER -->
-<div class="hero">
-    <img src="Titelbild.png" class="hero-bg">
-</div>
+/* Logo mit Glow */
+.logo {
+    height: 55px;
+    margin-right: 25px;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.9)); /* Glow */
+}
 
-<!-- KATEGORIEN -->
-<div class="categories">
+/* Navigation – gleichmäßig verteilt */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%; /* verteilt die Links über die Breite */
+}
 
-    <a class="cat" href="nebel.html">
-        <img src="Herznebel.png">
-        <h3>Nebel</h3>
-    </a>
+/* Navigation Schrift – schwarz, modern */
+nav a {
+    color: black;
+    text-decoration: none;
 
-    <a class="cat" href="galaxien.html">
-        <img src="Andromeda.png">
-        <h3>Galaxien</h3>
-    </a>
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
 
-    <a class="cat" href="sternhaufen.html">
-        <img src="M44.png">
-        <h3>Sternhaufen</h3>
-    </a>
+/* Banner */
+.hero {
+    width: 100%;
+    margin-top: 20px; /* Banner unter den Balken schieben */
+}
 
-    <a class="cat" href="mond.html">
-        <img src="Mond.png">
-        <h3>Mond</h3>
-    </a>
+.hero-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
 
-    <a class="cat" href="planeten.html">
-        <img src="Jupiter.png">
+/* Kategorien */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.cat {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.cat img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cat h3 {
+    margin-top: 10px;
+}
