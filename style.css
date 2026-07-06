@@ -6,31 +6,39 @@ body {
     color: white;
 }
 
-/* Header oben – WEISS + leicht transparent + schwarze Linie */
+/* Header oben – heller, transparent, Glow, Linie unten */
 header {
     display: flex;
     align-items: center;
-    padding: 12px 25px;
+    justify-content: space-between; /* Logo links, Menü rechts */
+    padding: 15px 30px;
 
-    background: rgba(255, 255, 255, 0.85) !important; /* garantiert weiß */
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.95); /* heller weißer Balken */
+    backdrop-filter: blur(6px);            /* moderner Glas-Effekt */
 
-    border-bottom: 2px solid black !important;        /* schwarze Linie */
+    border-bottom: 2px solid black;       /* schwarze Linie unten */
 }
 
+/* Logo mit Glow-Effekt */
 .logo {
     height: 55px;
     margin-right: 25px;
+    filter: drop-shadow(0 0 8px rgba(0,0,0,0.8)); /* Glow */
 }
 
-/* Navigation – SCHWARZ + größer + moderner */
+/* Navigation – gleichmäßig verteilt, modern, schwarz */
+nav {
+    display: flex;
+    justify-content: space-between; /* gleichmäßige Verteilung */
+    width: 60%;                     /* Breite der Navigation */
+}
+
 nav a {
-    margin: 0 18px;
-    color: black !important;                          /* garantiert schwarz */
+    color: black;
     text-decoration: none;
 
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;                /* größere Schrift */
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -44,7 +52,6 @@ nav a {
     height: auto;
     display: block;
     object-fit: contain;
-    filter: none;
 }
 
 /* Kategorien */
