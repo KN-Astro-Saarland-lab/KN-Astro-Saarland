@@ -1,3 +1,4 @@
+/* Allgemein */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -25,35 +26,17 @@ nav a {
     font-weight: bold;
 }
 
-/* Hero Banner */
+/* HERO – ORIGINAL-BANNER OHNE ZUSCHNEIDEN */
 .hero {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
+    width: 100%;
 }
 
 .hero-bg {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(60%);
-}
-
-.hero-text {
-    position: absolute;
-    top: 40%;
-    left: 40px;
-    text-shadow: 0 0 10px black;
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.hero-text h2 {
-    font-size: 28px;
-    margin: 5px 0;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: none;
 }
 
 /* Kategorien */
