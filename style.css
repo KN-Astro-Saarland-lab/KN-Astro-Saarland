@@ -6,16 +6,16 @@ body {
     color: white;
 }
 
-/* Header oben – jetzt leicht transparent + moderne Schrift */
+/* Header oben – WEISS + leicht transparent + schwarze Linie */
 header {
     display: flex;
     align-items: center;
     padding: 12px 25px;
 
-    background: rgba(255, 255, 255, 0.85); /* leicht transparent */
-    backdrop-filter: blur(4px);            /* moderner Glas-Effekt */
+    background: rgba(255, 255, 255, 0.85) !important; /* garantiert weiß */
+    backdrop-filter: blur(4px);
 
-    border-bottom: 2px solid black;       /* dünne schwarze Linie */
+    border-bottom: 2px solid black !important;        /* schwarze Linie */
 }
 
 .logo {
@@ -23,15 +23,15 @@ header {
     margin-right: 25px;
 }
 
-/* Navigation – moderne, größere Schrift */
+/* Navigation – SCHWARZ + größer + moderner */
 nav a {
     margin: 0 18px;
-    color: black;
+    color: black !important;                          /* garantiert schwarz */
     text-decoration: none;
 
-    font-weight: 600;                     /* etwas kräftiger */
-    font-size: 20px;                      /* größer */
-    font-family: "Segoe UI", Arial, sans-serif; /* moderner Font */
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* Banner darunter */
