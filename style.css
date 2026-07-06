@@ -6,25 +6,32 @@ body {
     color: white;
 }
 
-/* Header oben – jetzt WEISS */
+/* Header oben – jetzt leicht transparent + moderne Schrift */
 header {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    background: white;   /* Balken ist jetzt weiß */
+    padding: 12px 25px;
+
+    background: rgba(255, 255, 255, 0.85); /* leicht transparent */
+    backdrop-filter: blur(4px);            /* moderner Glas-Effekt */
+
+    border-bottom: 2px solid black;       /* dünne schwarze Linie */
 }
 
 .logo {
-    height: 50px;
-    margin-right: 20px;
+    height: 55px;
+    margin-right: 25px;
 }
 
-/* Navigation – jetzt SCHWARZ */
+/* Navigation – moderne, größere Schrift */
 nav a {
-    margin: 0 15px;
-    color: black;        /* Schrift schwarz */
+    margin: 0 18px;
+    color: black;
     text-decoration: none;
-    font-weight: bold;
+
+    font-weight: 600;                     /* etwas kräftiger */
+    font-size: 20px;                      /* größer */
+    font-family: "Segoe UI", Arial, sans-serif; /* moderner Font */
 }
 
 /* Banner darunter */
