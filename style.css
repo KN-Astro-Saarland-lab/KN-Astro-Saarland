@@ -6,27 +6,12 @@ body {
     color: white;
 }
 
-/* HERO – Banner komplett sichtbar */
-.hero {
-    width: 100%;
-}
-
-.hero-bg {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    filter: none;
-}
-
-/* Header unter dem Banner */
+/* Header oben */
 header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background: #111;
-    position: relative;
-    z-index: 5;
+    background: #000;
 }
 
 .logo {
@@ -39,6 +24,19 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Banner darunter */
+.hero {
+    width: 100%;
+}
+
+.hero-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: none;
 }
 
 /* Kategorien */
