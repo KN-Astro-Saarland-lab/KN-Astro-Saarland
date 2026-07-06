@@ -10,32 +10,34 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 8px 30px;
+    justify-content: flex-start; /* Navigation nach links */
+    gap: 40px;                   /* Abstand zwischen Logo und Menü */
+    padding: 6px 20px;           /* dünner Balken */
 
     background: white;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black; /* dünner schwarzer Strich */
 }
 
 /* Logo mit Glow */
 .logo {
-    height: 55px;
-    margin-right: 25px;
+    height: 45px; /* etwas kleiner, damit der Balken dünner wirkt */
     filter: drop-shadow(0 0 10px rgba(0,0,0,0.9));
 }
 
-/* Navigation – gleichmäßig verteilt */
+/* Navigation – weiter nach links, nicht zu breit */
 nav {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: flex-start; /* alles nach links */
+    gap: 25px;                   /* gleichmäßige Abstände */
+    max-width: 600px;            /* verhindert, dass "Kontakt" zu weit rechts hängt */
 }
 
+/* Navigation Schrift */
 nav a {
     color: black;
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -72,3 +74,4 @@ nav a {
 .cat h3 {
     margin-top: 10px;
 }
+
