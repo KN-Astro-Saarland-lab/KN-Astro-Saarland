@@ -8,47 +8,47 @@ body {
 
 /* Header – weißer Balken + dünner schwarzer Strich */
 header {
+    position: relative;        /* Header bleibt oben */
+    z-index: 1000;             /* Header über dem Banner */
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Navigation nach links */
-    gap: 40px;                   /* Abstand zwischen Logo und Menü */
-    padding: 6px 20px;           /* dünner Balken */
+    gap: 40px;
+    padding: 6px 20px;
 
     background: white;
-    border-bottom: 1px solid black; /* dünner schwarzer Strich */
+    border-bottom: 1px solid black;
 }
 
-/* Logo mit Glow */
+/* Logo */
 .logo {
-    height: 45px; /* etwas kleiner, damit der Balken dünner wirkt */
+    height: 45px;
     filter: drop-shadow(0 0 10px rgba(0,0,0,0.9));
 }
 
-/* Navigation – weiter nach links, nicht zu breit */
+/* Navigation – nach links */
 nav {
     display: flex;
-    justify-content: flex-start; /* alles nach links */
-    gap: 25px;                   /* gleichmäßige Abstände */
-    max-width: 600px;            /* verhindert, dass "Kontakt" zu weit rechts hängt */
+    justify-content: flex-start;
+    gap: 25px;
+    max-width: 600px; /* verhindert, dass Kontakt zu weit rechts hängt */
 }
 
-/* Navigation Schrift */
 nav a {
     color: black;
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Banner */
+/* Banner – WICHTIG: unter dem Header */
 .hero {
-    width: 100%;
+    position: relative;
+    margin-top: 0;
+    z-index: 1; /* Banner liegt UNTER dem Header */
 }
 
 .hero-bg {
     width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -74,4 +74,3 @@ nav a {
 .cat h3 {
     margin-top: 10px;
 }
-
