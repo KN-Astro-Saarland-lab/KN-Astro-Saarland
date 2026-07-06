@@ -1,4 +1,4 @@
-/* General */
+/* Allgemein */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,33 +6,32 @@ body {
     color: white;
 }
 
-/* Header – bright, transparent, line below */
+/* Header – weiß, gleichmäßig verteilt, Linie unten */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
 
-    background: rgba(255, 255, 255, 0.90); /* bright white */
-    backdrop-filter: blur(6px);            /* glass effect */
-
-    border-bottom: 2px solid black;       /* black line */
+    background: rgba(255, 255, 255, 1); /* Balken jetzt wirklich WEISS */
+    border-bottom: 3px solid black;     /* schwarzer Unterstrich */
 }
 
-/* Logo with glow */
+/* Logo mit Glow */
 .logo {
     height: 55px;
     margin-right: 25px;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,0.9)); /* glow */
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.9)); /* Glow-Effekt */
 }
 
-/* Navigation – evenly spaced, modern, black */
+/* Navigation – gleichmäßig verteilt */
 nav {
     display: flex;
-    justify-content: space-between;
-    width: 65%;
+    justify-content: space-between; /* verteilt die Links */
+    width: 70%;                     /* Breite der Navigation */
 }
 
+/* Navigation Schrift – schwarz, modern */
 nav a {
     color: black;
     text-decoration: none;
@@ -54,7 +53,7 @@ nav a {
     object-fit: contain;
 }
 
-/* Categories */
+/* Kategorien */
 .categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
