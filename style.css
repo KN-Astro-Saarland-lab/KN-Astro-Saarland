@@ -6,31 +6,31 @@ body {
     color: white;
 }
 
-/* Header oben – heller, transparent, Glow, Linie unten */
+/* Header oben – hell, transparent, Linie unten */
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Logo links, Menü rechts */
+    justify-content: space-between;
     padding: 15px 30px;
 
-    background: rgba(255, 255, 255, 0.95); /* heller weißer Balken */
-    backdrop-filter: blur(6px);            /* moderner Glas-Effekt */
+    background: rgba(255, 255, 255, 0.90); /* HELLER weißer Balken */
+    backdrop-filter: blur(6px);            /* Glas-Effekt */
 
     border-bottom: 2px solid black;       /* schwarze Linie unten */
 }
 
-/* Logo mit Glow-Effekt */
+/* Logo mit Glow */
 .logo {
     height: 55px;
     margin-right: 25px;
-    filter: drop-shadow(0 0 8px rgba(0,0,0,0.8)); /* Glow */
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.9)); /* Glow */
 }
 
 /* Navigation – gleichmäßig verteilt, modern, schwarz */
 nav {
     display: flex;
-    justify-content: space-between; /* gleichmäßige Verteilung */
-    width: 60%;                     /* Breite der Navigation */
+    justify-content: space-between;
+    width: 65%; /* Navigation breiter für gleichmäßige Verteilung */
 }
 
 nav a {
@@ -38,7 +38,7 @@ nav a {
     text-decoration: none;
 
     font-weight: 600;
-    font-size: 22px;                /* größere Schrift */
+    font-size: 22px;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
