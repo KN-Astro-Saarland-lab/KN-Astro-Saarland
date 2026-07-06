@@ -11,16 +11,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 8px 30px;
 
     background: white;
-    border-bottom: 1px solid black; /* dünner schwarzer Strich */
+    border-bottom: 1px solid black; /* dünner schwarzer Strich im weißen Balken */
 
     position: relative;
     z-index: 10;
 }
 
-/* Logo mit Glow */
+/* Logo mit Glow – WICHTIG: Klasse heißt genau .logo */
 .logo {
     height: 55px;
     margin-right: 25px;
@@ -44,7 +44,6 @@ nav a {
 
 /* Banner */
 .hero {
-    position: relative;
     width: 100%;
     margin-top: 0;
 }
@@ -53,32 +52,6 @@ nav a {
     width: 100%;
     height: auto;
     display: block;
-}
-
-/* Text über dem Banner */
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 20%;        /* weiter nach links */
-    transform: translateY(-50%);
-    text-align: left; /* linksbündig */
-    color: white;
-    text-shadow: 2px 2px 4px red; /* rote Umrandung */
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.hero-text h2 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.hero-text h3 {
-    font-size: 28px;
-    margin: 0;
 }
 
 /* Kategorien */
