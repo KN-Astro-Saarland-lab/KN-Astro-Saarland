@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>KN Astro Saarland</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: black; color: white; }
+        header { display: flex; align-items: center; padding: 10px 20px; background: #111; }
+        header img { height: 50px; margin-right: 20px; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+        .hero {
+            background: url('Titelbild.png') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+            text-shadow: 0 0 10px black;
+        }
+        .hero h1 { font-size: 48px; margin: 0; }
+        .hero h2 { font-size: 28px; margin: 5px 0; }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+        .cat {
+            text-align: center;
+        }
+        .cat img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .cat h3 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="KN.png" alt="Logo">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Galerie</a>
+        <a href="#">Über Mich</a>
+        <a href="#">Gartensternwarte</a>
+        <a href="#">Ausrüstung</a>
+        <a href="#">Kontakt</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>KAI NIMMRICHTER</h1>
+    <h2>ASTROFOTOGRAFIE AUS DEM SAARLAND</h2>
+</div>
+
+<div class="categories">
+    <div class="cat">
+        <img src="Herznebel.png" alt="Nebel">
+        <h3>Nebel</h3>
+    </div>
+    <div class="cat">
+        <img src="Adromeda.png" alt="Galaxien">
+        <h3>Galaxien</h3>
+    </div>
+    <div class="cat">
+        <img src="M44.png" alt="Sternhaufen">
+        <h3>Sternhaufen</h3>
+    </div>
+    <div class="cat">
+        <img src="Mond.png" alt="Mond">
+        <h3>Mond</h3>
+    </div>
+    <div class="cat">
+        <img src="Jupiter.png" alt="Planeten">
+        <h3>Planeten</h3>
+    </div>
+    <div class="cat">
+        <img src="Komet.png" alt="Kometen">
+        <h3>Kometen</h3>
+    </div>
+</div>
+
+</body>
+</html>
