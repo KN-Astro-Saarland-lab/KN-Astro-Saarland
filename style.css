@@ -6,21 +6,18 @@ body {
     color: white;
 }
 
-/* Header – weiß, dünner Strich, gleichmäßig verteilt */
+/* Header – weißer Balken + dünner schwarzer Strich */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px 30px;
 
-    background: white;
-    border-bottom: 1px solid black; /* dünner schwarzer Strich im weißen Balken */
-
-    position: relative;
-    z-index: 10;
+    background: white;              /* weißer Balken */
+    border-bottom: 1px solid black; /* dünner schwarzer Strich */
 }
 
-/* Logo mit Glow – WICHTIG: Klasse heißt genau .logo */
+/* Logo mit Glow */
 .logo {
     height: 55px;
     margin-right: 25px;
@@ -45,7 +42,6 @@ nav a {
 /* Banner */
 .hero {
     width: 100%;
-    margin-top: 0;
 }
 
 .hero-bg {
