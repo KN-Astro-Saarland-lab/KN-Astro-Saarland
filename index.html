@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>KN Astro Saarland</title>
+  <style>
+    body { margin:0; font-family: Arial; background:#000; color:#eee; }
+    header { background:#111; padding:20px; text-align:center; }
+    nav a { color:#eee; margin:0 10px; text-decoration:none; font-weight:bold; }
+    .hero { padding:60px 20px; text-align:center; background:#200030; }
+    .categories { display:flex; flex-wrap:wrap; justify-content:center; padding:20px; }
+    .cat { border:1px solid #444; border-radius:8px; padding:15px 25px; margin:10px; }
+    footer { text-align:center; padding:20px; background:#111; margin-top:40px; }
+  </style>
 </head>
 <body>
-  <h1>Willkommen bei KN Astro Saarland</h1>
-  <p>Astrofotografie aus dem Saarland.</p>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="ueber-mich.html">Über Mich</a>
+    <a href="gartensternwarte.html">Gartensternwarte</a>
+    <a href="ausruestung.html">Ausrüstung</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Kai Nimmrichter – Astrofotografie aus dem Saarland</h1>
+  <p>Nebel, Galaxien, Sternhaufen, Mond, Planeten und Kometen.</p>
+</div>
+
+<div class="categories">
+  <div class="cat">Nebel</div>
+  <div class="cat">Galaxien</div>
+  <div class="cat">Sternhaufen</div>
+  <div class="cat">Mond</div>
+  <div class="cat">Planeten</div>
+  <div class="cat">Kometen</div>
+</div>
+
+<footer>
+  © 2026 KN Astro Saarland
+</footer>
+
 </body>
 </html>
