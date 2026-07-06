@@ -13,8 +13,8 @@ header {
     justify-content: space-between;
     padding: 8px 30px;
 
-    background: white;              /* weißer Balken */
-    border-bottom: 1px solid black; /* dünner schwarzer Strich */
+    background: white;
+    border-bottom: 1px solid black;
 }
 
 /* Logo mit Glow */
