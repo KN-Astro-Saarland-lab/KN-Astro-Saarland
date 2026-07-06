@@ -1,4 +1,4 @@
-/* Allgemein */
+/* General */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,31 +6,31 @@ body {
     color: white;
 }
 
-/* Header oben – hell, transparent, Linie unten */
+/* Header – bright, transparent, line below */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
 
-    background: rgba(255, 255, 255, 0.90); /* HELLER weißer Balken */
-    backdrop-filter: blur(6px);            /* Glas-Effekt */
+    background: rgba(255, 255, 255, 0.90); /* bright white */
+    backdrop-filter: blur(6px);            /* glass effect */
 
-    border-bottom: 2px solid black;       /* schwarze Linie unten */
+    border-bottom: 2px solid black;       /* black line */
 }
 
-/* Logo mit Glow */
+/* Logo with glow */
 .logo {
     height: 55px;
     margin-right: 25px;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,0.9)); /* Glow */
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.9)); /* glow */
 }
 
-/* Navigation – gleichmäßig verteilt, modern, schwarz */
+/* Navigation – evenly spaced, modern, black */
 nav {
     display: flex;
     justify-content: space-between;
-    width: 65%; /* Navigation breiter für gleichmäßige Verteilung */
+    width: 65%;
 }
 
 nav a {
@@ -42,7 +42,7 @@ nav a {
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Banner darunter */
+/* Banner */
 .hero {
     width: 100%;
 }
@@ -54,7 +54,7 @@ nav a {
     object-fit: contain;
 }
 
-/* Kategorien */
+/* Categories */
 .categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
