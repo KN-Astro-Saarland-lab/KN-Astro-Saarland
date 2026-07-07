@@ -39,7 +39,8 @@ body {
 /* Dein komplettes Titelbild */
 .hero {
     height: 300px;
-    background: url("Titelbild.png") center center / cover no-repeat;
+    background: url("Titelbild.png") no-repeat center center;
+    background-size: cover;
 }
 
 /* Kategorien */
