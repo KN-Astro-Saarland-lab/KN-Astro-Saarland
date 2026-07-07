@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -40,8 +39,7 @@ body {
 /* Das komplette Titelbild */
 .hero {
     height: 300px;
-    background: url("titelbild.png") center center / cover no-repeat;
-    /* WICHTIG: Datei muss GENAU so heißen wie dein Titelbild */
+    background: url("Titelbild.png") center center / cover no-repeat;
 }
 
 /* Kategorien */
