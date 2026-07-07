@@ -1,76 +1,61 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kai Nimmrichter – Astrofotografie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    background: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-}
+<header class="header">
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="ueber-mich.html">Über Mich</a></li>
+            <li><a href="gartensternwarte.html">Gartensternwarte</a></li>
+            <li><a href="ausruestung.html">Ausrüstung</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
 
-/* Navigation oben */
-.header {
-    padding: 20px 40px;
-}
+<!-- Dein komplettes Titelbild -->
+<section class="hero"></section>
 
-.nav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-}
+<main class="kategorien">
 
-.nav a {
-    color: #ccc;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
+    <a class="kategorie" href="nebel.html">
+        <img src="Herznebel.png" alt="Nebel">
+        <span>Nebel</span>
+    </a>
 
-.nav a:hover,
-.nav a.active {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-}
+    <a class="kategorie" href="galaxien.html">
+        <img src="Adromeda.png" alt="Galaxien">
+        <span>Galaxien</span>
+    </a>
 
-/* Das komplette Headerbild */
-.hero {
-    height: 300px;
-    background: url("header.png") center center / cover no-repeat;
-    /* WICHTIG: Datei muss genauso heißen wie dein echtes Headerbild */
-}
+    <a class="kategorie" href="sternhaufen.html">
+        <img src="Sternhaufen.png" alt="Sternhaufen">
+        <span>Sternhaufen</span>
+    </a>
 
-/* Kategorien */
-.kategorien {
-    width: 1100px;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
+    <a class="kategorie" href="mond.html">
+        <img src="Mond.png" alt="Mond">
+        <span>Mond</span>
+    </a>
 
-.kategorie {
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-}
+    <a class="kategorie" href="planeten.html">
+        <img src="Jupiter.png" alt="Planeten">
+        <span>Planeten</span>
+    </a>
 
-.kategorie img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid #444;
-}
+    <a class="kategorie" href="kometen.html">
+        <img src="Komet.png" alt="Kometen">
+        <span>Kometen</span>
+    </a>
 
-.kategorie span {
-    display: block;
-    margin-top: 8px;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+</main>
+
+</body>
+</html>
