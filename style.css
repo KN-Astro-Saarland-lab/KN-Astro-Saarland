@@ -6,133 +6,116 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000;
-    color: #fff;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-/* Header mit Logo und Navigation */
-.site-header {
+/* Header */
+.header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
-    background-color: #05050a;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0a0a12;
 }
 
 .logo {
     width: 60px;
     height: 60px;
-    border-radius: 8px;
-    background-image: url("logo-bg.png"); /* optional: Sternen-Hintergrund fürs Logo */
+    background: url("logo.png");
     background-size: cover;
     background-position: center;
+    border-radius: 8px;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.logo span {
-    color: #fff;
+    align-items: center;
     font-weight: bold;
     font-size: 22px;
 }
 
 /* Navigation */
-.main-nav ul {
+.nav {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
-.main-nav a {
+.nav a {
+    color: #ccc;
     text-decoration: none;
-    color: #ddd;
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-.main-nav a:hover,
-.main-nav a.active {
-    color: #fff;
-    border-bottom: 2px solid #fff;
+.nav a:hover,
+.nav a.active {
+    color: white;
+    border-bottom: 2px solid white;
 }
 
-/* Hero-Bereich */
+/* Hero Bereich */
 .hero {
-    position: relative;
-    height: 320px;
-    background-image: url("hero-bg.jpg"); /* dein Nebel-/Sternenhintergrund */
+    background: url("header-bg.jpg") no-repeat center center;
     background-size: cover;
-    background-position: center;
-    margin-bottom: 30px;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
-    position: relative;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    width: 80%;
     align-items: center;
-    padding: 0 60px;
 }
 
-/* Saarland links */
-.saarland-img {
-    max-width: 140px;
+.saarland {
+    width: 140px;
 }
 
-/* Text in der Mitte */
-.hero-center {
+.teleskop {
+    width: 160px;
+}
+
+.hero-text {
     text-align: center;
 }
 
-.hero-center h1 {
-    font-size: 32px;
+.hero-text h1 {
+    font-size: 34px;
     letter-spacing: 3px;
-    margin-bottom: 8px;
 }
 
-.hero-center h2 {
-    font-size: 24px;
+.hero-text h2 {
+    font-size: 26px;
     letter-spacing: 4px;
-    margin-bottom: 6px;
+    margin-top: 5px;
 }
 
-.hero-center p {
+.hero-text p {
     font-size: 18px;
     letter-spacing: 3px;
+    margin-top: 5px;
 }
 
-/* Teleskop rechts */
-.teleskop-img {
-    max-width: 160px;
-}
-
-/* Kategorien-Bereich */
-.categories {
-    max-width: 1100px;
-    margin: 0 auto 40px auto;
+/* Kategorien */
+.kategorien {
+    width: 1100px;
+    margin: 40px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
-.category a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
+.kategorie {
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
-.category img {
+.kategorie img {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -140,10 +123,10 @@ body {
     border: 1px solid #444;
 }
 
-.category span {
+.kategorie span {
     display: block;
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: 16px;
-    letter-spacing: 1px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
