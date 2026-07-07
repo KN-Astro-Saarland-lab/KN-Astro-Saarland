@@ -7,89 +7,70 @@
 </head>
 <body>
 
-    <!-- Kopfbereich mit Logo und Navigation -->
-    <header class="site-header">
-        <div class="logo">
-            <span>KN</span>
+<header class="header">
+    <div class="logo">KN</div>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="ueber-mich.html">Über Mich</a></li>
+            <li><a href="gartensternwarte.html">Gartensternwarte</a></li>
+            <li><a href="ausruestung.html">Ausrüstung</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <img src="saarland.png" class="saarland" alt="Saarland">
+
+        <div class="hero-text">
+            <h1>KAI NIMMRICHTER</h1>
+            <h2>ASTROFOTOGRAFIE</h2>
+            <p>AUS DEM SAARLAND</p>
         </div>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="ueber-mich.html">Über Mich</a></li>
-                <li><a href="gartensternwarte.html">Gartensternwarte</a></li>
-                <li><a href="ausruestung.html">Ausrüstung</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+        <img src="teleskop.png" class="teleskop" alt="Teleskop">
 
-    <!-- Hero-Bereich mit Hintergrundbild, Text, Saarland-Umriss und Teleskop -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
+    </div>
+</section>
 
-        <div class="hero-content">
-            <div class="hero-left">
-                <img src="saarland.png" alt="Saarland" class="saarland-img">
-            </div>
+<main class="kategorien">
 
-            <div class="hero-center">
-                <h1>KAI NIMMRICHTER</h1>
-                <h2>ASTROFOTOGRAFIE</h2>
-                <p>AUS DEM SAARLAND</p>
-            </div>
+    <a class="kategorie" href="nebel.html">
+        <img src="Herznebel.png" alt="Nebel">
+        <span>Nebel</span>
+    </a>
 
-            <div class="hero-right">
-                <img src="teleskop.png" alt="Teleskop" class="teleskop-img">
-            </div>
-        </div>
-    </section>
+    <a class="kategorie" href="galaxien.html">
+        <img src="Adromeda.png" alt="Galaxien">
+        <span>Galaxien</span>
+    </a>
 
-    <!-- Kategorien mit Bildern -->
-    <main class="categories">
-        <div class="category">
-            <a href="nebel.html">
-                <img src="Nebel.png" alt="Nebel">
-                <span>Nebel</span>
-            </a>
-        </div>
+    <a class="kategorie" href="sternhaufen.html">
+        <img src="Sternhaufen.png" alt="Sternhaufen">
+        <span>Sternhaufen</span>
+    </a>
 
-        <div class="category">
-            <a href="galaxien.html">
-                <img src="Galaxien.png" alt="Galaxien">
-                <span>Galaxien</span>
-            </a>
-        </div>
+    <a class="kategorie" href="mond.html">
+        <img src="Mond.png" alt="Mond">
+        <span>Mond</span>
+    </a>
 
-        <div class="category">
-            <a href="sternhaufen.html">
-                <img src="Sternhaufen.png" alt="Sternhaufen">
-                <span>Sternhaufen</span>
-            </a>
-        </div>
+    <a class="kategorie" href="planeten.html">
+        <img src="Jupiter.png" alt="Planeten">
+        <span>Planeten</span>
+    </a>
 
-        <div class="category">
-            <a href="mond.html">
-                <img src="Mond.png" alt="Mond">
-                <span>Mond</span>
-            </a>
-        </div>
+    <a class="kategorie" href="kometen.html">
+        <img src="Komet.png" alt="Kometen">
+        <span>Kometen</span>
+    </a>
 
-        <div class="category">
-            <a href="planeten.html">
-                <img src="Planeten.png" alt="Planeten">
-                <span>Planeten</span>
-            </a>
-        </div>
-
-        <div class="category">
-            <a href="kometen.html">
-                <img src="Kometen.png" alt="Kometen">
-                <span>Kometen</span>
-            </a>
-        </div>
-    </main>
+</main>
 
 </body>
 </html>
