@@ -2,62 +2,94 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Kai Nimmrichter – Astrofotografie aus dem Saarland</title>
+    <title>Kai Nimmrichter – Astrofotografie</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <img src="KN.png" class="logo">
+    <!-- Kopfbereich mit Logo und Navigation -->
+    <header class="site-header">
+        <div class="logo">
+            <span>KN</span>
+        </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Galerie.html">Galerie</a>
-        <a href="ueber-mich.html">Über Mich</a>
-        <a href="Gartensternwarte.html">Gartensternwarte</a>
-        <a href="Ausrüstung.html">Ausrüstung</a>
-        <a href="Kontakt.html">Kontakt</a>
-    </nav>
-</header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="ueber-mich.html">Über Mich</a></li>
+                <li><a href="gartensternwarte.html">Gartensternwarte</a></li>
+                <li><a href="ausruestung.html">Ausrüstung</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="hero">
-    <img src="Titelbild.png" class="hero-bg">
-</div>
+    <!-- Hero-Bereich mit Hintergrundbild, Text, Saarland-Umriss und Teleskop -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
 
-<div class="categories">
+        <div class="hero-content">
+            <div class="hero-left">
+                <img src="saarland.png" alt="Saarland" class="saarland-img">
+            </div>
 
-    <a class="cat" href="nebel.html">
-        <img src="Herznebel.png">
-        <h3>Nebel</h3>
-    </a>
+            <div class="hero-center">
+                <h1>KAI NIMMRICHTER</h1>
+                <h2>ASTROFOTOGRAFIE</h2>
+                <p>AUS DEM SAARLAND</p>
+            </div>
 
-    <a class="cat" href="galaxien.html">
-        <img src="Andromeda.png">
-        <h3>Galaxien</h3>
-    </a>
+            <div class="hero-right">
+                <img src="teleskop.png" alt="Teleskop" class="teleskop-img">
+            </div>
+        </div>
+    </section>
 
-    <a class="cat" href="sternhaufen.html">
-        <img src="M44.png">
-        <h3>Sternhaufen</h3>
-    </a>
+    <!-- Kategorien mit Bildern -->
+    <main class="categories">
+        <div class="category">
+            <a href="nebel.html">
+                <img src="Nebel.png" alt="Nebel">
+                <span>Nebel</span>
+            </a>
+        </div>
 
-    <a class="cat" href="mond.html">
-        <img src="Mond.png">
-        <h3>Mond</h3>
-    </a>
+        <div class="category">
+            <a href="galaxien.html">
+                <img src="Galaxien.png" alt="Galaxien">
+                <span>Galaxien</span>
+            </a>
+        </div>
 
-    <a class="cat" href="planeten.html">
-        <img src="Jupiter.png">
-        <h3>Planeten</h3>
-    </a>
+        <div class="category">
+            <a href="sternhaufen.html">
+                <img src="Sternhaufen.png" alt="Sternhaufen">
+                <span>Sternhaufen</span>
+            </a>
+        </div>
 
-    <a class="cat" href="kometen.html">
-        <img src="Komet.png">
-        <h3>Kometen</h3>
-    </a>
+        <div class="category">
+            <a href="mond.html">
+                <img src="Mond.png" alt="Mond">
+                <span>Mond</span>
+            </a>
+        </div>
 
-</div>
+        <div class="category">
+            <a href="planeten.html">
+                <img src="Planeten.png" alt="Planeten">
+                <span>Planeten</span>
+            </a>
+        </div>
+
+        <div class="category">
+            <a href="kometen.html">
+                <img src="Kometen.png" alt="Kometen">
+                <span>Kometen</span>
+            </a>
+        </div>
+    </main>
 
 </body>
 </html>
