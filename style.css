@@ -1,76 +1,149 @@
-/* Allgemein */
-body {
+/* Grundlayout */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: black;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header – weißer Balken + dünner schwarzer Strich */
-header {
-    position: relative;        /* Header bleibt oben */
-    z-index: 1000;             /* Header über dem Banner */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header mit Logo und Navigation */
+.site-header {
     display: flex;
     align-items: center;
-    gap: 40px;
-    padding: 6px 20px;
-
-    background: white;
-    border-bottom: 1px solid black;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #05050a;
 }
 
-/* Logo */
 .logo {
-    height: 45px;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,0.9));
-}
-
-/* Navigation – nach links */
-nav {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background-image: url("logo-bg.png"); /* optional: Sternen-Hintergrund fürs Logo */
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: flex-start;
-    gap: 25px;
-    max-width: 600px; /* verhindert, dass Kontakt zu weit rechts hängt */
+    align-items: center;
+    justify-content: center;
 }
 
-nav a {
-    color: black;
+.logo span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Navigation */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
     text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
+    color: #ddd;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Banner – WICHTIG: unter dem Header */
+.main-nav a:hover,
+.main-nav a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* Hero-Bereich */
 .hero {
     position: relative;
-    margin-top: 0;
-    z-index: 1; /* Banner liegt UNTER dem Header */
+    height: 320px;
+    background-image: url("hero-bg.jpg"); /* dein Nebel-/Sternenhintergrund */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
 }
 
-.hero-bg {
-    width: 100%;
-    display: block;
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
-/* Kategorien */
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 0 60px;
+}
+
+/* Saarland links */
+.saarland-img {
+    max-width: 140px;
+}
+
+/* Text in der Mitte */
+.hero-center {
+    text-align: center;
+}
+
+.hero-center h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.hero-center h2 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-bottom: 6px;
+}
+
+.hero-center p {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+/* Teleskop rechts */
+.teleskop-img {
+    max-width: 160px;
+}
+
+/* Kategorien-Bereich */
 .categories {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 40px;
 }
 
-.cat {
-    text-align: center;
+.category a {
+    display: block;
     text-decoration: none;
-    color: white;
+    color: #fff;
+    text-align: center;
 }
 
-.cat img {
+.category img {
     width: 100%;
-    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #444;
 }
 
-.cat h3 {
-    margin-top: 10px;
+.category span {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
