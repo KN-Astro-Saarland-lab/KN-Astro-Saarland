@@ -1,6 +1,7 @@
-/* ===========================
-   Grundeinstellungen
-=========================== */
+/* ==========================================
+   KN Astro Saarland
+   Version 1.0
+========================================== */
 
 *{
     margin:0;
@@ -10,11 +11,11 @@
 
 body{
 
-    background:#ffffff;
-
     font-family:Arial, Helvetica, sans-serif;
 
-    color:#333;
+    background:#ffffff;
+
+    color:#333333;
 
 }
 
@@ -33,16 +34,12 @@ header{
 
     align-items:center;
 
-    padding:18px 70px;
+    padding:20px 60px;
 
-    background:white;
+    background:#ffffff;
 
 }
 
-
-/* ===========================
-          LOGO
-=========================== */
 
 .logo img{
 
@@ -52,7 +49,7 @@ header{
 
 
 /* ===========================
-       NAVIGATION
+        NAVIGATION
 =========================== */
 
 nav ul{
@@ -61,36 +58,46 @@ nav ul{
 
     display:flex;
 
-    gap:35px;
+    align-items:center;
+
+    gap:10px;
+
+}
+
+nav ul li{
+
+    position:relative;
 
 }
 
 nav ul li a{
 
+    display:block;
+
     text-decoration:none;
 
-    color:#666;
+    color:#666666;
 
-    font-size:19px;
+    font-size:18px;
 
     font-weight:bold;
 
+    padding:12px 22px;
+
     transition:0.3s;
-
-    padding:8px 14px;
-
-    border-radius:5px;
 
 }
 
 
-/* aktiver Menüpunkt */
+/* Goldener Homebutton */
 
 nav ul li a.aktiv{
 
-    background:#c89d3d;
+    background:#c79a39;
 
-    color:white;
+    color:#ffffff;
+
+    border-radius:4px;
 
 }
 
@@ -99,25 +106,47 @@ nav ul li a.aktiv{
 
 nav ul li a:hover{
 
-    background:#c89d3d;
+    background:#c79a39;
 
-    color:white;
+    color:#ffffff;
+
+    border-radius:4px;
+
+}
+
+
+/* Schräge Trennlinien */
+
+nav ul li:not(:last-child)::after{
+
+    content:"/";
+
+    position:absolute;
+
+    right:-8px;
+
+    top:11px;
+
+    color:#c79a39;
+
+    font-size:24px;
+
+    transform:rotate(18deg);
 
 }
 
 
 /* ===========================
-        Trennlinie
+        LINIE
 =========================== */
 
 hr{
 
     border:none;
 
-    border-top:1px solid #d9d9d9;
+    border-top:1px solid #dddddd;
 
 }
-
 
 
 /* ===========================
@@ -128,7 +157,7 @@ hr{
 
     width:100%;
 
-    margin-top:20px;
+    margin-top:25px;
 
     text-align:center;
 
@@ -138,28 +167,227 @@ hr{
 
     width:92%;
 
-    max-width:1600px;
+    max-width:1650px;
 
-    border-radius:6px;
+    display:block;
+
+    margin:auto;
+
+    border-radius:5px;
 
 }
 
 
-
 /* ===========================
-      Kategorien
+        HAUPTBEREICH
 =========================== */
 
-.kategorien{
+main{
 
     width:92%;
 
-    margin:45px auto;
+    margin:50px auto;
+
+}
+
+
+/* ===========================
+      KATEGORIEN
+=========================== */
+
+.kategorien{
 
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:40px;
+    gap:35px;
+
+/* ===========================
+          KARTEN
+=========================== */
+
+.karte{
+
+    background:#ffffff;
+
+    border:1px solid #dddddd;
+
+    border-radius:6px;
+
+    overflow:hidden;
+
+    transition:0.35s;
+
+    box-shadow:0px 3px 10px rgba(0,0,0,0.10);
+
+}
+
+.karte:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0px 10px 25px rgba(0,0,0,0.20);
+
+}
+
+.karte a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+.karte img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.karte h2{
+
+    background:#c79a39;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    padding:18px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.karte:hover h2{
+
+    background:#b68828;
+
+}
+
+
+/* ===========================
+         FOOTER
+=========================== */
+
+footer{
+
+    margin-top:60px;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#222222;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+
+/* ===========================
+      TABLET
+=========================== */
+
+@media(max-width:1100px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.kategorien{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.titelbild img{
+
+    width:96%;
+
+}
+
+}
+
+
+/* ===========================
+       SMARTPHONE
+=========================== */
+
+@media(max-width:700px){
+
+.logo img{
+
+    height:70px;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+nav ul li::after{
+
+    display:none;
+
+}
+
+.kategorien{
+
+    grid-template-columns:1fr;
+
+}
+
+.karte img{
+
+    height:220px;
+
+}
+
+.karte h2{
+
+    font-size:20px;
+
+}
+
+main{
+
+    width:96%;
+
+}
+
+.titelbild img{
+
+    width:100%;
 
 }
