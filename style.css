@@ -45,7 +45,7 @@ body {
     justify-content: center;
     text-align: center;
 
-    padding-top: 160px;        /* Textblock höher */
+    padding-top: 220px;        /* WICHTIG: Textblock VIEL höher */
 }
 
 /* Textblock */
