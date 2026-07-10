@@ -5,7 +5,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navigation oben */
 .topbar {
     width: 100%;
     height: 70px;
@@ -22,23 +21,15 @@ body {
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 3px;
-    color: #fff;
 }
 
-/* Navigation rechts */
 .nav a {
-    color: #4aa3ff;   /* Blau wie im Screenshot */
-    text-decoration: none;
+    color: #4aa3ff;
     margin-left: 25px;
+    text-decoration: none;
     font-size: 14px;
-    letter-spacing: 1px;
 }
 
-.nav a:hover {
-    color: #82c3ff;
-}
-
-/* Titelblock */
 .hero {
     text-align: center;
     padding-top: 200px;
@@ -46,13 +37,10 @@ body {
 
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
 }
 
 .hero h2 {
     font-size: 22px;
-    margin-bottom: 15px;
     font-weight: bold;
 }
 
