@@ -35,7 +35,7 @@ body {
 /* Hero Bereich */
 .hero {
     height: 100vh;
-    background-image: url("Startseite/Titelbild.png");
+    background-image: url("Titelbild.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
