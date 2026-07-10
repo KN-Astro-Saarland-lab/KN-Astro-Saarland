@@ -1,190 +1,96 @@
-/* Grundlayout */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000000;
-    color: #ffffff;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
 }
 
-/* Header / Navigation */
-.main-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Navigation */
+.topbar {
     width: 100%;
     height: 70px;
-    background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.8);
 }
 
-.logo span {
-    display: inline-block;
+.logo {
+    font-size: 28px;
     font-weight: bold;
-    font-size: 24px;
-    color: #ffffff;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.main-nav a {
-    color: #ffffff;
+.nav a {
+    color: #fff;
     text-decoration: none;
-    font-size: 15px;
-    text-transform: uppercase;
+    margin-left: 25px;
+    font-size: 14px;
     letter-spacing: 1px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background 0.3s, color 0.3s;
 }
 
-.main-nav a:hover {
-    background: #ffffff;
-    color: #000000;
+.nav a:hover {
+    color: #ccc;
 }
 
-/* Hero / Startseite */
+/* Hero Bereich */
 .hero {
-    height: 100vh;
-    background-image: url("Startseite/startseite-bg.jpg"); /* Dein großes Hintergrundbild */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    padding-top: 70px; /* Platz für die fixe Navigation */
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.hero-content {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 120px;
 }
 
-.hero-content h1 {
+.hero h1 {
     font-size: 48px;
-    letter-spacing: 4px;
     margin-bottom: 10px;
+    letter-spacing: 3px;
 }
 
-.hero-content h2 {
-    font-size: 22px;
+.hero h2 {
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
-.hero-content p {
+.hero p {
     font-size: 16px;
-    color: #dddddd;
+    color: #ccc;
 }
 
-/* Galerie / Kacheln */
-.gallery-section {
-    padding: 60px 40px;
-    background: #050505;
-}
-
-.gallery-section h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
-.tile-grid {
+/* Kachel-Galerie */
+.tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 40px;
 }
 
 .tile {
-    background: #111111;
+    background: #111;
     border-radius: 8px;
     overflow: hidden;
+    text-align: center;
     text-decoration: none;
-    color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.tile img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.tile span {
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .tile:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.3);
-}
-
-.tile-image {
-    width: 100%;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-}
-
-.tile-title {
-    padding: 12px 16px;
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Inhaltliche Sektionen */
-.content-section {
-    padding: 60px 40px;
-    background: #000000;
-    border-top: 1px solid #222222;
-}
-
-.content-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.content-section p {
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 800px;
-}
-
-/* Footer */
-.main-footer {
-    padding: 20px 40px;
-    text-align: center;
-    background: #050505;
-    border-top: 1px solid #222222;
-    font-size: 13px;
-    color: #aaaaaa;
-}
-
-/* Responsiv */
-@media (max-width: 768px) {
-    .main-header {
-        padding: 0 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 32px;
-    }
-
-    .hero-content h2 {
-        font-size: 18px;
-    }
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
 }
