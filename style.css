@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navigation */
+/* Navigation fixieren */
 .topbar {
     width: 100%;
     height: 90px;
@@ -15,6 +15,7 @@ body {
     padding: 0 60px;
     position: fixed;
     top: 0;
+    left: 0;
     background: rgba(0,0,0,0.55);
     z-index: 1000;
 }
@@ -36,6 +37,7 @@ body {
 /* HERO – Vollbild Hintergrund */
 .hero {
     height: 100vh;
+    width: 100%;
     background-image: url("Titelbild.png");
     background-size: cover;
     background-position: center;
@@ -49,11 +51,12 @@ body {
     padding-top: 90px; /* Platz für Navigation */
 }
 
-/* Textblock */
+/* Textblock exakt zentriert */
 .hero-text {
     background: rgba(0,0,0,0.45);
     padding: 50px 80px;
     border-radius: 12px;
+    max-width: 900px;
 }
 
 .hero-text h1 {
