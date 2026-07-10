@@ -5,14 +5,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navigation fixieren */
+/* Navigation oben fixiert */
 .topbar {
     width: 100%;
-    height: 90px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -21,57 +21,51 @@ body {
 }
 
 .logo img {
-    height: 60px;
+    height: 50px;
 }
 
-/* Navigation rechts */
 .nav a {
     color: #4aa3ff;
     text-decoration: none;
-    margin-left: 35px;
-    font-size: 18px;
-    letter-spacing: 1px;
+    margin-left: 25px;
+    font-size: 17px;
     font-weight: bold;
 }
 
-/* HERO – Vollbild Hintergrund */
+/* Hintergrund */
 .hero {
     height: 100vh;
-    width: 100%;
     background-image: url("Titelbild.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;   /* Textblock nach oben */
     justify-content: center;
     text-align: center;
 
-    padding-top: 90px; /* Platz für Navigation */
+    padding-top: 160px;        /* Textblock höher */
 }
 
-/* Textblock exakt zentriert */
+/* Textblock */
 .hero-text {
     background: rgba(0,0,0,0.45);
-    padding: 50px 80px;
-    border-radius: 12px;
-    max-width: 900px;
+    padding: 40px 70px;
+    border-radius: 10px;
 }
 
 .hero-text h1 {
-    font-size: 64px;
-    margin-bottom: 15px;
-    letter-spacing: 3px;
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
 .hero-text h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .hero-text p {
-    font-size: 22px;
+    font-size: 20px;
     color: #ddd;
 }
