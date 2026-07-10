@@ -8,31 +8,32 @@ body {
 /* Navigation */
 .topbar {
     width: 100%;
-    height: 80px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 60px;
     position: fixed;
     top: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.55);
     z-index: 1000;
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
 }
 
 /* Navigation rechts */
 .nav a {
     color: #4aa3ff;
     text-decoration: none;
-    margin-left: 25px;
-    font-size: 16px;
+    margin-left: 35px;
+    font-size: 18px;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
-/* HERO – Vollbild Hintergrund */
+/* HERO – dein komplettes Webador-Bild */
 .hero {
     height: 100vh;
     background-image: url("Titelbild.png");
@@ -45,28 +46,29 @@ body {
     justify-content: center;
     text-align: center;
 
-    padding-top: 80px; /* Platz für Navigation */
+    padding-top: 90px; /* Platz für Navigation */
 }
 
 /* Textblock */
 .hero-text {
     background: rgba(0,0,0,0.45);
-    padding: 40px 60px;
-    border-radius: 10px;
+    padding: 50px 80px;
+    border-radius: 12px;
 }
 
 .hero-text h1 {
-    font-size: 52px;
-    margin-bottom: 10px;
+    font-size: 64px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
 }
 
 .hero-text h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 22px;
     color: #ddd;
 }
