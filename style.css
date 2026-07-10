@@ -33,7 +33,7 @@ body {
     font-weight: bold;
 }
 
-/* HERO – dein komplettes Webador-Bild */
+/* HERO – Vollbild Hintergrund */
 .hero {
     height: 100vh;
     background-image: url("Titelbild.png");
