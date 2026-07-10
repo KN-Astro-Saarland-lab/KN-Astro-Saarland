@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navigation */
+/* Navigation oben */
 .topbar {
     width: 100%;
     height: 70px;
@@ -15,17 +15,19 @@ body {
     padding: 0 40px;
     position: fixed;
     top: 0;
-    background: rgba(0,0,0,0.8);
+    background: #000;
 }
 
 .logo {
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 3px;
+    color: #fff;
 }
 
+/* Navigation rechts */
 .nav a {
-    color: #fff;
+    color: #4aa3ff;   /* Blau wie im Screenshot */
     text-decoration: none;
     margin-left: 25px;
     font-size: 14px;
@@ -33,64 +35,28 @@ body {
 }
 
 .nav a:hover {
-    color: #ccc;
+    color: #82c3ff;
 }
 
-/* Hero Bereich */
+/* Titelblock */
 .hero {
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 120px;
 }
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .hero h2 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .hero p {
     font-size: 16px;
     color: #ccc;
-}
-
-/* Kachel-Galerie */
-.tiles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
-    padding: 40px;
-}
-
-.tile {
-    background: #111;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    transition: 0.3s;
-}
-
-.tile img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-}
-
-.tile span {
-    display: block;
-    padding: 12px;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.tile:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(255,255,255,0.3);
 }
