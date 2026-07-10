@@ -2,102 +2,117 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KN Astro Saarland</title>
-
+    <title>Kai Nimmrichter – Astrofotografie aus dem Saarland mit Teleskop</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <!-- Optional: kleines Logo-Bild -->
+            <!-- <img src="Startseite/logo.png" alt="KN Logo"> -->
+            <span>KN</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#ueber-mich">Über Mich</a></li>
+                <li><a href="#gartensternwarte">Gartensternwarte</a></li>
+                <li><a href="#ausruestung">Ausrüstung</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="logo">
-        <a href="index.html">
-            <img src="Bilder/KN.png" alt="KN Astro Saarland">
-        </a>
-    </div>
+    <!-- Startseite / Hero -->
+    <section id="home" class="hero">
+        <!-- Hintergrundbild aus deinem Ordner "Startseite" -->
+        <!-- In CSS: background-image: url("Startseite/startseite-bg.jpg"); -->
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Kai Nimmrichter</h1>
+                <h2>Astrofotografie aus dem Saarland mit Teleskop</h2>
+                <p>Galaxien, Nebel, Sternhaufen, Mond, Planeten und Kometen</p>
+            </div>
+        </div>
+    </section>
 
-    <nav>
-        <ul>
-            <li><a class="aktiv" href="index.html">Home</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="ueber-mich.html">Über mich</a></li>
-            <li><a href="gartensternwarte.html">Gartensternwarte</a></li>
-            <li><a href="ausruestung.html">Ausrüstung</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
+    <!-- Kategorien / Bild-Kacheln -->
+    <section id="galerie" class="gallery-section">
+        <h2>Astrofotografie Galerie</h2>
+        <div class="tile-grid">
 
-</header>
+            <a href="Galaxien/index.html" class="tile">
+                <div class="tile-image" style="background-image: url('Galaxien/galaxie.jpg');"></div>
+                <div class="tile-title">Galaxien</div>
+            </a>
 
-<hr>
+            <a href="Nebel/index.html" class="tile">
+                <div class="tile-image" style="background-image: url('Nebel/nebel.jpg');"></div>
+                <div class="tile-title">Nebel</div>
+            </a>
 
-<section class="titelbild">
+            <a href="Sternhaufen/index.html" class="tile">
+                <div class="tile-image" style="background-image: url('Sternhaufen/sternhaufen.jpg');"></div>
+                <div class="tile-title">Sternhaufen</div>
+            </a>
 
-    <img src="Bilder/Titelbild.png" alt="Titelbild">
+            <a href="Mond/index.html" class="tile">
+                <div class="tile-image" style="background-image: url('Mond/mond.jpg');"></div>
+                <div class="tile-title">Mond</div>
+            </a>
 
-</section>
+            <a href="Planeten/index.html" class="tile">
+                <div class="tile-image" style="background-image: url('Planeten/planet.jpg');"></div>
+                <div class="tile-title">Planeten</div>
+            </a>
 
-<main>
+            <a href="Kometen/index.html" class="tile">
+                <div class="tile-image" style="background-image: url('Kometen/komet.jpg');"></div>
+                <div class="tile-title">Kometen</div>
+            </a>
 
-<section class="kategorien">
+        </div>
+    </section>
 
-<div class="karte">
-<a href="galerie.html">
-<img src="Bilder/Nebel.png" alt="Nebel">
-<h2>Nebel</h2>
-</a>
-</div>
+    <!-- Über mich -->
+    <section id="ueber-mich" class="content-section">
+        <h2>Über Mich</h2>
+        <p>
+            Hier kannst du einen Text über dich einfügen: wie du zur Astrofotografie gekommen bist,
+            welche Ausrüstung du verwendest und was dir an der Beobachtung des Himmels besonders gefällt.
+        </p>
+    </section>
 
-<div class="karte">
-<a href="galerie.html">
-<img src="Bilder/Galaxien.png" alt="Galaxien">
-<h2>Galaxien</h2>
-</a>
-</div>
+    <!-- Gartensternwarte -->
+    <section id="gartensternwarte" class="content-section">
+        <h2>Gartensternwarte</h2>
+        <p>
+            Beschreibe hier deine Gartensternwarte, Standort, Aufbau und Besonderheiten.
+        </p>
+    </section>
 
-<div class="karte">
-<a href="galerie.html">
-<img src="Bilder/Sternhaufen.png" alt="Sternhaufen">
-<h2>Sternhaufen</h2>
-</a>
-</div>
+    <!-- Ausrüstung -->
+    <section id="ausruestung" class="content-section">
+        <h2>Ausrüstung</h2>
+        <p>
+            Liste hier deine Teleskope, Montierungen, Kameras und weiteres Zubehör auf.
+        </p>
+    </section>
 
-<div class="karte">
-<a href="galerie.html">
-<img src="Bilder/Mond.png" alt="Mond">
-<h2>Mond</h2>
-</a>
-</div>
+    <!-- Kontakt -->
+    <section id="kontakt" class="content-section">
+        <h2>Kontakt</h2>
+        <p>
+            Du kannst hier eine E‑Mail‑Adresse oder ein Kontaktformular verlinken.
+        </p>
+    </section>
 
-<div class="karte">
-<a href="galerie.html">
-<img src="Bilder/Planeten.png" alt="Planeten">
-<h2>Planeten</h2>
-</a>
-</div>
-
-<div class="karte">
-<a href="galerie.html">
-<img src="Bilder/Kometen.png" alt="Kometen">
-<h2>Kometen</h2>
-</a>
-</div>
-
-</section>
-
-</main>
-
-<footer>
-
-<p>
-© 2026 KN Astro Saarland
-</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <footer class="main-footer">
+        <p>&copy; Kai Nimmrichter – Astrofotografie aus dem Saarland</p>
+    </footer>
 
 </body>
 </html>
