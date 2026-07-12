@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Kai Nimmrichter – Astrofotografie</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Kai Nimmrichter – Astrofotografie aus dem Saarland</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header class="topbar">
+  <!-- Kopfbereich mit Navigation -->
+  <header class="header">
     <div class="logo">
-        <img src="KN.png" alt="KN Logo">
+      <img src="KN.png" alt="KN Logo">
     </div>
-
     <nav class="nav">
-        <a href="index.html">HOME</a>
-        <a href="#galerie">GALERIE</a>
-        <a href="#ueber">ÜBER MICH</a>
-        <a href="#sternwarte">GARTENSTERNWARTE</a>
-        <a href="#ausruestung">AUSRÜSTUNG</a>
-        <a href="#kontakt">KONTAKT</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#ueber-mich">Über Mich</a></li>
+        <li><a href="#gartensternwarte">Gartensternwarte</a></li>
+        <li><a href="#ausruestung">Ausrüstung</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
-    <div class="hero-text">
-        <h1>Kai Nimmrichter</h1>
-        <h2>Astrofotografie aus dem Saarland mit Teleskop</h2>
-        <p>Galaxien, Nebel, Sternhaufen, Mond, Planeten und Kometen</p>
+  <!-- Startbereich mit großem Hintergrundbild und Titelblock -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>KAI NIMMRICHTER</h1>
+      <h2>— ASTROFOTOGRAFIE —</h2>
+      <h3>AUS DEM SAARLAND</h3>
     </div>
-</section>
+  </section>
 
-</body>
-</html>
+  <!-- Kategorien als Bild-Kacheln -->
+  <main class="main">
+    <section id="galerie" class="categories">
+      <div class="category-tile">
+        <img src="Nebel.png" alt="Nebel">
+        <span>Nebel</span>
+      </div>
+      <div class="category-tile">
+        <img src="Galaxien.png" alt="Galaxien">
+        <span>Galaxien</span>
+      </div>
+      <div class="category-tile">
+        <img src="Sternhaufen.png" alt="Sternhaufen">
+        <span>Sternhaufen</span>
+      </div>
+      <div class="category-tile">
+        <img src="Mond.png" alt="Mond">
+        <span>Mond</span>
+      </div>
+      <div class="category-tile">
+        <img src="Planeten.png" alt="Planeten">
+        <span>Planeten</span>
+      </div>
+      <div class="category-tile">
+        <img src="Kometen.png" alt="Kometen">
+        <span>Kometen</span>
+      </div>
+    </section>
+
+    <!-- Platzhalter-Bereiche für weitere Seiteninhalte -->
+    <section id="ueber-mich" class="content-section">
+      <h2>Über Mich</h2>
+      <p>Hier kannst du später deinen Text über dich einfügen.</p>
+    </section>
+
+    <section id="gartensternwarte" class="content-section">
+      <h2>Gartensternwarte</h2>
+      <p>Beschreibung deiner Gartensternwarte.</p>
+    </section>
+
+    <section id="ausruestung" class="content-section">
+      <h2>Ausrüstung</h2>
+      <p>Informationen zu deiner Ausrüstung.</p>
+    </section>
+
+    <section id="kontakt" class="content-section">
+      <h2>Kontakt</h2>
+      <p>Hier kommen deine Kontaktdaten oder ein Kontaktformular
