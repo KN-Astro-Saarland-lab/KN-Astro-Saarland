@@ -4,79 +4,95 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* HEADER ÜBER DEM BILD */
+/* HEADER über dem Bild, aber im gleichen Rahmen wie Inhalt */
 .topbar {
     position: absolute;
     top: 0;
     width: 100%;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 10;
 }
 
+.topbar {
+    display: flex;
+    justify-content: center;
+}
+
+.topbar > * {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo KN kleiner und näher an die Ecke */
 .logo {
-    height: 55px;
+    height: 40px;
 }
 
 /* Navigation */
 .nav a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 25px;
-    font-size: 18px;
+    margin-left: 20px;
+    font-size: 16px;
     letter-spacing: 1px;
-    font-weight: bold;
 }
 
-/* HERO – dein komplettes Webador-Bild */
+/* HERO – Titelbild */
 .hero {
-    height: 520px;
+    height: 500px;
     background-image: url("Titelbild.png");
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     position: relative;
 }
 
-/* Textblock leicht links, nicht mittig */
+/* Textblock weiter nach links und linksbündig */
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 50px;
+    left: 30px;          /* weiter nach links */
     transform: translateY(-50%);
     color: #ffffff;
     text-shadow: 0 0 8px rgba(0,0,0,0.8);
+    text-align: left;
 }
 
 .hero-text h1 {
-    font-size: 60px;
+    font-size: 52px;
     margin: 0;
     letter-spacing: 3px;
 }
 
 .hero-text h2 {
-    font-size: 32px;
-    margin: 10px 0 0 0;
+    font-size: 28px;
+    margin: 8px 0 0 0;
 }
 
 .hero-text h3 {
-    font-size: 22px;
-    margin-top: 10px;
+    font-size: 20px;
+    margin-top: 8px;
 }
 
-/* KACHELN – weiß, ohne Rahmen, exakt wie Webador */
+/* KACHELN – zentriert unter dem Bild, 3 pro Reihe */
 .tiles {
     max-width: 1200px;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    margin: 40px auto 60px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .tile {
+    width: 32%;
     background: #ffffff;
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .tile img {
@@ -87,7 +103,7 @@ body {
 
 .tile span {
     display: block;
-    padding: 12px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 18px;
     font-weight: bold;
 }
