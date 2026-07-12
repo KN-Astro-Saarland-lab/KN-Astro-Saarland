@@ -1,25 +1,25 @@
 /* Grundlayout */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff; /* weißer Hintergrund */
+  background-color: #ffffff;
   color: #000000;
 }
 
-/* Header mit Logo und Navigation */
+/* Header */
 .header {
   width: 100%;
-  height: 80px;
+  height: 95px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
-  border-bottom: 1px solid #dddddd;
+  padding: 0 55px;
+  border-bottom: 1px solid #e5e5e5;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,46 +28,39 @@ body {
 }
 
 .logo img {
-  height: 50px;
+  height: 62px;
 }
 
-/* Navigation */
 .nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 38px;
 }
 
 .nav a {
   text-decoration: none;
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 
-.nav a:hover {
-  text-decoration: underline;
-}
-
-/* Hero-Bereich mit Hintergrundbild */
+/* Hero Bereich */
 .hero {
-  margin-top: 80px; /* Platz für festen Header */
+  margin-top: 95px;
   width: 100%;
-  height: 420px;
-  position: relative;
+  height: 480px;
   background-image: url("Titelbild.png");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
-/* leichte Abdunklung wie auf alter Seite */
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
 }
 
-/* Titelblock zentriert */
 .hero-content {
   position: absolute;
   inset: 0;
@@ -80,33 +73,34 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 42px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
 .hero-content h2 {
-  font-size: 26px;
-  margin-bottom: 6px;
+  font-size: 30px;
+  margin-bottom: 8px;
 }
 
 .hero-content h3 {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 /* Hauptbereich */
 .main {
-  max-width: 1200px;
-  margin: 40px auto 60px auto;
-  padding: 0 20px;
+  max-width: 1250px;
+  margin: 60px auto 80px auto;
+  padding: 0 25px;
 }
 
-/* Kategorien-Kacheln */
+/* Kategorien */
 .categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: 32px;
+  margin-top: 55px;
+  margin-bottom: 60px;
 }
 
 .category-tile {
@@ -114,14 +108,12 @@ body {
   overflow: hidden;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 }
 
 .category-tile img {
   width: 100%;
-  height: 180px;
+  height: 210px;
   object-fit: cover;
-  display: block;
 }
 
 .category-tile span {
@@ -129,14 +121,14 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 8px 10px;
+  padding: 12px 10px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
-/* Allgemeine Inhaltsbereiche */
+/* Inhaltsbereiche */
 .content-section {
   margin-bottom: 40px;
 }
@@ -154,9 +146,9 @@ body {
 /* Footer */
 .footer {
   width: 100%;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
-  border-top: 1px solid #dddddd;
-  font-size: 14px;
-  color: #555555;
+  border-top: 1px solid #e5e5e5;
+  font-size: 15px;
+  color: #666666;
 }
