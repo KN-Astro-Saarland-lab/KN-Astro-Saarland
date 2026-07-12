@@ -4,57 +4,41 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* HEADER über dem Bild, aber im gleichen Rahmen wie Inhalt */
-.topbar {
+/* HEADER */
+.header {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 10;
-}
-
-.topbar {
-    display: flex;
-    justify-content: center;
-}
-
-.topbar > * {
-    max-width: 1200px;
-    width: 100%;
     padding: 20px 40px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
-/* Logo KN kleiner und näher an die Ecke */
 .logo {
-    height: 40px;
+    height: 50px;
 }
 
 /* Navigation */
 .nav a {
     color: #ffffff;
+    margin-left: 25px;
+    font-size: 18px;
     text-decoration: none;
-    margin-left: 20px;
-    font-size: 16px;
-    letter-spacing: 1px;
 }
 
-/* HERO – Titelbild */
+/* HERO */
 .hero {
-    height: 500px;
-    background-image: url("Titelbild.png");
-    background-size: cover;
-    background-position: top center;
+    height: 520px;
+    background: url("Titelbild.png") center/cover no-repeat;
     position: relative;
 }
 
-/* Textblock weiter nach links und linksbündig */
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 30px;          /* weiter nach links */
+    left: 40px;
     transform: translateY(-50%);
     color: #ffffff;
     text-shadow: 0 0 8px rgba(0,0,0,0.8);
@@ -62,27 +46,25 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 52px;
+    font-size: 60px;
     margin: 0;
-    letter-spacing: 3px;
 }
 
 .hero-text h2 {
-    font-size: 28px;
-    margin: 8px 0 0 0;
+    font-size: 32px;
+    margin: 10px 0 0 0;
 }
 
 .hero-text h3 {
-    font-size: 20px;
-    margin-top: 8px;
+    font-size: 22px;
+    margin-top: 10px;
 }
 
-/* KACHELN – zentriert unter dem Bild, 3 pro Reihe */
+/* KACHELN */
 .tiles {
     max-width: 1200px;
-    margin: 40px auto 60px auto;
+    margin: 40px auto;
     padding: 0 40px;
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
