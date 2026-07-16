@@ -361,4 +361,44 @@ nav a{
     height:45px;
 
 }
+/* ===========================
+   Content
+=========================== */
 
+.content{
+
+    width:100%;
+
+    margin:40px auto 70px;
+
+}
+
+.textblock{
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    font-size:20px;
+
+}
+
+.textblock h2{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    font-weight:400;
+
+}
+
+.textblock p{
+
+    margin-bottom:25px;
+
+    color:#444;
+
+}
