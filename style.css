@@ -62,15 +62,15 @@ header{
 
     position:absolute;
 
-    left:70px;
+    left:20px;
+
+    top:10px;
 
 }
 
 .logo img{
 
-    width:80px;
-
-    height:auto;
+    width:78px;
 
 }
 
@@ -78,15 +78,25 @@ header{
    Navigation
 =========================== */
 
-nav ul{
+nav{
 
-    list-style:none;
+    width:100%;
+    display:flex;
+    justify-content:center;
+
+}
+
+nav ul{
 
     display:flex;
 
-    gap:38px;
+    list-style:none;
+
+    gap:40px;
 
     align-items:center;
+
+}
 
 }
 
@@ -128,9 +138,11 @@ nav a.active{
 
 main{
 
-    width:1250px;
+    width:100%;
 
-    margin:auto;
+    max-width:1400px;
+
+    margin:0 auto;
 
 }
 
@@ -140,9 +152,10 @@ main{
 
 .hero{
 
-    margin-top:40px;
+    width:100%;
+    max-width:1400px;
 
-    margin-bottom:25px;
+    margin:35px auto;
 
 }
 
@@ -150,8 +163,13 @@ main{
 
     width:100%;
 
+    display:block;
+
+    margin:0 auto;
+
     border-radius:2px;
 
+}
 }
 
 /* ===========================
