@@ -1,7 +1,7 @@
-/*======================================================
- KAI NIMMRICHTER
- ASTROFOTOGRAFIE AUS DEM SAARLAND
-======================================================*/
+/* ==================================================
+   KAI NIMMRICHTER
+   ASTROFOTOGRAFIE AUS DEM SAARLAND
+================================================== */
 
 *{
     margin:0;
@@ -9,16 +9,10 @@
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
 
     font-family:Arial, Helvetica, sans-serif;
-
     background:#ffffff;
-
     color:#333;
 
 }
@@ -26,88 +20,67 @@ body{
 img{
 
     display:block;
-
     max-width:100%;
 
 }
 
 a{
 
-    text-decoration:none;
-
     color:inherit;
+    text-decoration:none;
 
 }
 
-/*======================================================
- HEADER
-======================================================*/
+/* ==================================================
+   HEADER
+================================================== */
 
 header{
 
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
     width:100%;
-
-    height:90px;
-
     background:#ffffff;
-
-    border-bottom:1px solid #dddddd;
-
-    z-index:9999;
+    border-bottom:1px solid #dcdcdc;
 
 }
 
-/*======================================================
- LOGO
-======================================================*/
+.header-container{
 
-.logo{
-
-    position:absolute;
-
-    left:35px;
-
-    top:12px;
-
-}
-
-.logo img{
-
-    width:68px;
-
-}
-
-/*======================================================
- NAVIGATION
-======================================================*/
-
-nav{
-
-    width:100%;
+    max-width:1700px;
+    margin:auto;
 
     height:90px;
 
     display:flex;
-
-    justify-content:center;
 
     align-items:center;
 
+    justify-content:space-between;
+
 }
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.logo img{
+
+    width:70px;
+
+}
+
+/* ==================================================
+   NAVIGATION
+================================================== */
 
 nav ul{
 
-    display:flex;
-
     list-style:none;
 
-    gap:70px;
+    display:flex;
+
+    align-items:center;
+
+    gap:55px;
 
 }
 
@@ -117,64 +90,65 @@ nav li{
 
 }
 
+nav li:not(:last-child)::after{
+
+    content:"/";
+
+    position:absolute;
+
+    right:-30px;
+
+    color:#b69463;
+
+    font-size:20px;
+
+}
+
 nav a{
 
-    font-size:21px;
+    font-size:22px;
 
-    color:#3a3a3a;
+    color:#444;
 
-    transition:.25s;
-
-    padding-bottom:2px;
-
-    border-bottom:3px solid transparent;
+    transition:.3s;
 
 }
 
 nav a:hover{
 
-    color:#b79567;
-
-    border-color:#b79567;
+    color:#b69463;
 
 }
 
 nav a.active{
 
-    color:#b79567;
-
-    border-color:#b79567;
+    color:#b69463;
 
     font-weight:bold;
 
 }
 
-/*======================================================
- SEITE
-======================================================*/
+/* ==================================================
+   SEITE
+================================================== */
 
 main{
 
-    width:98%;
+    width:96%;
 
     max-width:1700px;
 
-    margin:110px auto 40px;
-
+    margin:30px auto 60px;
 
 }
 
-/*======================================================
- TITELBILD
-======================================================*/
+/* ==================================================
+   TITELBILD
+================================================== */
 
 .hero{
 
-    width:100%;
-
-    max-width:1700px;
-
-    margin:0 auto 35px;
+    margin-bottom:35px;
 
 }
 
@@ -182,44 +156,38 @@ main{
 
     width:100%;
 
-    height:auto;
-
     display:block;
 
-    object-fit:cover;
-
 }
-
-}
-
-/*======================================================
- KACHELN
-======================================================*/
+/* ==================================================
+   KATEGORIEN
+================================================== */
 
 .kategorien{
-
-    width:100%;
 
     display:grid;
 
     grid-template-columns:repeat(6,1fr);
 
-    gap:24px;
+    gap:28px;
 
-    margin:0 auto;
- 
+    margin-top:10px;
+
+    margin-bottom:60px;
 
 }
 
 .kachel{
 
-    transition:.3s;
+    background:#ffffff;
+
+    transition:.30s;
 
 }
 
 .kachel:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-6px);
 
 }
 
@@ -227,80 +195,49 @@ main{
 
     width:100%;
 
-    aspect-ratio:1;
+    aspect-ratio:1/1;
 
     object-fit:cover;
 
+    border:1px solid #e5e5e5;
+
 }
+
+/* ==================================================
+   BUTTONS
+================================================== */
 
 .button{
 
-    margin-top:16px;
+    width:100%;
 
-    background:#b79567;
+    margin-top:18px;
 
-    color:#fff;
+    background:#b79868;
+
+    color:#ffffff;
 
     text-align:center;
 
-    padding:13px;
-
-    font-size:19px;
-
-    transition:.25s;
-
-}
-
-.button:hover{
-
-    background:#9f7d4e;
-
-}
-/*======================================================
- CONTENT
-======================================================*/
-
-.content{
-
-    width:100%;
-
-    margin:60px auto;
-
-}
-
-.textblock{
-
-    max-width:950px;
-
-    margin:auto;
-
-}
-
-.textblock h2{
-
-    font-size:34px;
-
-    font-weight:400;
-
-    margin-bottom:30px;
-
-}
-
-.textblock p{
+    padding:13px 0;
 
     font-size:20px;
 
-    line-height:1.8;
+    font-weight:500;
 
-    color:#555;
-
-    margin-bottom:25px;
+    transition:.30s;
 
 }
 
-/*======================================================
- GALERIE
-======================================================*/
+.kachel:hover .button{
+
+    background:#9f7d4d;
+
+}
+
+/* ==================================================
+   GALERIE
+================================================== */
 
 .bildergalerie{
 
@@ -310,9 +247,7 @@ main{
 
     gap:35px;
 
-    margin-top:40px;
-
-    margin-bottom:80px;
+    margin:50px 0;
 
 }
 
@@ -320,19 +255,17 @@ main{
 
     background:#ffffff;
 
-    overflow:hidden;
+    border:1px solid #e6e6e6;
 
-    border:1px solid #ececec;
-
-    transition:.3s;
+    transition:.30s;
 
 }
 
 .foto:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
-    box-shadow:0 12px 28px rgba(0,0,0,.12);
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
 
 }
 
@@ -354,235 +287,86 @@ main{
 
     font-size:20px;
 
-    font-weight:500;
+    font-weight:400;
 
 }
 
-/*======================================================
- SEITENKOPF
-======================================================*/
+/* ==================================================
+   TEXTSEITEN
+================================================== */
 
-.seitenkopf{
+.content{
 
-    text-align:center;
-
-    margin:20px 0 50px;
-
-}
-
-.seitenkopf h1{
-
-    font-size:42px;
-
-    font-weight:300;
-
-    margin-bottom:12px;
-
-}
-
-.seitenkopf p{
-
-    font-size:20px;
-
-    color:#666;
-
-}
-
-/*======================================================
- ÜBER MICH
-======================================================*/
-
-.ueber{
-
-    max-width:950px;
+    max-width:1000px;
 
     margin:auto;
 
-    font-size:20px;
-
-    line-height:1.9;
-
-}
-
-.ueber h2{
-
-    margin-bottom:25px;
-
-    font-size:34px;
-
-}
-
-.ueber p{
-
-    margin-bottom:20px;
-
-}
-
-/*======================================================
- GARTENSTERNWARTE
-======================================================*/
-
-.sternwarte-grid{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:50px;
-
-    align-items:center;
-
-}
-
-.sternwarte-text h2{
-
-    font-size:34px;
-
-    margin-bottom:25px;
-
-}
-
-.sternwarte-text p{
-
-    font-size:20px;
-
-    line-height:1.8;
-
-    margin-bottom:20px;
-
-}
-
-.sternwarte-bild img{
-
-    width:100%;
-
-}
-
-/*======================================================
- AUSRÜSTUNG
-======================================================*/
-
-.equipment{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-    margin:40px 0 80px;
-
-}
-
-.equipment-card{
-
-    border:1px solid #e6e6e6;
-
-    padding:35px;
-
-    transition:.3s;
-
-}
-
-.equipment-card:hover{
-
-    border-color:#b79567;
-
-}
-
-.equipment-card h2{
-
-    color:#b79567;
-
-    margin-bottom:20px;
-
-    font-size:28px;
-
-}
-
-.equipment-card p{
-
-    font-size:19px;
-
     line-height:1.8;
 
 }
 
-/*======================================================
- KONTAKT
-======================================================*/
+.content h1{
 
-.kontakt-box{
+    font-size:40px;
 
-    display:flex;
+    font-weight:300;
 
-    justify-content:center;
-
-    margin:40px 0 80px;
+    margin-bottom:30px;
 
 }
 
-.kontakt-card{
+.content h2{
 
-    width:700px;
+    font-size:30px;
 
-    border:1px solid #e5e5e5;
+    font-weight:400;
 
-    padding:45px;
-
-}
-
-.kontakt-card h2{
-
-    font-size:34px;
-
-    margin-bottom:25px;
-
-    color:#b79567;
+    margin:40px 0 20px;
 
 }
 
-.kontakt-card p{
+.content p{
 
     font-size:20px;
 
-    line-height:1.8;
+    margin-bottom:20px;
 
-    margin-bottom:16px;
+    color:#555;
 
 }
-/*======================================================
- FOOTER
-======================================================*/
+/* ==================================================
+   FOOTER
+================================================== */
 
 footer{
 
     width:100%;
 
+    border-top:1px solid #dddddd;
+
     margin-top:60px;
 
-    padding:30px;
+    padding:25px 0;
 
     text-align:center;
 
-    font-size:15px;
-
     color:#777;
 
-    border-top:1px solid #e5e5e5;
-
-    background:#ffffff;
+    font-size:15px;
 
 }
 
-/*======================================================
- BILDER
-======================================================*/
+/* ==================================================
+   BILDEFFEKTE
+================================================== */
 
-.hero img,
-.kachel img,
-.foto img,
-.sternwarte-bild img{
+.hero img{
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.kachel img{
 
     transition:.35s;
 
@@ -590,71 +374,59 @@ footer{
 
 .kachel:hover img{
 
-    transform:scale(1.04);
+    transform:scale(1.03);
 
 }
-
-.foto:hover img{
-
-    transform:scale(1.05);
-
-}
-
-/*======================================================
- BUTTON
-======================================================*/
 
 .button{
-
-    font-weight:500;
 
     letter-spacing:.3px;
 
 }
 
-.button:hover{
+.hero{
 
-    background:#9b7a4c;
+    max-width:1700px;
 
-}
-
-/*======================================================
- SCROLLBAR
-======================================================*/
-
-::-webkit-scrollbar{
-
-    width:10px;
+    margin:0 auto 40px;
 
 }
 
-::-webkit-scrollbar-track{
+.kategorien{
 
-    background:#f4f4f4;
+    max-width:1700px;
 
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#b79567;
+    margin:0 auto 50px;
 
 }
 
-::-webkit-scrollbar-thumb:hover{
+/* ==================================================
+   TABLET
+================================================== */
 
-    background:#987448;
+@media (max-width:1300px){
+
+.header-container{
+
+    width:95%;
 
 }
-
-/*======================================================
- TABLET
-======================================================*/
-
-@media (max-width:1200px){
 
 main{
 
     width:95%;
+
+}
+
+nav ul{
+
+    gap:28px;
+
+}
+
+nav li:not(:last-child)::after{
+
+    right:-16px;
 
 }
 
@@ -670,35 +442,19 @@ main{
 
 }
 
-.equipment{
-
-    grid-template-columns:repeat(2,1fr);
-
 }
 
-nav ul{
+/* ==================================================
+   SMARTPHONE
+================================================== */
 
-    gap:24px;
+@media (max-width:850px){
 
-}
+.header-container{
 
-nav a{
+    flex-direction:column;
 
-    font-size:18px;
-
-}
-
-}
-
-/*======================================================
- SMARTPHONE
-======================================================*/
-
-@media (max-width:900px){
-
-header{
-
-    position:relative;
+    justify-content:center;
 
     height:auto;
 
@@ -708,23 +464,7 @@ header{
 
 .logo{
 
-    position:relative;
-
-    left:0;
-
-    top:0;
-
-    display:flex;
-
-    justify-content:center;
-
     margin-bottom:15px;
-
-}
-
-nav{
-
-    height:auto;
 
 }
 
@@ -734,13 +474,17 @@ nav ul{
 
     justify-content:center;
 
-    gap:16px;
+    gap:18px;
+
+}
+
+nav li::after{
+
+    display:none;
 
 }
 
 main{
-
-    margin-top:40px;
 
     width:94%;
 
@@ -760,31 +504,13 @@ main{
 
 }
 
-.sternwarte-grid{
-
-    grid-template-columns:1fr;
-
 }
 
-.equipment{
+/* ==================================================
+   KLEINE HANDYS
+================================================== */
 
-    grid-template-columns:1fr;
-
-}
-
-.kontakt-card{
-
-    width:100%;
-
-}
-
-}
-
-/*======================================================
- KLEINE HANDYS
-======================================================*/
-
-@media (max-width:600px){
+@media (max-width:550px){
 
 .kategorien{
 
@@ -794,123 +520,88 @@ main{
 
 nav a{
 
-    font-size:17px;
-
-}
-
-.logo img{
-
-    width:60px;
-
-}
-
-.hero{
-
-    margin-bottom:25px;
+    font-size:18px;
 
 }
 
 .button{
 
-    font-size:17px;
-
-    padding:12px;
-
-}
-
-.seitenkopf h1{
-
-    font-size:32px;
+    font-size:18px;
 
 }
 
 }
 
-/*======================================================
- WEBADOR LOOK
-======================================================*/
+/* ==================================================
+   WEBADOR FEINSCHLIFF
+================================================== */
 
-.hero{
+body{
 
-    max-width:1280px;
-
-    margin-left:auto;
-
-    margin-right:auto;
-
-}
-
-.kategorien{
-
-    max-width:1280px;
-
-    margin:0 auto;
+    min-width:1200px;
 
 }
 
 .kachel{
 
-    background:#ffffff;
+    overflow:hidden;
 
 }
 
 .kachel img{
 
-    border:1px solid #ececec;
+    border-radius:2px;
+
+}
+
+.button{
+
+    border-radius:3px;
 
 }
 
 nav a{
 
-    text-transform:none;
-
-}
-
-nav a:hover{
-
-    color:#b79567;
+    font-weight:400;
 
 }
 
 nav a.active{
 
-    color:#b79567;
+    font-weight:600;
+
+}
+
+nav a:hover{
+
+    color:#b69463;
+
+}
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
 
 }
 
 .hero img{
 
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    border:1px solid #e6e6e6;
 
 }
 
 .kachel:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-4px);
 
 }
 
-.foto{
+.foto:hover{
 
-    background:#fff;
-
-}
-
-.foto h3{
-
-    background:#fff;
-
-}
-
-.equipment-card,
-.kontakt-card{
-
-    background:#fff;
-
-}
-
-footer{
-
-    background:#fff;
+    transform:translateY(-4px);
 
 }
