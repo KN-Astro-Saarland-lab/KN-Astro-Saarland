@@ -155,9 +155,12 @@ nav a.active{
 
 main{
 
-    max-width:1600px;
+    width:98%;
 
-    margin:125px auto 60px auto;
+    max-width:1700px;
+
+    margin:110px auto 40px;
+
 
 }
 
@@ -169,7 +172,9 @@ main{
 
     width:100%;
 
-    margin-bottom:35px;
+    max-width:1700px;
+
+    margin:0 auto 35px;
 
 }
 
@@ -177,7 +182,13 @@ main{
 
     width:100%;
 
+    height:auto;
+
     display:block;
+
+    object-fit:cover;
+
+}
 
 }
 
@@ -187,11 +198,16 @@ main{
 
 .kategorien{
 
+    width:100%;
+
     display:grid;
 
     grid-template-columns:repeat(6,1fr);
 
     gap:24px;
+
+    margin:0 auto;
+ 
 
 }
 
