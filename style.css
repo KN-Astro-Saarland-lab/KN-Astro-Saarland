@@ -162,15 +162,19 @@ main{
 
 .kategorien{
 
+    .kategorien{
+
     display:grid;
 
     grid-template-columns:repeat(6,1fr);
 
-    max-width:1400px;
+    max-width:1550px;
 
     margin:10px auto 20px auto;
 
     gap:24px;
+
+}
 
 }
 
