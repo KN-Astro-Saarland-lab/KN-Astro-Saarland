@@ -165,7 +165,7 @@ main{
 
     grid-template-columns:repeat(6,1fr);
 
-    gap:12px;
+    gap:6px;
 
     margin-top:10px;
 
