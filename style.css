@@ -63,13 +63,12 @@ header{
 
     width:120px;
 
-}
+    display:flex;
 
-.logo img{
+    justify-content:flex-start;
 
-    width:72px;
+    padding-left:20px;
 
-}
 }
 
 /*======================================================
