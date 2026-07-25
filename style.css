@@ -34,25 +34,13 @@ img{
  HEADER
 ======================================================*/
 
-h.header{
+header{
 
     width:100%;
+
     background:#ffffff;
+
     border-bottom:1px solid #d8d8d8;
- 
-    width:1600px;
-    height:85px;
-
-    margin:auto;
-
-    display:flex;
-
-    align-items:center;
-
-    padding:0 30px;
-
-    box-sizing:border-box;
-
 
 }
 
@@ -63,13 +51,19 @@ h.header{
 
 .logo{
 
-    width:120px;
+    width:90px;
 
-    display:flex;
+    margin-left:25px;
 
-    justify-content:flex-start;
+}
 
-    margin-left:60px;
+.logo img{
+
+    width:64px;
+
+    display:block;
+
+}
 
 }
 
