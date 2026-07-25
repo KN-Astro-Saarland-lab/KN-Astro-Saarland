@@ -38,7 +38,6 @@ header{
 
     width:100%;
     background:#ffffff;
-    border-bottom:1px solid #d8d8d8;
 
 }
 
@@ -56,7 +55,25 @@ header{
     padding:0 30px;
 
     box-sizing:border-box;
+ 
+.header::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+
+    left:100px;
+
+    right:100px;
+
+    height:1px;
+
+    background:#d8d8d8;
+
 }
+
 
 /*======================================================
  LOGO
