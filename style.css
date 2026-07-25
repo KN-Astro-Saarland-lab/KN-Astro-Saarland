@@ -255,10 +255,6 @@ main{
 
 }
 
-/*======================================================
- BUTTONS
-======================================================*/
-
 .button{
 
     margin-top:8px;
@@ -278,12 +274,6 @@ main{
     border-radius:6px;
 
     transition:.25s;
-
-}
-
-.kachel:hover .button{
-
-    background:#9b7a4d;
 
 }
 
