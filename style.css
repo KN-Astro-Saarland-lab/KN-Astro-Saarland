@@ -34,33 +34,21 @@ img{
  HEADER
 ======================================================*/
 
-header{
-
-    width:100%;
-    background:#ffffff;
-
-}
-
-.header{
- 
-    width:100%;
-    background:#ffffff;
-    border-bottom:1px solid #d8d8d8;
- 
-.header::after{
+h.header{
 
     width:1600px;
     height:85px;
- 
-    margin:auto; 
- 
+
+    margin:auto;
+
     display:flex;
- 
-   align-items:center;
- 
-   padding:0 30px;
- 
-  box-sizing:border-box;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    box-sizing:border-box;
+
 
 }
 
@@ -85,9 +73,29 @@ header{
  NAVIGATION
 ======================================================*/
 
-nav{
+av{
 
     flex:1;
+
+    position:relative;
+
+}
+
+nav::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:100px;
+
+    right:100px;
+
+    bottom:-22px;
+
+    height:1px;
+
+    background:#d8d8d8;
 
 }
 
@@ -108,6 +116,7 @@ nav ul{
 nav li{
 
     font-size:21px;
+
     color:#666;
 
 }
@@ -115,6 +124,7 @@ nav li{
 nav a{
 
     color:#555;
+
     transition:.25s;
 
 }
@@ -128,6 +138,7 @@ nav a:hover{
 nav a.active{
 
     color:#b79567;
+
     font-weight:bold;
 
 }
