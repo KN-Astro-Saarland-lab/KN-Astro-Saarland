@@ -701,7 +701,7 @@ main{
 }
 
 /* ==========================================
-   ÜBER MICH – Layout (NEU)
+   ÜBER MICH – Layout (FIXED)
 =========================================== */
 
 .ueber-container {
@@ -713,7 +713,7 @@ main{
     gap: 40px;
 }
 
-/* Bild links – jetzt korrekt */
+/* Bild links – überschreibt globale img-Regel */
 .ueber-bild img {
     width: 260px !important;
     max-width: none !important;
@@ -736,3 +736,4 @@ main{
     margin-bottom: 12px;
     line-height: 1.6;
 }
+
