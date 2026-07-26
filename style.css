@@ -701,61 +701,24 @@ main{
 }
 
 /* ==========================================
-   ÜBER MICH – Layout (FIXED)
+   ÜBER MICH – Webador Layout (FINAL)
 =========================================== */
 
-.ueber-container {
-    width: 1500px;
-    max-width: 95%;
-    margin: 40px auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-/* Bild links – überschreibt globale img-Regel */
-.ueber-bild img {
-    width: 260px !important;
-    max-width: none !important;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-/* Text rechts */
-.ueber-text {
-    flex: 1;
-}
-
-.ueber-text h2 {
-    margin-top: 0;
-    font-size: 26px;
-}
-
-.ueber-text p {
-    margin-bottom: 12px;
-    line-height: 1.6;
-}
-
-/* ==========================================
-   ÜBER MICH – Layout (FINAL FIX)
-=========================================== */
-
-.ueber-container {
+.ueber-wrapper {
     width: 100%;
-    max-width: 1200px;      /* kleiner als main */
-    margin: 40px auto;
+    max-width: 1200px;        /* passt in main (1400px) */
+    margin: 60px auto;
     display: flex;
     align-items: flex-start;
     gap: 40px;
 }
 
-/* Bild links – überschreibt globale img-Regel */
+/* Bild links – feste Größe */
 .ueber-bild img {
-    width: 220px !important;   /* feste Bildgröße */
-    max-width: none !important; /* verhindert 100% Breite */
+    width: 260px !important;  /* feste Breite */
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
     display: block;
 }
 
@@ -765,12 +728,12 @@ main{
 }
 
 .ueber-text h2 {
-    margin-top: 0;
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .ueber-text p {
-    margin-bottom: 12px;
-    line-height: 1.6;
     font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 18px;
 }
