@@ -699,30 +699,28 @@ main{
 .footer{
     width:100%;
 }
-
-/* ==========================================
+}
+//* ==========================================
    ÜBER MICH – Webador Layout (FINAL)
 =========================================== */
 
 .ueber-wrapper {
     width: 100%;
-    max-width: 1200px;        /* passt in main (1400px) */
+    max-width: 1200px;
     margin: 60px auto;
     display: flex;
     align-items: flex-start;
     gap: 40px;
 }
 
-/* Bild links – feste Größe */
 .ueber-bild img {
-    width: 260px !important;  /* feste Breite */
+    width: 260px !important;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
     display: block;
 }
 
-/* Text rechts */
 .ueber-text {
     flex: 1;
 }
