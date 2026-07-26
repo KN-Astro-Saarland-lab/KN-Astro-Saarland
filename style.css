@@ -627,3 +627,76 @@ body{
     min-width:1200px;
 
 }
+/*======================================================
+ HANDY & TABLET
+======================================================*/
+
+@media screen and (max-width:900px){
+
+body{
+    min-width:0;
+}
+
+.header{
+    width:100%;
+    height:auto;
+    padding:15px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.header::after{
+    left:20px;
+    right:20px;
+}
+
+.logo{
+    margin:0 0 15px 0;
+    width:auto;
+}
+
+.logo img{
+    width:70px;
+}
+
+nav{
+    width:100%;
+    padding:0;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+}
+
+nav li{
+    font-size:17px;
+}
+
+main{
+    width:95%;
+    margin:20px auto 40px;
+}
+
+.hero img{
+    width:100%;
+    height:auto;
+}
+
+.kategorien{
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.button{
+    font-size:16px;
+    padding:8px 0;
+}
+
+.footer{
+    width:100%;
+}
+}
