@@ -738,25 +738,28 @@ main{
 }
 
 /* ==========================================
-   ÜBER MICH – Layout (FINAL)
+   ÜBER MICH – Layout (FINAL FIX)
 =========================================== */
 
 .ueber-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200px;      /* kleiner als main */
     margin: 40px auto;
     display: flex;
     align-items: flex-start;
-    gap: 30px;
+    gap: 40px;
 }
 
+/* Bild links – überschreibt globale img-Regel */
 .ueber-bild img {
-    width: 220px !important;
+    width: 220px !important;   /* feste Bildgröße */
+    max-width: none !important; /* verhindert 100% Breite */
     height: auto;
     border-radius: 10px;
     display: block;
 }
 
+/* Text rechts */
 .ueber-text {
     flex: 1;
 }
