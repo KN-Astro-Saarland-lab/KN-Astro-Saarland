@@ -723,7 +723,7 @@ main{
     width: 100% !important;
     height: 100% !important;   /* gleiche Höhe wie Text */
     object-fit: cover;         /* sauberer Zuschnitt */
-    border-radius: 12px;
+    border-radius: 22px;       /* etwas runder, moderner */
 }
 
 /* Text rechts – gleiche Höhe wie Bild */
@@ -733,18 +733,20 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;   /* Text mittig */
-    font-family: "Inter", Arial, sans-serif;  /* moderne Schrift */
+    font-family: "Poppins", Arial, sans-serif;  /* modernere Schrift */
 }
 
 .ueber-text h2 {
-    font-size: 24px;           /* kleiner */
+    font-size: 24px;
     font-weight: 600;
+    letter-spacing: 0.3px;
     margin-bottom: 18px;
 }
 
 .ueber-text p {
-    font-size: 16px;           /* moderner, kleiner */
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.65;
     color: #444;
+    font-weight: 300;
     margin-bottom: 16px;
 }
