@@ -713,10 +713,10 @@ main{
     gap: 40px;
 }
 
-/* Bild links – nicht zu groß */
+/* Bild links – jetzt korrekt */
 .ueber-bild img {
-    width: 260px;          /* Bildgröße – kannst du anpassen */
-    max-width: 100%;
+    width: 260px !important;
+    max-width: none !important;
     height: auto;
     border-radius: 10px;
     display: block;
