@@ -701,7 +701,7 @@ main{
 }
 }
 /* ==========================================
-   ÜBER MICH – Perfekte Webador Optik (Final)
+   ÜBER MICH – Gleich hohe Spalten (Final)
 =========================================== */
 
 .ueber-wrapper {
@@ -709,37 +709,42 @@ main{
     max-width: 1200px;
     margin: 60px auto;
     display: flex;
-    align-items: flex-start;
-    gap: 60px;                 /* größerer Abstand */
+    align-items: stretch;      /* beide Spalten gleich hoch */
+    gap: 60px;
 }
 
-/* Bild links – breiter */
+/* Bild links – breiter + feste Höhe */
 .ueber-bild {
-    flex: 0 0 420px;           /* Bildspalte breiter */
+    flex: 0 0 450px;           /* Bildspalte breiter */
+    height: 520px;             /* feste Höhe für Gleichheit */
 }
 
 .ueber-bild img {
     width: 100% !important;
-    height: auto;
+    height: 100% !important;   /* gleiche Höhe wie Text */
+    object-fit: cover;         /* sauberer Zuschnitt */
     border-radius: 12px;
-    object-fit: cover;
 }
 
-/* Text rechts – moderner, kleiner */
+/* Text rechts – gleiche Höhe wie Bild */
 .ueber-text {
     flex: 1;
-    font-family: "Inter", Arial, sans-serif;   /* moderne Schrift */
+    height: 520px;             /* gleiche Höhe wie Bild */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Text mittig */
+    font-family: "Inter", Arial, sans-serif;  /* moderne Schrift */
 }
 
 .ueber-text h2 {
-    font-size: 26px;           /* kleiner */
-    font-weight: 600;          /* moderner Look */
-    margin-bottom: 20px;
+    font-size: 24px;           /* kleiner */
+    font-weight: 600;
+    margin-bottom: 18px;
 }
 
 .ueber-text p {
-    font-size: 17px;           /* kleinerer Text */
-    line-height: 1.65;         /* angenehmer Abstand */
-    color: #444;               /* moderner Farbton */
-    margin-bottom: 18px;
+    font-size: 16px;           /* moderner, kleiner */
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 16px;
 }
