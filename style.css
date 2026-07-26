@@ -701,7 +701,7 @@ main{
 }
 }
 /* ==========================================
-   ÜBER MICH – Gleich große Spalten
+   ÜBER MICH – Perfekte Webador Optik
 =========================================== */
 
 .ueber-wrapper {
@@ -709,18 +709,20 @@ main{
     max-width: 1200px;
     margin: 60px auto;
     display: flex;
-    align-items: stretch;   /* beide Spalten gleich hoch */
-    gap: 40px;
+    align-items: stretch;      /* beide Spalten gleich hoch */
+    gap: 50px;                 /* schöner Abstand */
 }
 
-/* Bild links – größer machen */
+/* Bild links – groß, gleiche Höhe wie Text */
+.ueber-bild {
+    flex: 0 0 380px;           /* feste Spaltenbreite */
+}
+
 .ueber-bild img {
-    width: 350px !important;   /* Bildbreite */
+    width: 100% !important;    /* füllt die Spalte */
     height: 100%;              /* gleiche Höhe wie Text */
-    max-height: 600px;         /* optional: maximale Höhe */
     object-fit: cover;         /* sauberer Zuschnitt */
     border-radius: 10px;
-    display: block;
 }
 
 /* Text rechts – gleiche Höhe wie Bild */
@@ -729,4 +731,17 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;   /* Text mittig ausrichten */
+}
+
+.ueber-text h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.ueber-text p {
+    font-size: 19px;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
 }
