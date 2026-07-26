@@ -750,3 +750,50 @@ main{
     font-weight: 300;
     margin-bottom: 16px;
 }
+/*======================================================
+ ÜBER MICH - HANDY
+======================================================*/
+
+@media screen and (max-width:900px){
+
+.about{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+
+}
+
+.about-image{
+
+    width:100%;
+    max-width:320px;
+}
+
+.about-image img{
+
+    width:100%;
+    border-radius:18px;
+}
+
+.about-text{
+
+    width:100%;
+}
+
+.about-text h1{
+
+    font-size:34px;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.about-text p{
+
+    font-size:18px;
+    line-height:1.8;
+    text-align:left;
+}
+
+}
