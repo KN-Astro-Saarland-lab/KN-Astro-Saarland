@@ -699,34 +699,3 @@ main{
 .footer{
     width:100%;
 }
-
-/*=========================================================
-ÜBER MICH
-=========================================================*/
-
-.about-section {
-    padding: 40px 20px;
-}
-
-.about-container {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.about-image img {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.about-text {
-    max-width: 700px;
-    line-height: 1.7;
-}
-
-.about-text h2 {
-    margin-top: 0;
-}
