@@ -699,3 +699,34 @@ main{
 .footer{
     width:100%;
 }
+
+/* ==========================================
+   ÜBER MICH – Layout
+=========================================== */
+
+.ueber-container {
+    width: 1500px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.ueber-bild img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.ueber-text {
+    flex: 1;
+}
+
+.ueber-text h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.ueber-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
