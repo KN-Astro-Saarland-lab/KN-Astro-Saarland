@@ -737,3 +737,37 @@ main{
     line-height: 1.6;
 }
 
+/* ==========================================
+   ÜBER MICH – Layout (FINAL)
+=========================================== */
+
+.ueber-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.ueber-bild img {
+    width: 220px !important;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.ueber-text {
+    flex: 1;
+}
+
+.ueber-text h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.ueber-text p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 18px;
+}
