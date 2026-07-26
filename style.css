@@ -701,32 +701,38 @@ main{
 }
 
 /* ==========================================
-   ÜBER MICH – Layout
+   ÜBER MICH – Layout (NEU)
 =========================================== */
 
 .ueber-container {
     width: 1500px;
+    max-width: 95%;
     margin: 40px auto;
     display: flex;
-    gap: 40px;
     align-items: flex-start;
+    gap: 40px;
 }
 
+/* Bild links – nicht zu groß */
 .ueber-bild img {
-    width: 350px;
+    width: 260px;          /* Bildgröße – kannst du anpassen */
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    display: block;
 }
 
+/* Text rechts */
 .ueber-text {
     flex: 1;
 }
 
 .ueber-text h2 {
     margin-top: 0;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .ueber-text p {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     line-height: 1.6;
 }
