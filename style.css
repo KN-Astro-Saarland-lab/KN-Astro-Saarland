@@ -921,3 +921,74 @@ main{
     color:#555;
 
 }
+/*======================================================
+ GARTENSTERNWARTE - HANDY
+======================================================*/
+
+@media screen and (max-width:900px){
+
+.seitenkopf{
+
+    width:95%;
+    margin:30px auto 40px;
+
+}
+
+.seitenkopf h1{
+
+    font-size:34px;
+
+}
+
+.seitenkopf p{
+
+    font-size:18px;
+    line-height:1.7;
+
+}
+
+/* Bild 1 + Bild 2 */
+
+.sternwarte-zweier{
+
+    grid-template-columns:1fr;
+    gap:20px;
+
+}
+
+.sternwarte-bild img{
+
+    height:auto;
+
+}
+
+/* Unterer Bereich */
+
+.sternwarte-grid{
+
+    grid-template-columns:1fr;
+    gap:30px;
+
+}
+
+.sternwarte-spalte{
+
+    width:100%;
+
+}
+
+.sternwarte-spalte img{
+
+    width:100%;
+    height:auto;
+
+}
+
+.sternwarte-spalte p{
+
+    font-size:17px;
+    margin-bottom:25px;
+
+}
+
+}
