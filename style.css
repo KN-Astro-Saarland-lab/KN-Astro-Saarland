@@ -754,9 +754,9 @@ main{
  ÜBER MICH - HANDY
 ======================================================*/
 
-@media screen and (max-width:900px){
+@media (max-width:900px){
 
-.about{
+.ueber-wrapper{
 
     display:flex;
     flex-direction:column;
@@ -765,35 +765,42 @@ main{
 
 }
 
-.about-image{
+.ueber-bild{
 
     width:100%;
     max-width:320px;
+
 }
 
-.about-image img{
+.ueber-bild img{
 
     width:100%;
+    height:auto;
+    display:block;
     border-radius:18px;
+
 }
 
-.about-text{
+.ueber-text{
 
     width:100%;
+
 }
 
-.about-text h1{
+.ueber-text h2{
 
-    font-size:34px;
     text-align:center;
-    margin-bottom:25px;
+    font-size:32px;
+    margin-bottom:20px;
+
 }
 
-.about-text p{
+.ueber-text p{
 
     font-size:18px;
     line-height:1.8;
     text-align:left;
+
 }
 
 }
