@@ -808,22 +808,72 @@ main{
  GARTENSTERNWARTE
 ======================================================*/
 
+.seitenkopf{
+
+    width:100%;
+    max-width:1000px;
+    margin:45px auto 55px;
+    text-align:center;
+
+}
+
+.seitenkopf h1{
+
+    font-size:42px;
+    font-weight:300;
+    color:#333;
+    margin-bottom:30px;
+
+}
+
+.seitenkopf p{
+
+    font-size:20px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:16px;
+
+}
+
+/* Goldene Einleitung */
+
+.einleitung-gold{
+
+    color:#b49367;
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:28px;
+
+}
+
+/*======================================================
+ BILD 1 + 2
+======================================================*/
+
 .gs-bilder2{
 
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:30px;
-    margin:40px 0 15px;
+    gap:12px;
+    margin-bottom:18px;
+
+}
+
+.gs-bild{
+
+    overflow:hidden;
 
 }
 
 .gs-bild img{
 
     width:100%;
-    height:auto;
+    height:430px;
+    object-fit:cover;
+    object-position:center center;
     display:block;
     border:1px solid #dddddd;
-    transition:.3s;
+    transition:.35s;
 
 }
 
@@ -833,10 +883,31 @@ main{
 
 }
 
+/* Bryan */
+
+img[alt="Bryan"]{
+
+    object-position:center top;
+
+}
+
+/* Betonsäule */
+
+img[alt="Betonsäule"]{
+
+    object-position:center top;
+
+}
+
+/*======================================================
+ TEXT UNTER BILD 1 + 2
+======================================================*/
+
 .gs-text{
 
-    max-width:900px;
-    margin:0 auto 45px;
+    width:100%;
+    max-width:1000px;
+    margin:0 auto 50px;
     text-align:center;
 
 }
@@ -848,17 +919,17 @@ main{
     color:#555;
 
 }
-
 /*======================================================
- UNTERER BEREICH
+ UNTERER BEREICH (BILD 5–8)
 ======================================================*/
 
 .gs-unten{
 
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:35px;
-    margin-top:30px;
+    gap:12px;
+    margin-top:20px;
+    align-items:start;
 
 }
 
@@ -872,11 +943,12 @@ main{
 .gs-spalte img{
 
     width:100%;
-    height:auto;
+    height:320px;
+    object-fit:cover;
+    object-position:center;
     display:block;
     border:1px solid #dddddd;
-    transition:.3s;
-    margin-bottom:12px;
+    transition:.35s;
 
 }
 
@@ -889,40 +961,45 @@ main{
 .gs-spalte p{
 
     font-size:18px;
-    line-height:1.7;
+    line-height:1.8;
     color:#555;
-    margin-bottom:35px;
+    text-align:center;
+    margin:15px 0 35px;
 
 }
 
 /*======================================================
- HANDY
+ BILDAUSSCHNITTE
 ======================================================*/
 
-@media (max-width:900px){
+/* Regensensor */
 
-.gs-bilder2{
+img[alt="Regensensor"]{
 
-    grid-template-columns:1fr;
-
-}
-
-.gs-unten{
-
-    grid-template-columns:1fr;
+    object-position:center center;
 
 }
 
-.gs-text{
+/* Torantrieb */
 
-    width:95%;
+img[alt="Torantrieb"]{
+
+    object-position:center center;
+
+}
+
+/* Shelly */
+
+img[alt="Shelly"]{
+
+    object-position:center center;
 
 }
 
-.gs-spalte p{
+/* Elektrik */
 
-    font-size:17px;
+img[alt="Elektrik"]{
 
-}
+    object-position:center center;
 
 }
