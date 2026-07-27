@@ -1003,3 +1003,92 @@ img[alt="Elektrik"]{
     object-position:center center;
 
 }
+/*======================================================
+ GARTENSTERNWARTE - HANDY
+======================================================*/
+
+@media (max-width:900px){
+
+.seitenkopf{
+
+    width:95%;
+    margin:30px auto 40px;
+
+}
+
+.seitenkopf h1{
+
+    font-size:34px;
+
+}
+
+.seitenkopf p{
+
+    font-size:18px;
+    line-height:1.7;
+
+}
+
+.einleitung-gold{
+
+    font-size:20px;
+
+}
+
+/* Bild 1 + 2 */
+
+.gs-bilder2{
+
+    grid-template-columns:1fr;
+    gap:18px;
+
+}
+
+.gs-bild img{
+
+    width:100%;
+    height:auto;
+    object-fit:contain;
+
+}
+
+/* Text */
+
+.gs-text{
+
+    width:95%;
+    margin:20px auto 40px;
+
+}
+
+.gs-text p{
+
+    font-size:17px;
+
+}
+
+/* Unterer Bereich */
+
+.gs-unten{
+
+    grid-template-columns:1fr;
+    gap:25px;
+
+}
+
+.gs-spalte img{
+
+    width:100%;
+    height:auto;
+    object-fit:contain;
+
+}
+
+.gs-spalte p{
+
+    font-size:17px;
+    margin:15px 0 30px;
+
+}
+
+}
