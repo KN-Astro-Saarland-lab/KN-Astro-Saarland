@@ -1097,7 +1097,7 @@ img[alt="Elektrik"]{
 
 }
 /*======================================================
- AUSRÜSTUNG – GLEICHMÄSSIGER AUFBAU
+ AUSRÜSTUNG – KOMPLETTER AUFBAU
 ======================================================*/
 
 .ausruestung-seite{
@@ -1123,7 +1123,7 @@ img[alt="Elektrik"]{
 
     gap:12px;
 
-    margin:35px 0 55px;
+    margin:35px 0 45px;
 
     align-items:start;
 
@@ -1138,7 +1138,7 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
- BILDER – ALLE GLEICH HOCH
+ NORMALE BILDER
 ======================================================*/
 
 .aus-bildbox img{
@@ -1159,7 +1159,18 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
- BILDTEXTE – GLEICHE HÖHE
+ OBERE BILDER – DEUTLICH HÖHER
+======================================================*/
+
+.aus-oben img{
+
+    height:620px;
+
+}
+
+
+/*======================================================
+ BILDBESCHREIBUNGEN
 ======================================================*/
 
 .aus-bildbox p{
@@ -1180,14 +1191,40 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
+ ZWEI TEXTSPALTEN
+======================================================*/
+
+.aus-text-zwei{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:70px;
+
+    margin:0 0 55px;
+
+    align-items:start;
+
+}
+
+
+.aus-text-spalte{
+
+    width:100%;
+
+}
+
+
+/*======================================================
  TEXTBEREICHE
 ======================================================*/
 
 .aus-textblock{
 
-    max-width:1050px;
+    width:100%;
 
-    margin:0 auto 48px;
+    margin:0 0 42px;
 
 }
 
@@ -1242,6 +1279,8 @@ img[alt="Elektrik"]{
     }
 
 
+    /* Bilder untereinander */
+
     .aus-bildreihe{
 
         grid-template-columns:1fr;
@@ -1253,9 +1292,9 @@ img[alt="Elektrik"]{
     }
 
 
-    .aus-bildbox img{
+    /* Obere Bilder auf dem Handy */
 
-        width:100%;
+    .aus-oben img{
 
         height:auto;
 
@@ -1264,18 +1303,33 @@ img[alt="Elektrik"]{
     }
 
 
-    .aus-bildbox p{
+    /* Normale Bilder auf dem Handy */
 
-        min-height:0;
+    .aus-bildbox img{
 
-        font-size:17px;
+        height:auto;
+
+        object-fit:contain;
+
+    }
+
+
+    /* Textspalten untereinander */
+
+    .aus-text-zwei{
+
+        grid-template-columns:1fr;
+
+        gap:0;
+
+        margin-bottom:40px;
 
     }
 
 
     .aus-textblock{
 
-        margin-bottom:40px;
+        margin-bottom:38px;
 
     }
 
@@ -1289,11 +1343,29 @@ img[alt="Elektrik"]{
     }
 
 
+    .aus-textblock ul{
+
+        padding-left:22px;
+
+    }
+
+
     .aus-textblock li{
 
         font-size:16px;
 
         line-height:1.65;
+
+    }
+
+
+    .aus-bildbox p{
+
+        min-height:0;
+
+        font-size:17px;
+
+        margin-top:10px;
 
     }
 
