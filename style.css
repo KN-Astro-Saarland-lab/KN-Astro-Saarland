@@ -1097,7 +1097,7 @@ img[alt="Elektrik"]{
 
 }
 /*======================================================
- AUSRÜSTUNG – NEUER AUFBAU
+ AUSRÜSTUNG – GLEICHMÄSSIGER AUFBAU
 ======================================================*/
 
 .ausruestung-seite{
@@ -1112,7 +1112,7 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
- BILDREIHEN – ZWEI BILDER NEBENEINANDER
+ BILDREIHEN
 ======================================================*/
 
 .aus-bildreihe{
@@ -1123,7 +1123,7 @@ img[alt="Elektrik"]{
 
     gap:12px;
 
-    margin:35px 0 50px;
+    margin:35px 0 55px;
 
     align-items:start;
 
@@ -1138,14 +1138,18 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
- BILDER
+ BILDER – ALLE GLEICH HOCH
 ======================================================*/
 
 .aus-bildbox img{
 
     width:100%;
 
-    height:auto;
+    height:330px;
+
+    object-fit:cover;
+
+    object-position:center;
 
     display:block;
 
@@ -1155,10 +1159,14 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
- BILDBESCHREIBUNGEN
+ BILDTEXTE – GLEICHE HÖHE
 ======================================================*/
 
 .aus-bildbox p{
+
+    min-height:58px;
+
+    margin:12px 0 0;
 
     font-size:18px;
 
@@ -1167,10 +1175,6 @@ img[alt="Elektrik"]{
     color:#555;
 
     text-align:center;
-
-    margin:12px 0 0;
-
-    min-height:58px;
 
 }
 
@@ -1183,7 +1187,7 @@ img[alt="Elektrik"]{
 
     max-width:1050px;
 
-    margin:0 auto 45px;
+    margin:0 auto 48px;
 
 }
 
@@ -1238,20 +1242,16 @@ img[alt="Elektrik"]{
     }
 
 
-    /* Bilder untereinander */
-
     .aus-bildreihe{
 
         grid-template-columns:1fr;
 
-        gap:30px;
+        gap:35px;
 
         margin:30px 0 45px;
 
     }
 
-
-    /* Bilder auf dem Handy */
 
     .aus-bildbox img{
 
@@ -1259,10 +1259,10 @@ img[alt="Elektrik"]{
 
         height:auto;
 
+        object-fit:contain;
+
     }
 
-
-    /* Bildbeschreibungen */
 
     .aus-bildbox p{
 
@@ -1270,16 +1270,10 @@ img[alt="Elektrik"]{
 
         font-size:17px;
 
-        margin-top:10px;
-
     }
 
 
-    /* Textbereiche */
-
     .aus-textblock{
-
-        width:100%;
 
         margin-bottom:40px;
 
@@ -1291,13 +1285,6 @@ img[alt="Elektrik"]{
         font-size:24px;
 
         text-align:center;
-
-    }
-
-
-    .aus-textblock ul{
-
-        padding-left:22px;
 
     }
 
