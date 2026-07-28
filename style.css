@@ -964,7 +964,11 @@ img[alt="Betonsäule"]{
     line-height:1.8;
     color:#555;
     text-align:center;
+
+    min-height:65px;
+
     margin:15px 0 35px;
+
 
 }
 
