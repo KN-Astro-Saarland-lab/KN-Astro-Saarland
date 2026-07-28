@@ -1194,20 +1194,24 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
- LETZTE BILDER – GROSS UND VOLLSTÄNDIG SICHTBAR
+ LETZTE BILDER – SEHR GROSS UND OHNE RAND
 ======================================================*/
 
 .aus-bildreihe:last-child img{
 
     width:100%;
 
-    height:450px;
+    height:560px;
 
     object-fit:contain;
 
     object-position:center;
 
-    background:#ffffff;
+    display:block;
+
+    border:none;
+
+    background:transparent;
 
 }
 
@@ -1360,8 +1364,6 @@ img[alt="Elektrik"]{
     }
 
 
-    /* Goldene Einleitung */
-
     .aus-einleitung-gold{
 
         font-size:20px;
@@ -1372,8 +1374,6 @@ img[alt="Elektrik"]{
 
     }
 
-
-    /* Bilder untereinander */
 
     .aus-bildreihe{
 
@@ -1386,8 +1386,6 @@ img[alt="Elektrik"]{
     }
 
 
-    /* Bilder auf dem Handy */
-
     .aus-bildbox img{
 
         width:100%;
@@ -1398,8 +1396,6 @@ img[alt="Elektrik"]{
 
     }
 
-
-    /* Überschriften */
 
     .aus-bereich-ueberschrift{
 
@@ -1415,8 +1411,6 @@ img[alt="Elektrik"]{
     }
 
 
-    /* Textspalten untereinander */
-
     .aus-text-zwei{
 
         grid-template-columns:1fr;
@@ -1427,8 +1421,6 @@ img[alt="Elektrik"]{
 
     }
 
-
-    /* Textbereiche */
 
     .aus-textblock{
 
@@ -1459,8 +1451,6 @@ img[alt="Elektrik"]{
 
     }
 
-
-    /* Bildtexte */
 
     .aus-bildbox p{
 
