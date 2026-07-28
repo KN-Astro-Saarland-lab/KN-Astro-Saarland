@@ -1212,6 +1212,34 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
+ ÜBERSCHRIFT – TECHNISCHE AUSRÜSTUNG
+======================================================*/
+
+.aus-bereich-ueberschrift{
+
+    width:100%;
+
+    text-align:center;
+
+    margin:10px 0 35px;
+
+}
+
+
+.aus-bereich-ueberschrift h2{
+
+    color:#b49367;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    margin:0;
+
+}
+
+
+/*======================================================
  ZWEI TEXTSPALTEN
 ======================================================*/
 
@@ -1335,6 +1363,22 @@ img[alt="Elektrik"]{
         height:auto;
 
         object-fit:contain;
+
+    }
+
+
+    /* Überschrift */
+
+    .aus-bereich-ueberschrift{
+
+        margin:5px 0 28px;
+
+    }
+
+
+    .aus-bereich-ueberschrift h2{
+
+        font-size:26px;
 
     }
 
