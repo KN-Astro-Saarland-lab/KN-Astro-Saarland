@@ -1096,3 +1096,271 @@ img[alt="Elektrik"]{
 }
 
 }
+/*======================================================
+ AUSRÜSTUNG – PC
+======================================================*/
+
+.ausruestung-wrapper{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:430px 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+    margin-top:45px;
+
+}
+
+
+/*======================================================
+ LINKE SPALTE – TEXT
+======================================================*/
+
+.ausruestung-links{
+
+    width:100%;
+
+}
+
+
+.ausruestung-block{
+
+    margin-bottom:30px;
+
+}
+
+
+.ausruestung-block h2{
+
+    color:#b49367;
+
+    font-size:25px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+
+.ausruestung-block ul{
+
+    margin:0;
+
+    padding-left:22px;
+
+}
+
+
+.ausruestung-block li{
+
+    font-size:17px;
+
+    line-height:1.65;
+
+    color:#555;
+
+    margin-bottom:6px;
+
+}
+
+
+/*======================================================
+ LINKE BILDER – DOBSON + APO
+======================================================*/
+
+.ausruestung-bild-links{
+
+    width:100%;
+
+    margin-top:35px;
+
+}
+
+
+.ausruestung-bild-links img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    border:1px solid #dddddd;
+
+}
+
+
+.ausruestung-bild-links p{
+
+    font-size:17px;
+
+    line-height:1.6;
+
+    color:#555;
+
+    text-align:center;
+
+    margin:12px 0 35px;
+
+}
+
+
+/*======================================================
+ RECHTE SPALTE
+======================================================*/
+
+.ausruestung-rechts{
+
+    width:100%;
+
+}
+
+
+.ausruestung-bild-rechts{
+
+    width:100%;
+
+    margin-bottom:38px;
+
+}
+
+
+.ausruestung-bild-rechts img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    border:1px solid #dddddd;
+
+}
+
+
+.ausruestung-bild-rechts p{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    color:#555;
+
+    text-align:center;
+
+    margin-top:12px;
+
+}
+
+
+/*======================================================
+ AUSRÜSTUNG – TABLET
+======================================================*/
+
+@media screen and (max-width:1400px){
+
+    .ausruestung-wrapper{
+
+        grid-template-columns:360px 1fr;
+
+        gap:25px;
+
+    }
+
+}
+
+
+/*======================================================
+ AUSRÜSTUNG – HANDY
+======================================================*/
+
+@media screen and (max-width:900px){
+
+    .ausruestung-wrapper{
+
+        display:flex;
+
+        flex-direction:column;
+
+        width:94%;
+
+        margin:30px auto 50px;
+
+        gap:30px;
+
+    }
+
+
+    .ausruestung-links{
+
+        width:100%;
+
+    }
+
+
+    .ausruestung-rechts{
+
+        width:100%;
+
+    }
+
+
+    .ausruestung-block{
+
+        margin-bottom:28px;
+
+    }
+
+
+    .ausruestung-block h2{
+
+        font-size:23px;
+
+        text-align:center;
+
+    }
+
+
+    .ausruestung-block li{
+
+        font-size:17px;
+
+        line-height:1.6;
+
+    }
+
+
+    .ausruestung-bild-links{
+
+        margin-top:30px;
+
+    }
+
+
+    .ausruestung-bild-links p{
+
+        font-size:16px;
+
+    }
+
+
+    .ausruestung-bild-rechts{
+
+        margin-bottom:32px;
+
+    }
+
+
+    .ausruestung-bild-rechts p{
+
+        font-size:17px;
+
+    }
+
+}
