@@ -1212,7 +1212,7 @@ img[alt="Elektrik"]{
 
 
 /*======================================================
- ÜBERSCHRIFT – TECHNISCHE AUSRÜSTUNG
+ ÜBERSCHRIFTEN
 ======================================================*/
 
 .aus-bereich-ueberschrift{
@@ -1286,7 +1286,7 @@ img[alt="Elektrik"]{
 
     font-size:26px;
 
-    font-weight:600;
+    font-weight:400;
 
     text-align:center;
 
@@ -1301,7 +1301,7 @@ img[alt="Elektrik"]{
 
     padding:0;
 
-    list-style-position:inside;
+    list-style:none;
 
     text-align:center;
 
