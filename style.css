@@ -1469,8 +1469,7 @@ KONTAKT
 
 .kontakt{
 
-    max-width:1400px;
-    width:calc(100% - 40px);
+    width:1400px;
     margin:45px auto 70px;
 
 }
@@ -1490,7 +1489,7 @@ KONTAKT
     text-align:center;
     color:#b49367;
     font-size:23px;
-    margin:18px 0 30px;
+    margin:18px 0 35px;
 
 }
 
@@ -1498,21 +1497,20 @@ KONTAKT
 
     width:220px;
     height:1px;
-    background:#dddddd;
+    background:#d8d8d8;
     margin:0 auto 60px;
 
 }
 
-
 /*======================================================
-ZWEI SPALTEN
+2 SPALTEN
 ======================================================*/
 
 .kontakt-grid{
 
     display:grid;
 
-    grid-template-columns:420px 1fr;
+    grid-template-columns:430px 1fr;
 
     gap:90px;
 
@@ -1520,9 +1518,8 @@ ZWEI SPALTEN
 
 }
 
-
 /*======================================================
-INFORMATION
+LINKE SEITE
 ======================================================*/
 
 .kontakt-info h2{
@@ -1537,18 +1534,6 @@ INFORMATION
 
 }
 
-.kontakt-info h3{
-
-    color:#444;
-
-    font-size:22px;
-
-    font-weight:400;
-
-    margin:35px 0 15px;
-
-}
-
 .kontakt-info p{
 
     color:#555;
@@ -1557,20 +1542,27 @@ INFORMATION
 
     line-height:1.9;
 
-    margin-bottom:18px;
+    margin-bottom:22px;
 
 }
 
-.kontakt-info hr{
+.kontakt-social{
 
-    border:0;
-
-    border-top:1px solid #dddddd;
-
-    margin:30px 0;
+    margin-top:45px;
 
 }
 
+.kontakt-social h3{
+
+    color:#b49367;
+
+    font-size:24px;
+
+    font-weight:400;
+
+    margin-bottom:25px;
+
+}
 
 /*======================================================
 SOCIAL BUTTONS
@@ -1582,29 +1574,31 @@ SOCIAL BUTTONS
 
     flex-direction:column;
 
-    gap:15px;
+    gap:18px;
 
 }
 
 .social-btn{
 
-    display:block;
+    display:flex;
 
-    text-align:center;
+    justify-content:center;
 
-    text-decoration:none;
+    align-items:center;
 
-    color:#555;
+    height:54px;
 
     border:1px solid #b49367;
 
     border-radius:30px;
 
-    padding:14px 20px;
+    color:#555;
+
+    text-decoration:none;
 
     font-size:18px;
 
-    transition:.3s;
+    transition:.35s;
 
 }
 
@@ -1612,11 +1606,11 @@ SOCIAL BUTTONS
 
     background:#b49367;
 
-    color:#fff;
+    color:#ffffff;
 
 }
 /*======================================================
- FORMULAR
+FORMULAR
 ======================================================*/
 
 .kontakt-formular h2{
@@ -1650,7 +1644,7 @@ SOCIAL BUTTONS
 
     padding:0 18px;
 
-    border:1px solid #d8d8d8;
+    border:1px solid #d9d9d9;
     border-radius:8px;
 
     font-size:18px;
@@ -1658,6 +1652,8 @@ SOCIAL BUTTONS
     box-sizing:border-box;
 
     transition:.3s;
+
+    background:#ffffff;
 
 }
 
@@ -1669,17 +1665,19 @@ SOCIAL BUTTONS
 
     padding:18px;
 
-    border:1px solid #d8d8d8;
+    border:1px solid #d9d9d9;
     border-radius:8px;
-
-    resize:vertical;
 
     font-size:18px;
     line-height:1.8;
 
+    resize:vertical;
+
     box-sizing:border-box;
 
     transition:.3s;
+
+    background:#ffffff;
 
 }
 
@@ -1687,6 +1685,7 @@ SOCIAL BUTTONS
 .kontakt-formular textarea:focus{
 
     border-color:#b49367;
+
     outline:none;
 
 }
@@ -1694,17 +1693,17 @@ SOCIAL BUTTONS
 .kontakt-formular button{
 
     width:260px;
-    height:56px;
+    height:58px;
 
-    margin:35px auto 0;
-
-    background:#b49367;
-
-    color:#ffffff;
+    margin:40px auto 0;
 
     border:none;
 
     border-radius:30px;
+
+    background:#b49367;
+
+    color:#ffffff;
 
     font-size:18px;
 
@@ -1720,17 +1719,15 @@ SOCIAL BUTTONS
 
 }
 
-
 /*======================================================
- MOBIL
+MOBIL
 ======================================================*/
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1000px){
 
 .kontakt{
 
     width:92%;
-    margin:35px auto 60px;
 
 }
 
@@ -1738,7 +1735,7 @@ SOCIAL BUTTONS
 
     grid-template-columns:1fr;
 
-    gap:45px;
+    gap:50px;
 
 }
 
@@ -1761,17 +1758,15 @@ SOCIAL BUTTONS
 
 }
 
-.kontakt-info h3{
-
-    font-size:20px;
-
-}
-
 .kontakt-info p{
 
     font-size:17px;
 
-    line-height:1.7;
+}
+
+.kontakt-social h3{
+
+    font-size:22px;
 
 }
 
