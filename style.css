@@ -1467,117 +1467,98 @@ img[alt="Elektrik"]{
 KONTAKT
 ======================================================*/
 
-.kontakt-seite{
+.kontakt{
 
     max-width:1400px;
-
     width:calc(100% - 40px);
-
     margin:45px auto 70px;
 
 }
 
-.kontakt-einleitung{
+.kontakt-titel{
 
     text-align:center;
-
-    margin-bottom:45px;
-
-}
-
-.kontakt-einleitung h1{
-
-    color:#b49367;
-
-    font-size:34px;
-
-    font-weight:500;
-
-    margin-bottom:20px;
+    font-size:38px;
+    font-weight:400;
+    color:#444;
+    margin:0;
 
 }
 
 .kontakt-gold{
 
+    text-align:center;
     color:#b49367;
-
     font-size:22px;
-
-    font-weight:500;
-
-    margin-bottom:20px;
-
-}
-
-.kontakt-einleitung p{
-
-    color:#555;
-
-    font-size:19px;
-
-    line-height:1.9;
-
-    max-width:900px;
-
-    margin:0 auto 15px;
+    margin:18px 0 30px;
 
 }
 
 .kontakt-linie{
 
-    width:180px;
-
+    width:220px;
     height:1px;
-
-    background:#d7d7d7;
-
-    margin:45px auto 60px;
+    background:#dddddd;
+    margin:0 auto 55px;
 
 }
 
+.kontakt-grid{
+
+    display:grid;
+    grid-template-columns:35% 65%;
+    gap:70px;
+    align-items:start;
+
+}
 
 /*======================================================
-FORMULAR
+LINKE SPALTE
 ======================================================*/
 
-.kontakt-formular{
+.kontakt-info h2{
 
-    max-width:900px;
-
-    margin:auto;
+    color:#b49367;
+    font-size:28px;
+    font-weight:400;
+    margin:0 0 25px;
 
 }
 
-.kontakt-formular h1{
+.kontakt-info p{
 
-    text-align:center;
+    color:#555;
+    font-size:19px;
+    line-height:1.9;
+    margin:0 0 22px;
+
+}
+
+/*======================================================
+RECHTE SPALTE
+======================================================*/
+
+.kontakt-formular h2{
 
     color:#b49367;
-
-    font-size:34px;
-
-    font-weight:500;
-
-    margin-bottom:40px;
+    font-size:28px;
+    font-weight:400;
+    margin:0 0 30px;
 
 }
 
 .kontakt-formular form{
 
     display:flex;
-
     flex-direction:column;
 
 }
 
 .kontakt-formular label{
 
-    font-size:18px;
-
     color:#555;
-
+    font-size:18px;
     margin-bottom:8px;
-
     margin-top:20px;
 
 }
@@ -1585,18 +1566,13 @@ FORMULAR
 .kontakt-formular input{
 
     width:100%;
-
     height:58px;
-
     padding:0 18px;
 
-    font-size:18px;
-
-    border:1px solid #d7d7d7;
-
+    border:1px solid #d8d8d8;
     border-radius:8px;
 
-    outline:none;
+    font-size:18px;
 
     transition:.3s;
 
@@ -1607,22 +1583,17 @@ FORMULAR
 .kontakt-formular textarea{
 
     width:100%;
+    min-height:240px;
 
     padding:18px;
 
-    font-size:18px;
-
-    line-height:1.7;
-
-    border:1px solid #d7d7d7;
-
+    border:1px solid #d8d8d8;
     border-radius:8px;
 
     resize:vertical;
 
-    min-height:240px;
-
-    outline:none;
+    font-size:18px;
+    line-height:1.7;
 
     transition:.3s;
 
@@ -1631,23 +1602,21 @@ FORMULAR
 }
 
 .kontakt-formular input:focus,
-
 .kontakt-formular textarea:focus{
 
     border-color:#b49367;
+    outline:none;
 
 }
 
 .kontakt-formular button{
 
     width:260px;
+    height:56px;
 
-    height:58px;
-
-    margin:40px auto 0;
+    margin:35px auto 0;
 
     border:none;
-
     border-radius:30px;
 
     background:#b49367;
@@ -1664,10 +1633,9 @@ FORMULAR
 
 .kontakt-formular button:hover{
 
-    background:#9e7d54;
+    background:#9d7a4c;
 
 }
-
 
 /*======================================================
 HANDY
@@ -1675,56 +1643,42 @@ HANDY
 
 @media screen and (max-width:900px){
 
-    .kontakt-seite{
+.kontakt{
 
-        width:92%;
+    width:92%;
 
-        margin:30px auto 50px;
+}
 
-    }
+.kontakt-grid{
 
-    .kontakt-einleitung h1,
+    grid-template-columns:1fr;
+    gap:45px;
 
-    .kontakt-formular h1{
+}
 
-        font-size:28px;
+.kontakt-titel{
 
-    }
+    font-size:32px;
 
-    .kontakt-gold{
+}
 
-        font-size:20px;
+.kontakt-info h2,
+.kontakt-formular h2{
 
-    }
+    font-size:26px;
 
-    .kontakt-einleitung p{
+}
 
-        font-size:17px;
+.kontakt-info p{
 
-        line-height:1.7;
+    font-size:17px;
 
-    }
+}
 
-    .kontakt-formular input{
+.kontakt-formular button{
 
-        height:54px;
+    width:100%;
 
-        font-size:17px;
-
-    }
-
-    .kontakt-formular textarea{
-
-        min-height:200px;
-
-        font-size:17px;
-
-    }
-
-    .kontakt-formular button{
-
-        width:100%;
-
-    }
+}
 
 }
