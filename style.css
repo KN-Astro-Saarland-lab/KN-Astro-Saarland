@@ -1615,3 +1615,186 @@ SOCIAL BUTTONS
     color:#fff;
 
 }
+/*======================================================
+ FORMULAR
+======================================================*/
+
+.kontakt-formular h2{
+
+    color:#b49367;
+    font-size:30px;
+    font-weight:400;
+    margin:0 0 30px;
+
+}
+
+.kontakt-formular form{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.kontakt-formular label{
+
+    color:#555;
+    font-size:18px;
+    margin:18px 0 8px;
+
+}
+
+.kontakt-formular input{
+
+    width:100%;
+    height:58px;
+
+    padding:0 18px;
+
+    border:1px solid #d8d8d8;
+    border-radius:8px;
+
+    font-size:18px;
+
+    box-sizing:border-box;
+
+    transition:.3s;
+
+}
+
+.kontakt-formular textarea{
+
+    width:100%;
+
+    min-height:260px;
+
+    padding:18px;
+
+    border:1px solid #d8d8d8;
+    border-radius:8px;
+
+    resize:vertical;
+
+    font-size:18px;
+    line-height:1.8;
+
+    box-sizing:border-box;
+
+    transition:.3s;
+
+}
+
+.kontakt-formular input:focus,
+.kontakt-formular textarea:focus{
+
+    border-color:#b49367;
+    outline:none;
+
+}
+
+.kontakt-formular button{
+
+    width:260px;
+    height:56px;
+
+    margin:35px auto 0;
+
+    background:#b49367;
+
+    color:#ffffff;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.kontakt-formular button:hover{
+
+    background:#9d7a4c;
+
+}
+
+
+/*======================================================
+ MOBIL
+======================================================*/
+
+@media screen and (max-width:900px){
+
+.kontakt{
+
+    width:92%;
+    margin:35px auto 60px;
+
+}
+
+.kontakt-grid{
+
+    grid-template-columns:1fr;
+
+    gap:45px;
+
+}
+
+.kontakt-titel{
+
+    font-size:34px;
+
+}
+
+.kontakt-gold{
+
+    font-size:20px;
+
+}
+
+.kontakt-info h2,
+.kontakt-formular h2{
+
+    font-size:26px;
+
+}
+
+.kontakt-info h3{
+
+    font-size:20px;
+
+}
+
+.kontakt-info p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+.kontakt-formular input{
+
+    height:54px;
+
+    font-size:17px;
+
+}
+
+.kontakt-formular textarea{
+
+    min-height:220px;
+
+    font-size:17px;
+
+}
+
+.kontakt-formular button{
+
+    width:100%;
+
+}
+
+}
