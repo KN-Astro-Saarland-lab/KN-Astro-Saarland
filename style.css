@@ -1470,37 +1470,36 @@ KONTAKT
 .kontakt{
 
     width:1400px;
-    margin:45px auto 70px;
-
-}
-
-.kontakt-titel{
-
-    text-align:center;
-    font-size:42px;
-    font-weight:300;
-    color:#444;
-    margin:0;
+    margin:10px auto 25px;
 
 }
 
 .kontakt-gold{
 
     text-align:center;
+
     color:#b49367;
-    font-size:23px;
-    margin:18px 0 35px;
+
+    font-size:24px;
+
+    font-weight:400;
+
+    margin:0 0 15px;
 
 }
 
 .kontakt-linie{
 
     width:220px;
+
     height:1px;
-    background:#d8d8d8;
-    margin:0 auto 60px;
+
+    background:#d9d9d9;
+
+    margin:0 auto 40px;
 
 }
+
 
 /*======================================================
 2 SPALTEN
@@ -1510,27 +1509,28 @@ KONTAKT
 
     display:grid;
 
-    grid-template-columns:430px 1fr;
+    grid-template-columns:390px 1fr;
 
-    gap:90px;
+    gap:55px;
 
     align-items:start;
 
 }
 
+
 /*======================================================
-LINKE SEITE
+INFORMATION
 ======================================================*/
 
 .kontakt-info h2{
 
     color:#b49367;
 
-    font-size:30px;
+    font-size:26px;
 
     font-weight:400;
 
-    margin:0 0 25px;
+    margin:0 0 20px;
 
 }
 
@@ -1538,17 +1538,22 @@ LINKE SEITE
 
     color:#555;
 
-    font-size:18px;
+    font-size:17px;
 
-    line-height:1.9;
+    line-height:1.8;
 
-    margin-bottom:22px;
+    margin-bottom:18px;
 
 }
 
+
+/*======================================================
+SOCIAL
+======================================================*/
+
 .kontakt-social{
 
-    margin-top:45px;
+    margin-top:35px;
 
 }
 
@@ -1560,13 +1565,9 @@ LINKE SEITE
 
     font-weight:400;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 
 }
-
-/*======================================================
-SOCIAL BUTTONS
-======================================================*/
 
 .social-buttons{
 
@@ -1574,7 +1575,7 @@ SOCIAL BUTTONS
 
     flex-direction:column;
 
-    gap:18px;
+    gap:15px;
 
 }
 
@@ -1586,19 +1587,19 @@ SOCIAL BUTTONS
 
     align-items:center;
 
-    height:54px;
+    height:52px;
 
     border:1px solid #b49367;
 
     border-radius:30px;
 
-    color:#555;
-
     text-decoration:none;
 
-    font-size:18px;
+    color:#555;
 
-    transition:.35s;
+    font-size:17px;
+
+    transition:.3s;
 
 }
 
@@ -1606,7 +1607,7 @@ SOCIAL BUTTONS
 
     background:#b49367;
 
-    color:#ffffff;
+    color:#fff;
 
 }
 /*======================================================
@@ -1616,9 +1617,9 @@ FORMULAR
 .kontakt-formular h2{
 
     color:#b49367;
-    font-size:30px;
+    font-size:26px;
     font-weight:400;
-    margin:0 0 30px;
+    margin:0 0 20px;
 
 }
 
@@ -1632,28 +1633,28 @@ FORMULAR
 .kontakt-formular label{
 
     color:#555;
-    font-size:18px;
-    margin:18px 0 8px;
+    font-size:17px;
+    margin:14px 0 6px;
 
 }
 
 .kontakt-formular input{
 
     width:100%;
-    height:58px;
+    height:50px;
 
-    padding:0 18px;
+    padding:0 16px;
 
-    border:1px solid #d9d9d9;
+    border:1px solid #d8d8d8;
     border-radius:8px;
 
-    font-size:18px;
+    background:#fff;
+
+    font-size:17px;
 
     box-sizing:border-box;
 
     transition:.3s;
-
-    background:#ffffff;
 
 }
 
@@ -1661,23 +1662,23 @@ FORMULAR
 
     width:100%;
 
-    min-height:260px;
+    min-height:160px;
 
-    padding:18px;
+    padding:16px;
 
-    border:1px solid #d9d9d9;
+    border:1px solid #d8d8d8;
     border-radius:8px;
 
-    font-size:18px;
-    line-height:1.8;
+    background:#fff;
 
     resize:vertical;
+
+    font-size:17px;
+    line-height:1.7;
 
     box-sizing:border-box;
 
     transition:.3s;
-
-    background:#ffffff;
 
 }
 
@@ -1692,20 +1693,19 @@ FORMULAR
 
 .kontakt-formular button{
 
-    width:260px;
-    height:58px;
+    width:240px;
+    height:52px;
 
-    margin:40px auto 0;
+    margin:28px auto 0;
 
     border:none;
-
     border-radius:30px;
 
     background:#b49367;
 
-    color:#ffffff;
+    color:#fff;
 
-    font-size:18px;
+    font-size:17px;
 
     cursor:pointer;
 
@@ -1728,20 +1728,14 @@ MOBIL
 .kontakt{
 
     width:92%;
+    margin:25px auto 40px;
 
 }
 
 .kontakt-grid{
 
     grid-template-columns:1fr;
-
-    gap:50px;
-
-}
-
-.kontakt-titel{
-
-    font-size:34px;
+    gap:35px;
 
 }
 
@@ -1754,13 +1748,7 @@ MOBIL
 .kontakt-info h2,
 .kontakt-formular h2{
 
-    font-size:26px;
-
-}
-
-.kontakt-info p{
-
-    font-size:17px;
+    font-size:24px;
 
 }
 
@@ -1770,19 +1758,21 @@ MOBIL
 
 }
 
+.kontakt-info p{
+
+    font-size:16px;
+
+}
+
 .kontakt-formular input{
 
-    height:54px;
-
-    font-size:17px;
+    height:48px;
 
 }
 
 .kontakt-formular textarea{
 
-    min-height:220px;
-
-    font-size:17px;
+    min-height:180px;
 
 }
 
