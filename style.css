@@ -1472,7 +1472,7 @@ KONTAKT
     max-width:1400px;
     width:calc(100% - 40px);
 
-    margin:20px auto 40px;
+    margin:50px auto 40px;
 
 }
 
@@ -1507,9 +1507,9 @@ LINKE SPALTE
 
     font-weight:400;
 
-    margin-bottom:25px;
+    margin:0 0 30px;
 
-    text-align:center;
+    text-align:left;
 
 }
 
@@ -1521,9 +1521,9 @@ LINKE SPALTE
 
     line-height:1.9;
 
-    margin-bottom:22px;
+    margin-bottom:26px;
 
-    text-align:center;
+    text-align:left;
 
 }
 
@@ -1534,7 +1534,7 @@ SOCIAL
 
 .kontakt-social{
 
-    margin-top:40px;
+    margin-top:45px;
 
 }
 
@@ -1542,13 +1542,13 @@ SOCIAL
 
     color:#b49367;
 
-    text-align:center;
-
     font-size:26px;
 
     font-weight:400;
 
-    margin-bottom:28px;
+    margin-bottom:25px;
+
+    text-align:left;
 
 }
 
@@ -1559,6 +1559,8 @@ SOCIAL
     flex-direction:column;
 
     gap:18px;
+
+    width:68%;
 
 }
 
@@ -1577,13 +1579,14 @@ FACEBOOK
 
     gap:15px;
 
+    width:100%;
     height:56px;
 
     border-radius:30px;
 
     background:#1877F2;
 
-    color:#ffffff;
+    color:#fff;
 
     text-decoration:none;
 
@@ -1598,7 +1601,6 @@ FACEBOOK
 .facebook-btn img{
 
     width:24px;
-
     height:24px;
 
 }
@@ -1624,13 +1626,14 @@ INSTAGRAM
 
     gap:15px;
 
+    width:100%;
     height:56px;
 
     border-radius:30px;
 
     text-decoration:none;
 
-    color:#ffffff;
+    color:#fff;
 
     font-size:18px;
 
@@ -1652,10 +1655,11 @@ INSTAGRAM
 .instagram-btn img{
 
     width:24px;
-
     height:24px;
 
 }
+
+
 /*======================================================
 ASTROTREFF
 ======================================================*/
@@ -1670,13 +1674,14 @@ ASTROTREFF
 
     gap:15px;
 
+    width:100%;
     height:56px;
 
     border-radius:30px;
 
     background:#1f4b8f;
 
-    color:#ffffff;
+    color:#fff;
 
     text-decoration:none;
 
@@ -1691,7 +1696,6 @@ ASTROTREFF
 .astrotreff-btn img{
 
     width:24px;
-
     height:24px;
 
 }
@@ -1721,9 +1725,9 @@ FORMULAR
 
     font-weight:400;
 
-    margin-bottom:25px;
+    margin:0 0 30px;
 
-    text-align:center;
+    text-align:left;
 
 }
 
@@ -1737,9 +1741,9 @@ FORMULAR
 
 .kontakt-formular label{
 
-    font-size:17px;
-
     color:#555;
+
+    font-size:17px;
 
     margin:15px 0 8px;
 
@@ -1747,6 +1751,7 @@ FORMULAR
 
 .kontakt-formular input{
 
+    width:100%;
     height:52px;
 
     padding:0 18px;
@@ -1759,13 +1764,13 @@ FORMULAR
 
     box-sizing:border-box;
 
-    transition:.3s;
-
 }
 
 .kontakt-formular textarea{
 
-    min-height:170px;
+    width:100%;
+
+    min-height:140px;
 
     padding:18px;
 
@@ -1780,8 +1785,6 @@ FORMULAR
     line-height:1.8;
 
     box-sizing:border-box;
-
-    transition:.3s;
 
 }
 
@@ -1808,7 +1811,7 @@ FORMULAR
 
     background:#b49367;
 
-    color:#ffffff;
+    color:#fff;
 
     font-size:18px;
 
@@ -1834,6 +1837,7 @@ MOBIL
 .kontakt{
 
     width:92%;
+    margin:30px auto;
 
 }
 
@@ -1845,32 +1849,16 @@ MOBIL
 
 }
 
+.social-buttons{
+
+    width:100%;
+
+}
+
 .kontakt-info h2,
 .kontakt-formular h2{
 
-    font-size:26px;
-
-}
-
-.kontakt-social h3{
-
-    font-size:22px;
-
-}
-
-.facebook-btn,
-.instagram-btn,
-.astrotreff-btn{
-
-    height:52px;
-
-    font-size:17px;
-
-}
-
-.kontakt-formular button{
-
-    width:100%;
+    text-align:left;
 
 }
 
