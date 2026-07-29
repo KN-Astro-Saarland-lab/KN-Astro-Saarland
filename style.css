@@ -1469,49 +1469,20 @@ KONTAKT
 
 .kontakt{
 
-    width:1400px;
-    margin:10px auto 25px;
+    max-width:1400px;
+    width:calc(100% - 40px);
+
+    margin:20px auto 40px;
 
 }
-
-.kontakt-gold{
-
-    text-align:center;
-
-    color:#b49367;
-
-    font-size:24px;
-
-    font-weight:400;
-
-    margin:0 0 15px;
-
-}
-
-.kontakt-linie{
-
-    width:220px;
-
-    height:1px;
-
-    background:#d9d9d9;
-
-    margin:0 auto 40px;
-
-}
-
-
-/*======================================================
-2 SPALTEN
-======================================================*/
 
 .kontakt-grid{
 
     display:grid;
 
-    grid-template-columns:390px 1fr;
+    grid-template-columns:1fr 1fr;
 
-    gap:55px;
+    gap:70px;
 
     align-items:start;
 
@@ -1519,18 +1490,26 @@ KONTAKT
 
 
 /*======================================================
-INFORMATION
+LINKE SPALTE
 ======================================================*/
+
+.kontakt-info{
+
+    width:100%;
+
+}
 
 .kontakt-info h2{
 
     color:#b49367;
 
-    font-size:26px;
+    font-size:30px;
 
     font-weight:400;
 
-    margin:0 0 20px;
+    margin-bottom:25px;
+
+    text-align:center;
 
 }
 
@@ -1538,11 +1517,13 @@ INFORMATION
 
     color:#555;
 
-    font-size:17px;
+    font-size:18px;
 
-    line-height:1.8;
+    line-height:1.9;
 
-    margin-bottom:18px;
+    margin-bottom:22px;
+
+    text-align:center;
 
 }
 
@@ -1553,7 +1534,7 @@ SOCIAL
 
 .kontakt-social{
 
-    margin-top:35px;
+    margin-top:40px;
 
 }
 
@@ -1561,11 +1542,13 @@ SOCIAL
 
     color:#b49367;
 
-    font-size:24px;
+    text-align:center;
+
+    font-size:26px;
 
     font-weight:400;
 
-    margin-bottom:20px;
+    margin-bottom:28px;
 
 }
 
@@ -1575,80 +1558,202 @@ SOCIAL
 
     flex-direction:column;
 
-    gap:15px;
+    gap:18px;
 
 }
 
-.social-btn{
+
+/*======================================================
+FACEBOOK
+======================================================*/
+
+.facebook-btn{
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
 
-    height:52px;
+    justify-content:center;
 
-    border:1px solid #b49367;
+    gap:15px;
+
+    height:56px;
 
     border-radius:30px;
 
+    background:#1877F2;
+
+    color:#ffffff;
+
     text-decoration:none;
 
-    color:#555;
+    font-size:18px;
 
-    font-size:17px;
+    font-weight:500;
 
     transition:.3s;
 
 }
 
-.social-btn:hover{
+.facebook-btn img{
 
-    background:#b49367;
+    width:24px;
 
-    color:#fff;
+    height:24px;
 
 }
+
+.facebook-btn:hover{
+
+    background:#0f63d8;
+
+}
+
+
+/*======================================================
+INSTAGRAM
+======================================================*/
+
+.instagram-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    height:56px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    background:linear-gradient(
+    90deg,
+    #405DE6,
+    #833AB4,
+    #C13584,
+    #E1306C,
+    #F77737,
+    #FCAF45);
+
+}
+
+.instagram-btn img{
+
+    width:24px;
+
+    height:24px;
+
+}
+/*======================================================
+ASTROTREFF
+======================================================*/
+
+.astrotreff-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    height:56px;
+
+    border-radius:30px;
+
+    background:#1f4b8f;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.astrotreff-btn img{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+.astrotreff-btn:hover{
+
+    background:#163b72;
+
+}
+
+
 /*======================================================
 FORMULAR
 ======================================================*/
 
+.kontakt-formular{
+
+    width:100%;
+
+}
+
 .kontakt-formular h2{
 
     color:#b49367;
-    font-size:26px;
+
+    font-size:30px;
+
     font-weight:400;
-    margin:0 0 20px;
+
+    margin-bottom:25px;
+
+    text-align:center;
 
 }
 
 .kontakt-formular form{
 
     display:flex;
+
     flex-direction:column;
 
 }
 
 .kontakt-formular label{
 
-    color:#555;
     font-size:17px;
-    margin:14px 0 6px;
+
+    color:#555;
+
+    margin:15px 0 8px;
 
 }
 
 .kontakt-formular input{
 
-    width:100%;
-    height:50px;
+    height:52px;
 
-    padding:0 16px;
+    padding:0 18px;
 
     border:1px solid #d8d8d8;
-    border-radius:8px;
 
-    background:#fff;
+    border-radius:8px;
 
     font-size:17px;
 
@@ -1660,21 +1765,19 @@ FORMULAR
 
 .kontakt-formular textarea{
 
-    width:100%;
+    min-height:170px;
 
-    min-height:160px;
-
-    padding:16px;
+    padding:18px;
 
     border:1px solid #d8d8d8;
+
     border-radius:8px;
 
-    background:#fff;
-
-    resize:vertical;
+    resize:none;
 
     font-size:17px;
-    line-height:1.7;
+
+    line-height:1.8;
 
     box-sizing:border-box;
 
@@ -1693,19 +1796,21 @@ FORMULAR
 
 .kontakt-formular button{
 
-    width:240px;
-    height:52px;
+    width:250px;
 
-    margin:28px auto 0;
+    height:54px;
+
+    margin:30px auto 0;
 
     border:none;
+
     border-radius:30px;
 
     background:#b49367;
 
-    color:#fff;
+    color:#ffffff;
 
-    font-size:17px;
+    font-size:18px;
 
     cursor:pointer;
 
@@ -1715,40 +1820,35 @@ FORMULAR
 
 .kontakt-formular button:hover{
 
-    background:#9d7a4c;
+    background:#9c7b50;
 
 }
+
 
 /*======================================================
 MOBIL
 ======================================================*/
 
-@media screen and (max-width:1000px){
+@media(max-width:1000px){
 
 .kontakt{
 
     width:92%;
-    margin:25px auto 40px;
 
 }
 
 .kontakt-grid{
 
     grid-template-columns:1fr;
-    gap:35px;
 
-}
-
-.kontakt-gold{
-
-    font-size:20px;
+    gap:45px;
 
 }
 
 .kontakt-info h2,
 .kontakt-formular h2{
 
-    font-size:24px;
+    font-size:26px;
 
 }
 
@@ -1758,21 +1858,13 @@ MOBIL
 
 }
 
-.kontakt-info p{
+.facebook-btn,
+.instagram-btn,
+.astrotreff-btn{
 
-    font-size:16px;
+    height:52px;
 
-}
-
-.kontakt-formular input{
-
-    height:48px;
-
-}
-
-.kontakt-formular textarea{
-
-    min-height:180px;
+    font-size:17px;
 
 }
 
