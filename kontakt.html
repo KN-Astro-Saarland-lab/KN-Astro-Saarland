@@ -14,12 +14,22 @@
 
 <body>
 
+<!--======================================================
+HEADER
+======================================================-->
+
 <header>
 
+<div class="header">
+
 <div class="logo">
+
 <a href="index.html">
+
 <img src="KN.png" alt="KN Logo">
+
 </a>
+
 </div>
 
 <nav>
@@ -27,55 +37,157 @@
 <ul>
 
 <li><a href="index.html">Home</a></li>
+
+<li>|</li>
+
 <li><a href="galerie.html">Galerie</a></li>
+
+<li>|</li>
+
 <li><a href="ueber-mich.html">Über Mich</a></li>
+
+<li>|</li>
+
 <li><a href="gartensternwarte.html">Gartensternwarte</a></li>
+
+<li>|</li>
+
 <li><a href="ausruestung.html">Ausrüstung</a></li>
+
+<li>|</li>
+
 <li><a class="active" href="kontakt.html">Kontakt</a></li>
 
 </ul>
 
 </nav>
 
+</div>
+
 </header>
+
+<!--======================================================
+HAUPTBEREICH
+======================================================-->
 
 <main>
 
-<section class="seitenkopf">
+<section class="kontakt-seite">
 
-<h1>Kontakt</h1>
+<div class="kontakt-einleitung">
 
-<p>Bei Fragen oder Anregungen freue ich mich auf Ihre Nachricht.</p>
+<h1>Information</h1>
 
-</section>
+<p class="kontakt-gold">
 
-<section class="kontakt-box">
+Ich freue mich über Ihre Nachricht.
 
-<div class="kontakt-card">
+</p>
 
-<h2>Kontakt</h2>
+<p>
 
-<p><strong>Name:</strong> Kai Nimmrichter</p>
+Die Astrofotografie ist für mich weit mehr als nur ein Hobby.
+Gerne beantworte ich Fragen zu meinen Aufnahmen, meiner
+Ausrüstung oder meiner Gartensternwarte.
 
-<p><strong>Standort:</strong> Saarland</p>
+</p>
 
-<p><strong>E-Mail:</strong> deine@email.de</p>
+<p>
 
-<p><strong>Instagram:</strong> @kn_astro_saarland</p>
+Auch Anregungen, Hinweise oder ein allgemeiner Austausch
+über Astronomie und Astrofotografie sind jederzeit willkommen.
+
+</p>
+
+</div>
+
+<div class="kontakt-linie"></div>
+
+<div class="kontakt-formular">
+
+<h1>Kontaktiere mich</h1>
+
+<form
+action="#"
+method="post">
+
+<label for="name">
+
+Name *
+
+</label>
+
+<input
+type="text"
+id="name"
+name="name"
+required>
+
+<label for="email">
+
+E-Mail-Adresse *
+
+</label>
+
+<input
+type="email"
+id="email"
+name="email"
+required>
+
+<label for="betreff">
+
+Betreff
+
+</label>
+
+<input
+type="text"
+id="betreff"
+name="betreff">
+
+<label for="nachricht">
+
+Nachricht *
+
+</label>
+
+<textarea
+
+id="nachricht"
+
+name="nachricht"
+
+rows="10"
+
+required>
+
+</textarea>
+
+<button type="submit">
+
+Nachricht senden
+
+</button>
+
+</form>
 
 </div>
 
 </section>
 
 </main>
+<!--======================================================
+FOOTER
+======================================================-->
 
 <footer>
 
-<p>
+<div class="footer">
 
 © 2026 Kai Nimmrichter – Astrofotografie aus dem Saarland
 
-</p>
+</div>
 
 </footer>
 
