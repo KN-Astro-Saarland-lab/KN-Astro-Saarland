@@ -1106,7 +1106,6 @@ img[alt="Elektrik"]{
 .ausruestung-seite{
 
     max-width:1400px;
-
     width:calc(100% - 40px);
 
     margin:45px auto 70px;
@@ -1121,14 +1120,10 @@ img[alt="Elektrik"]{
 .aus-einleitung-gold{
 
     color:#b49367;
-
     font-size:23px;
-
     font-weight:500;
-
     text-align:center;
-
-    letter-spacing:0.2px;
+    letter-spacing:.2px;
 
     margin:0 0 25px;
 
@@ -1142,8 +1137,7 @@ img[alt="Elektrik"]{
 .aus-bildreihe{
 
     display:grid;
-
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2,1fr);
 
     gap:12px;
 
@@ -1157,7 +1151,6 @@ img[alt="Elektrik"]{
 .aus-bildbox{
 
     width:100%;
-
 }
 
 
@@ -1168,16 +1161,16 @@ img[alt="Elektrik"]{
 .aus-bildbox img{
 
     width:100%;
-
     height:330px;
 
-    object-fit:cover;
-
-    object-position:center;
+    object-fit:contain;
+    object-position:center center;
 
     display:block;
 
-    border:1px solid #dddddd;
+    border:none;
+
+    background:#fff;
 
 }
 
@@ -1188,11 +1181,17 @@ img[alt="Elektrik"]{
 
 .aus-oben img{
 
-    height:620px;
+    width:100%;
+    height:680px;
+
+    object-fit:contain;
+    object-position:center center;
+
+    border:none;
+
+    background:#fff;
 
 }
-
-
 /*======================================================
  LETZTE BILDER – SEHR GROSS UND OHNE RAND
 ======================================================*/
@@ -1200,11 +1199,9 @@ img[alt="Elektrik"]{
 .aus-bildreihe:last-child img{
 
     width:100%;
-
     height:560px;
 
     object-fit:contain;
-
     object-position:center;
 
     display:block;
@@ -1251,7 +1248,6 @@ img[alt="Elektrik"]{
 
 }
 
-
 .aus-bereich-ueberschrift h2{
 
     color:#b49367;
@@ -1273,7 +1269,7 @@ img[alt="Elektrik"]{
 
     display:grid;
 
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2,1fr);
 
     gap:70px;
 
@@ -1282,7 +1278,6 @@ img[alt="Elektrik"]{
     align-items:start;
 
 }
-
 
 .aus-text-spalte{
 
@@ -1305,7 +1300,6 @@ img[alt="Elektrik"]{
 
 }
 
-
 .aus-textblock h2{
 
     color:#b49367;
@@ -1320,7 +1314,6 @@ img[alt="Elektrik"]{
 
 }
 
-
 .aus-textblock ul{
 
     margin:0;
@@ -1332,7 +1325,6 @@ img[alt="Elektrik"]{
     text-align:center;
 
 }
-
 
 .aus-textblock li{
 
@@ -1363,7 +1355,6 @@ img[alt="Elektrik"]{
 
     }
 
-
     .aus-einleitung-gold{
 
         font-size:20px;
@@ -1373,7 +1364,6 @@ img[alt="Elektrik"]{
         margin-bottom:20px;
 
     }
-
 
     .aus-bildreihe{
 
@@ -1385,7 +1375,6 @@ img[alt="Elektrik"]{
 
     }
 
-
     .aus-bildbox img{
 
         width:100%;
@@ -1396,6 +1385,13 @@ img[alt="Elektrik"]{
 
     }
 
+    .aus-oben img{
+
+        height:auto;
+
+        object-fit:contain;
+
+    }
 
     .aus-bereich-ueberschrift{
 
@@ -1403,13 +1399,11 @@ img[alt="Elektrik"]{
 
     }
 
-
     .aus-bereich-ueberschrift h2{
 
         font-size:26px;
 
     }
-
 
     .aus-text-zwei{
 
@@ -1421,27 +1415,17 @@ img[alt="Elektrik"]{
 
     }
 
-
     .aus-textblock{
 
         margin-bottom:38px;
 
     }
 
-
     .aus-textblock h2{
 
         font-size:24px;
 
     }
-
-
-    .aus-textblock ul{
-
-        padding:0;
-
-    }
-
 
     .aus-textblock li{
 
@@ -1450,7 +1434,6 @@ img[alt="Elektrik"]{
         line-height:1.65;
 
     }
-
 
     .aus-bildbox p{
 
@@ -1461,7 +1444,6 @@ img[alt="Elektrik"]{
         margin-top:10px;
 
     }
-
 }
 /*======================================================
 KONTAKT
