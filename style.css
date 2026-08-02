@@ -321,385 +321,6 @@ main{
 
 }
 
-/*======================================================
- GALERIE
-======================================================*/
-
-.bildergalerie{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-    margin:50px 0 70px;
-
-}
-
-.foto{
-
-    background:#ffffff;
-
-    border:1px solid #e3e3e3;
-
-    overflow:hidden;
-
-    transition:.3s;
-
-}
-
-.foto:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 12px 25px rgba(0,0,0,.12);
-
-}
-
-.foto img{
-
-    width:100%;
-
-    height:260px;
-
-    object-fit:cover;
-
-}
-
-.foto h3{
-
-    padding:18px;
-
-    text-align:center;
-
-    font-size:20px;
-
-    font-weight:400;
-
-}
-/*======================================================
- FOOTER
-======================================================*/
-
-footer{
-
-    width:100%;
-
-    margin-top:60px;
-
-    background:#ffffff;
-
-}
-
-.footer{
-
-    width:1600px;
-
-    margin:auto;
-
-    padding:25px 0;
-
-    text-align:center;
-
-    color:#777777;
-
-    font-size:15px;
-
-}
-
-/*======================================================
- HOVER
-======================================================*/
-
-.hero img{
-
-    transition:.35s;
-
-}
-
-.kachel img{
-
-    transition:.35s;
-
-}
-
-.kachel:hover img{
-
-    transform:scale(1.03);
-
-}
-
-.button{
-
-    letter-spacing:.3px;
-
-}
-
-.button:hover{
-
-    background:#9b7a4d;
-
-}
-
-/*======================================================
- TABLET
-======================================================*/
-
-@media (max-width:1400px){
-
-.header,
-main,
-.footer{
-
-    width:95%;
-
-}
-
-.kategorien{
-
-    grid-template-columns:repeat(3,1fr);
-
-}
-
-.bildergalerie{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-nav ul{
-
-    gap:12px;
-
-}
-
-nav li{
-
-    font-size:18px;
-
-}
-
-}
-
-/*======================================================
- SMARTPHONE
-======================================================*/
-
-@media (max-width:900px){
-
-.header{
-
-    flex-direction:column;
-
-    height:auto;
-
-    padding:20px 0;
-
-}
-
-.logo{
-
-    width:auto;
-
-    margin-bottom:15px;
-
-}
-
-nav ul{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-main{
-
-    width:94%;
-
-}
-
-.kategorien{
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:18px;
-
-}
-
-.bildergalerie{
-
-    grid-template-columns:1fr;
-
-}
-
-.hero img{
-
-    height:220px;
-
-}
-
-}
-
-/*======================================================
- KLEINE SMARTPHONES
-======================================================*/
-
-@media (max-width:600px){
-
-.kategorien{
-
-    grid-template-columns:1fr;
-
-}
-
-nav li{
-
-    font-size:16px;
-
-}
-
-.logo img{
-
-    width:60px;
-
-}
-
-.button{
-
-    font-size:18px;
-
-}
-
-.hero img{
-
-    height:180px;
-
-}
-
-}
-
-/*======================================================
- FEINSCHLIFF
-======================================================*/
-
-.hero{
-
-    overflow:hidden;
-
-}
-
-.kachel{
-
-    overflow:hidden;
-
-}
-
-.foto{
-
-    border-radius:2px;
-
-}
-
-nav a{
-
-    font-weight:400;
-
-}
-
-nav a.active{
-
-    font-weight:600;
-
-    color:#b49367;
-
-}
-
-nav a:hover{
-
-    color:#b49367;
-
-}
-
-body{
-
-    min-width:1200px;
-
-}
-/*======================================================
- HANDY & TABLET
-======================================================*/
-
-@media screen and (max-width:900px){
-
-body{
-    min-width:0;
-}
-
-.header{
-    width:100%;
-    height:auto;
-    padding:15px 20px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.header::after{
-    left:20px;
-    right:20px;
-}
-
-.logo{
-    margin:0 0 15px 0;
-    width:auto;
-}
-
-.logo img{
-    width:70px;
-}
-
-nav{
-    width:100%;
-    padding:0;
-}
-
-nav ul{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:14px;
-}
-
-nav li{
-    font-size:17px;
-}
-
-main{
-    width:95%;
-    margin:20px auto 40px;
-}
-
-.hero img{
-    width:100%;
-    height:auto;
-}
-
-.kategorien{
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-}
-
-.button{
-    font-size:16px;
-    padding:8px 0;
-}
-
-.footer{
-    width:100%;
-}
-}
 /* ==========================================
    ÜBER MICH – Gleich hohe Spalten (Final)
 =========================================== */
@@ -1842,6 +1463,188 @@ MOBIL
 .kontakt-formular h2{
 
     text-align:left;
+
+}
+
+}
+/*======================================================
+ HAUPTGALERIE
+======================================================*/
+
+.galerie-navigation{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    margin:20px 0 45px;
+
+}
+
+.galerie-navigation a{
+
+    display:inline-block;
+
+    background:#b49367;
+
+    color:#ffffff;
+
+    padding:10px 22px;
+
+    border-radius:6px;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.galerie-navigation a:hover{
+
+    background:#9c7b50;
+
+}
+
+.galerie-ueberschrift{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.galerie-ueberschrift h1{
+
+    font-size:36px;
+
+    font-weight:300;
+
+    color:#333;
+
+}
+
+
+/*======================================================
+ BILDERGALERIE
+======================================================*/
+
+.bildergalerie{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-bottom:60px;
+
+}
+
+.foto{
+
+    background:#ffffff;
+
+    border:1px solid #dddddd;
+
+    overflow:hidden;
+
+    transition:.30s;
+
+}
+
+.foto:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.foto img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    display:block;
+
+}
+
+.foto .button{
+
+    display:block;
+
+    width:100%;
+
+    margin:0;
+
+    border-radius:0;
+
+    padding:12px 10px;
+
+    background:#b49367;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.foto .button:hover{
+
+    background:#9c7b50;
+
+}
+
+
+/*======================================================
+ HANDY
+======================================================*/
+
+@media (max-width:900px){
+
+.galerie-navigation{
+
+    gap:10px;
+
+}
+
+.galerie-navigation a{
+
+    font-size:15px;
+
+    padding:8px 16px;
+
+}
+
+.bildergalerie{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+.foto img{
+
+    height:auto;
+
+    object-fit:contain;
 
 }
 
