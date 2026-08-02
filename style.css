@@ -1468,29 +1468,48 @@ MOBIL
 
 }
 /*======================================================
- HAUPTGALERIE
+ GALERIE
 ======================================================*/
 
-.galerie-navigation{
+/* Hauptbereich */
+
+.galerie-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px 30px;
+
+    margin:40px 0 70px;
+
+}
+
+
+/* Kategorien */
+
+.galerie-kategorien{
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
     flex-wrap:wrap;
 
-    gap:16px;
+    gap:18px;
 
     margin:20px 0 45px;
 
 }
 
-.galerie-navigation a{
 
-    display:inline-block;
+.galerie-kategorien a{
 
     background:#b49367;
 
-    color:#ffffff;
+    color:#fff;
 
     padding:10px 22px;
 
@@ -1504,72 +1523,30 @@ MOBIL
 
 }
 
-.galerie-navigation a:hover{
+
+.galerie-kategorien a:hover{
 
     background:#9c7b50;
 
 }
 
-.galerie-ueberschrift{
+
+/* Einzelnes Objekt */
+
+.galerie-item{
 
     text-align:center;
 
-    margin-bottom:40px;
-
-}
-
-.galerie-ueberschrift h1{
-
-    font-size:36px;
-
-    font-weight:300;
-
-    color:#333;
-
 }
 
 
-/*======================================================
- BILDERGALERIE
-======================================================*/
+/* Bild */
 
-.bildergalerie{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:35px;
-
-    margin-bottom:60px;
-
-}
-
-.foto{
-
-    background:#ffffff;
-
-    border:1px solid #dddddd;
-
-    overflow:hidden;
-
-    transition:.30s;
-
-}
-
-.foto:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:0 10px 25px rgba(0,0,0,.10);
-
-}
-
-.foto img{
+.galerie-item img{
 
     width:100%;
 
-    height:260px;
+    height:320px;
 
     object-fit:cover;
 
@@ -1577,25 +1554,33 @@ MOBIL
 
     display:block;
 
+    transition:.35s;
+
 }
 
-.foto .button{
+
+.galerie-item:hover img{
+
+    transform:scale(1.03);
+
+}
+
+
+/* Button */
+
+.galerie-button{
 
     display:block;
 
-    width:100%;
-
-    margin:0;
-
-    border-radius:0;
-
-    padding:12px 10px;
+    margin-top:12px;
 
     background:#b49367;
 
-    color:#ffffff;
+    color:#fff;
 
-    text-align:center;
+    padding:11px 0;
+
+    border-radius:6px;
 
     font-size:16px;
 
@@ -1605,9 +1590,25 @@ MOBIL
 
 }
 
-.foto .button:hover{
+
+.galerie-button:hover{
 
     background:#9c7b50;
+
+}
+
+
+/*======================================================
+ TABLET
+======================================================*/
+
+@media(max-width:1100px){
+
+.galerie-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
 
 }
 
@@ -1616,15 +1617,21 @@ MOBIL
  HANDY
 ======================================================*/
 
-@media (max-width:900px){
+@media(max-width:700px){
 
-.galerie-navigation{
+.galerie-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.galerie-kategorien{
 
     gap:10px;
 
 }
 
-.galerie-navigation a{
+.galerie-kategorien a{
 
     font-size:15px;
 
@@ -1632,20 +1639,9 @@ MOBIL
 
 }
 
-.bildergalerie{
-
-    grid-template-columns:1fr;
-
-    gap:25px;
-
-}
-
-.foto img{
+.galerie-item img{
 
     height:auto;
 
-    object-fit:contain;
-
 }
 
-}
