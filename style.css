@@ -1471,26 +1471,95 @@ MOBIL
 HAUPTGALERIE
 ======================================================*/
 
+.galerie-nav{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:18px;
+
+    margin:20px 0 45px;
+
+}
+
+.galerie-nav-btn{
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#b49367;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    border-radius:6px;
+
+    transition:.25s;
+
+}
+
+.galerie-nav-btn:hover{
+
+    background:#9d7b4d;
+
+    transform:translateY(-2px);
+
+}
+
+.nav-icon{
+
+    font-size:13px;
+
+    line-height:1;
+
+}
+
+
+/*======================================================
+GALERIEGRID
+======================================================*/
+
 .galerie-grid{
 
     display:grid;
 
     grid-template-columns:repeat(4,1fr);
 
-    gap:40px 24px;
+    gap:38px 24px;
 
-    margin:40px 0 70px;
+    margin:35px 0 70px;
 
 }
 
 
 /*======================================================
-OBJEKT
+GALERIE KARTE
 ======================================================*/
 
 .galerie-item{
 
     width:100%;
+
+    transition:.3s;
+
+}
+
+.galerie-item:hover{
+
+    transform:translateY(-4px);
 
 }
 
@@ -1530,17 +1599,186 @@ BUTTON
 
 .galerie-button{
 
+    width:100%;
+
+    height:40px;
+
+    margin-top:12px;
+
     display:flex;
 
     justify-content:center;
 
     align-items:center;
 
+    background:#b49367;
+
+    color:#ffffff;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:.2px;
+
+    transition:.25s;
+
+}
+
+.galerie-button:hover{
+
+    background:#9d7b4d;
+
+}
+
+
+/*======================================================
+TABLET
+======================================================*/
+
+@media(max-width:1300px){
+
+.galerie-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.galerie-nav{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+
+/*======================================================
+SMARTPHONE
+======================================================*/
+
+@media(max-width:900px){
+
+.galerie-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px 18px;
+
+}
+
+.galerie-nav{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+body{
+
+    min-width:0;
+
+}
+
+main{
+
+    width:95%;
+
+}
+
+}
+
+
+/*======================================================
+KLEINE SMARTPHONES
+======================================================*/
+
+@media(max-width:600px){
+
+.galerie-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.galerie-nav{
+
+    grid-template-columns:1fr;
+
+}
+
+.galerie-nav-btn{
+
+    height:44px;
+
+}
+
+}
+/*======================================================
+UNTERGALERIEN
+======================================================*/
+
+.untergalerie{
+
     width:100%;
 
-    height:42px;
+    margin:10px 0 60px;
 
-    margin-top:12px;
+}
+
+.untergalerie h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    font-weight:300;
+
+    margin-bottom:18px;
+
+    color:#333333;
+
+}
+
+.untergalerie p{
+
+    text-align:center;
+
+    font-size:19px;
+
+    color:#666666;
+
+    margin-bottom:45px;
+
+}
+
+
+/*======================================================
+ZURÜCK ZUR GALERIE
+======================================================*/
+
+.zurueck{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:45px;
+
+}
+
+.zurueck a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:240px;
+
+    height:42px;
 
     background:#b49367;
 
@@ -1554,46 +1792,99 @@ BUTTON
 
     transition:.25s;
 
-    text-align:center;
-
 }
 
-.galerie-button:hover{
+.zurueck a:hover{
 
-    background:#9c7b50;
+    background:#9d7b4d;
 
 }
 
 
 /*======================================================
-KATEGORIEN
+OBJEKTGALERIE
 ======================================================*/
 
-.galerie-nav{
+.objekt-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px 24px;
+
+}
+
+.objekt{
 
     width:100%;
 
-    margin:10px auto 45px;
+}
+
+.objekt img{
+
+    width:100%;
+
+    aspect-ratio:1;
+
+    object-fit:cover;
+
+    border:1px solid #dddddd;
+
+    transition:.35s;
 
 }
 
-.galerie-nav-zeile{
+.objekt:hover img{
+
+    transform:scale(1.02);
+
+}
+
+.objekt-button{
+
+    width:100%;
+
+    height:40px;
+
+    margin-top:12px;
 
     display:flex;
 
+    align-items:center;
+
     justify-content:center;
 
-    gap:30px;
+    background:#b49367;
 
-    margin-bottom:18px;
+    color:#ffffff;
+
+    font-size:15px;
+
+    border-radius:6px;
+
+    transition:.25s;
 
 }
 
-.galerie-nav-btn{
+.objekt-button:hover{
 
-    width:230px;
+    background:#9d7b4d;
 
-    height:48px;
+}
+
+
+/*======================================================
+TOP BUTTON
+======================================================*/
+
+.top-button{
+
+    width:80px;
+
+    height:42px;
+
+    margin:70px auto 0;
 
     display:flex;
 
@@ -1605,32 +1896,324 @@ KATEGORIEN
 
     color:#ffffff;
 
-    font-size:18px;
+    border-radius:6px;
 
-    font-weight:500;
-
-    border-radius:8px;
+    font-size:15px;
 
     transition:.25s;
 
 }
 
-.galerie-nav-btn:hover{
+.top-button:hover{
 
-    background:#9c7b50;
+    background:#9d7b4d;
 
-    transform:translateY(-2px);
+}
+/*======================================================
+DETAILSEITEN DER BILDER
+======================================================*/
+
+.objekt-detail{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:40px auto 80px;
+
+}
+
+.objekt-detail h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    font-weight:300;
+
+    color:#333333;
+
+    margin-bottom:15px;
+
+}
+
+.objekt-detail-untertitel{
+
+    text-align:center;
+
+    color:#b49367;
+
+    font-size:22px;
+
+    font-weight:500;
+
+    margin-bottom:40px;
+
+}
+
+.objekt-bild{
+
+    width:100%;
+
+    margin-bottom:40px;
+
+}
+
+.objekt-bild img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    border:1px solid #dddddd;
+
+}
+
+.objekt-info{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    margin-top:40px;
+
+}
+
+.info-box{
+
+    width:100%;
+
+}
+
+.info-box h2{
+
+    color:#b49367;
+
+    font-size:28px;
+
+    font-weight:400;
+
+    margin-bottom:18px;
+
+}
+
+.info-box p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#555555;
+
+    margin-bottom:18px;
+
+}
+
+.info-box ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.info-box li{
+
+    font-size:18px;
+
+    color:#555555;
+
+    line-height:1.8;
+
+    margin-bottom:8px;
+
+}
+
+.detail-button{
+
+    width:260px;
+
+    height:44px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:60px auto 0;
+
+    background:#b49367;
+
+    color:#ffffff;
+
+    border-radius:6px;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.detail-button:hover{
+
+    background:#9d7b4d;
 
 }
 
 
 /*======================================================
-HANDY
+DETAILSEITE HANDY
 ======================================================*/
 
-@media(max-width:1200px){
+@media(max-width:900px){
 
-.galerie-grid{
+.objekt-detail{
+
+    width:95%;
+
+}
+
+.objekt-info{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+.objekt-detail h1{
+
+    font-size:34px;
+
+}
+
+.objekt-detail-untertitel{
+
+    font-size:18px;
+
+}
+
+.info-box h2{
+
+    font-size:24px;
+
+}
+
+.info-box p,
+.info-box li{
+
+    font-size:17px;
+
+}
+
+.detail-button{
+
+    width:100%;
+
+}
+
+}
+/*======================================================
+FOOTER
+======================================================*/
+
+footer{
+
+    width:100%;
+
+    margin-top:80px;
+
+    background:#ffffff;
+
+    border-top:1px solid #dddddd;
+
+}
+
+.footer{
+
+    width:1400px;
+
+    margin:auto;
+
+    padding:30px 0;
+
+    text-align:center;
+
+    color:#777777;
+
+    font-size:15px;
+
+}
+
+
+/*======================================================
+ALLGEMEINE HOVER EFFEKTE
+======================================================*/
+
+.galerie-item,
+.objekt,
+.kachel{
+
+    overflow:hidden;
+
+}
+
+.galerie-item img,
+.objekt img,
+.kachel img{
+
+    transition:.35s;
+
+}
+
+.galerie-item:hover img,
+.objekt:hover img,
+.kachel:hover img{
+
+    transform:scale(1.03);
+
+}
+
+.galerie-button,
+.objekt-button,
+.galerie-nav-btn{
+
+    letter-spacing:.2px;
+
+}
+
+
+/*======================================================
+GROSSE TABLETS
+======================================================*/
+
+@media(max-width:1400px){
+
+.header,
+main,
+.footer{
+
+    width:95%;
+
+}
+
+.galerie-grid,
+.objekt-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.galerie-nav{
 
     grid-template-columns:repeat(3,1fr);
 
@@ -1638,21 +2221,53 @@ HANDY
 
 }
 
+
+/*======================================================
+TABLETS
+======================================================*/
+
 @media(max-width:900px){
 
-.galerie-nav-zeile{
+body{
+
+    min-width:0;
+
+}
+
+.header{
+
+    width:100%;
+
+    height:auto;
+
+    padding:20px;
+
+    flex-direction:column;
+
+}
+
+.logo{
+
+    margin:0 0 15px;
+
+}
+
+nav ul{
 
     flex-wrap:wrap;
 
-}
-
-.galerie-nav-btn{
-
-    width:220px;
+    justify-content:center;
 
 }
 
-.galerie-grid{
+main{
+
+    width:95%;
+
+}
+
+.galerie-grid,
+.objekt-grid{
 
     grid-template-columns:repeat(2,1fr);
 
@@ -1660,11 +2275,35 @@ HANDY
 
 }
 
+.galerie-nav{
+
+    grid-template-columns:repeat(2,1fr);
+
 }
+
+.footer{
+
+    width:100%;
+
+}
+
+}
+
+
+/*======================================================
+SMARTPHONES
+======================================================*/
 
 @media(max-width:600px){
 
-.galerie-grid{
+.galerie-grid,
+.objekt-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.galerie-nav{
 
     grid-template-columns:1fr;
 
@@ -1673,6 +2312,21 @@ HANDY
 .galerie-nav-btn{
 
     width:100%;
+
+}
+
+.galerie-button,
+.objekt-button{
+
+    font-size:14px;
+
+}
+
+.seitenkopf h1,
+.untergalerie h1,
+.objekt-detail h1{
+
+    font-size:30px;
 
 }
 
