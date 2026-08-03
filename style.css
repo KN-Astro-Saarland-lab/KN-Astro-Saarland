@@ -1489,17 +1489,6 @@ HAUPTGALERIE
 GALERIEGRID
 ======================================================*/
 
-.galerie-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:38px 24px;
-
-    margin:35px 0 70px;
- }
- 
 .galerie-nav-btn{
 
     height:42px;
