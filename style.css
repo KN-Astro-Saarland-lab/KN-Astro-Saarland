@@ -1467,6 +1467,7 @@ MOBIL
 }
 
 }
+
 /*======================================================
 HAUPTGALERIE
 ======================================================*/
@@ -1484,10 +1485,6 @@ HAUPTGALERIE
     margin:20px 0 45px;
 
 }
-
-/*======================================================
-GALERIEGRID
-======================================================*/
 
 .galerie-nav-btn{
 
@@ -1530,6 +1527,52 @@ GALERIEGRID
     line-height:1;
 
 }
+
+
+/*======================================================
+GALERIETITEL
+======================================================*/
+
+.galerie-titel{
+
+    width:100%;
+
+    margin:15px 0 35px;
+
+    text-align:center;
+
+}
+
+.galerie-titel h1{
+
+    display:inline-block;
+
+    font-size:38px;
+
+    font-weight:300;
+
+    color:#8c6a42;
+
+    padding-bottom:12px;
+
+    border-bottom:2px solid #b49367;
+
+    letter-spacing:.4px;
+
+}
+
+.galerie-titel h1 span{
+
+    display:inline-block;
+
+}
+
+.galerie-trennlinie{
+
+    display:none;
+
+}
+
 
 /*======================================================
 GALERIEGRID
@@ -1635,7 +1678,6 @@ BUTTON
     background:#9d7b4d;
 
 }
-
 
 /*======================================================
 TABLET
