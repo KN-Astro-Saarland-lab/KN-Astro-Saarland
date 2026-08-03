@@ -1485,6 +1485,61 @@ HAUPTGALERIE
 
 }
 
+/*======================================================
+GALERIE ÜBERSCHRIFT
+======================================================*/
+
+.galerie-titel{
+
+    width:100%;
+    max-width:1400px;
+    margin:20px auto 35px;
+    text-align:center;
+
+}
+
+.galerie-trennlinie{
+
+    width:100%;
+    height:3px;
+    background:#2f2f2f;
+    margin-bottom:26px;
+
+}
+
+.galerie-titel h1{
+
+    margin:0;
+
+}
+
+.galerie-titel h1 span{
+
+    display:inline-block;
+    background:#bdbdbd;
+    color:#ffffff;
+    font-size:30px;
+    font-weight:700;
+    padding:4px 12px;
+    line-height:1.2;
+
+}
+
+
+/*======================================================
+GALERIEGRID
+======================================================*/
+
+.galerie-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px 24px;
+
+    margin:35px 0 70px;
+ 
 .galerie-nav-btn{
 
     height:42px;
