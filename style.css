@@ -2455,3 +2455,68 @@ UNTERSEITE STERNHAUFEN - ZWEI SPALTEN
     }
 
 }
+/*======================================================
+UNTERSEITE PLANETEN - ZWEI SPALTEN
+======================================================*/
+
+.planeten-typen{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    margin:0 0 45px;
+}
+
+.planeten-spalte h3{
+    font-size:16px;
+    color:#b49367;
+    margin-bottom:10px;
+}
+
+.planeten-spalte p{
+    font-size:15px;
+    line-height:1.5;
+    color:#555;
+    margin-bottom:14px;
+}
+
+.planeten-spalte p.untergruppe{
+    font-weight:700;
+    color:#333;
+    margin-bottom:6px;
+}
+
+.planeten-spalte ul{
+    margin:0 0 14px;
+    padding:0;
+    list-style:none;
+}
+
+.planeten-spalte ul.unterliste{
+    margin-left:16px;
+}
+
+.planeten-spalte li{
+    position:relative;
+    padding-left:16px;
+    margin-bottom:8px;
+    color:#555;
+    font-size:15px;
+    line-height:1.5;
+}
+
+.planeten-spalte li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:#b49367;
+}
+
+@media screen and (max-width:900px){
+
+    .planeten-typen{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+}
