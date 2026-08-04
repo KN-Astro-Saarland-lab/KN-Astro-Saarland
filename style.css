@@ -2382,29 +2382,25 @@ UNTERSEITE GALAXIEN - TEXT LINKSBÜNDIG
 ======================================================*/
 
 .text-left{
-
     width:100%;
     max-width:none;
     margin:45px 0 55px;
-
 }
 
 .text-left,
 .text-left p{
-
     text-align:left;
-
 }
 
 .text-left h1{
-
     font-size:32px;
-
 }
 
 .text-left p{
-
     font-size:16px;
     line-height:1.4;
+}
 
+.text-left p b{
+    color:#b49367;
 }
