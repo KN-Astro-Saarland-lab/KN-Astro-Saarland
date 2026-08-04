@@ -2535,3 +2535,196 @@ UNTERSEITE PLANETEN - ZWEI SPALTEN
     }
 
 }
+/*======================================================
+OBJEKTDATEN-M31 ANDROMEDA
+======================================================*/
+
+.objektseite{
+
+    width:1200px;
+
+    margin:40px auto 80px;
+
+}
+
+.objektseite h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    font-weight:300;
+
+    color:#8c6a42;
+
+    margin-bottom:18px;
+
+    padding-bottom:12px;
+
+    border-bottom:2px solid #b49367;
+
+}
+
+.objekt-untertitel{
+
+    width:900px;
+
+    margin:0 auto 40px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+.objektbild{
+
+    margin:0 auto 45px;
+
+    text-align:center;
+
+}
+
+.objektbild img{
+
+    width:100%;
+
+    max-width:1100px;
+
+    border-radius:10px;
+
+    border:1px solid #d8d8d8;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.12);
+
+}
+
+.objektbeschreibung{
+
+    width:1100px;
+
+    margin:0 auto 55px;
+
+}
+
+.objektbeschreibung p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#555555;
+
+    margin-bottom:22px;
+
+    text-align:justify;
+
+}
+
+/*======================================================
+DATENKARTEN
+======================================================*/
+
+.datenbereich{
+
+    width:1200px;
+
+    margin:30px auto 60px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+}
+
+.datenkarte{
+
+    background:#ffffff;
+
+    border:1px solid #dddddd;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.30s;
+
+}
+
+.datenkarte:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+
+}
+
+.datenkarte h2{
+
+    background:#b49367;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    font-size:23px;
+
+    font-weight:400;
+
+    padding:16px;
+
+}
+
+.datenzeile{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.datenzeile:last-child{
+
+    border-bottom:none;
+
+}
+
+.datenlabel{
+
+    background:#fafafa;
+
+    padding:14px 18px;
+
+    font-weight:600;
+
+    color:#555555;
+
+}
+
+.datenwert{
+
+    padding:14px 18px;
+
+    color:#333333;
+
+    background:#ffffff;
+
+}
+
+.objekt-zurueck{
+
+    width:320px;
+
+    margin:60px auto 0;
+
+}
