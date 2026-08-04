@@ -2512,11 +2512,26 @@ UNTERSEITE PLANETEN - ZWEI SPALTEN
     color:#b49367;
 }
 
+.planeten-untergruppen{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.planeten-untergruppe-block ul.unterliste{
+    margin-left:0;
+}
+
 @media screen and (max-width:900px){
 
     .planeten-typen{
         grid-template-columns:1fr;
         gap:30px;
+    }
+
+    .planeten-untergruppen{
+        grid-template-columns:1fr;
+        gap:15px;
     }
 
 }
