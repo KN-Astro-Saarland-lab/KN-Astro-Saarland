@@ -16,10 +16,14 @@
 
 <header>
 
+<div class="header">
+
 <div class="logo">
+
 <a href="index.html">
 <img src="KN.png" alt="KN Logo">
 </a>
+
 </div>
 
 <nav>
@@ -27,71 +31,160 @@
 <ul>
 
 <li><a href="index.html">Home</a></li>
+<li>|</li>
+
 <li><a class="active" href="galerie.html">Galerie</a></li>
+<li>|</li>
+
 <li><a href="ueber-mich.html">Über Mich</a></li>
+<li>|</li>
+
 <li><a href="gartensternwarte.html">Gartensternwarte</a></li>
+<li>|</li>
+
 <li><a href="ausruestung.html">Ausrüstung</a></li>
+<li>|</li>
+
 <li><a href="kontakt.html">Kontakt</a></li>
 
 </ul>
 
 </nav>
 
+</div>
+
 </header>
 
 <main>
 
-<section class="seitenkopf">
+<section class="galerie-nav">
+
+<a href="nebel.html" class="galerie-nav-btn">
+<span class="nav-icon">📑</span>
+<span>Nebelarten</span>
+</a>
+
+<a href="galaxien.html" class="galerie-nav-btn">
+<span class="nav-icon">📑</span>
+<span>Galaxien</span>
+</a>
+
+<a href="sternhaufen.html" class="galerie-nav-btn">
+<span class="nav-icon">📑</span>
+<span>Sternhaufen</span>
+</a>
+
+<a href="mond.html" class="galerie-nav-btn">
+<span class="nav-icon">📑</span>
+<span>Mond</span>
+</a>
+
+<a href="planeten.html" class="galerie-nav-btn">
+<span class="nav-icon">📑</span>
+<span>Planeten</span>
+</a>
+
+<a href="kometen.html" class="galerie-nav-btn">
+<span class="nav-icon">📑</span>
+<span>Kometen</span>
+</a>
+
+</section>
+
+<section class="seitenkopf text-left">
 
 <h1>Planeten</h1>
 
-<p>Meine Aufnahmen der Planeten unseres Sonnensystems.</p>
+<p>
+
+In unserem Sonnensystem gibt es insgesamt <b>acht Planeten</b>, die sich in
+<b>zwei Hauptkategorien</b> unterteilen lassen. Diese werden nochmals in
+Untergruppen eingeteilt:
+
+</p>
 
 </section>
 
-<section class="bildergalerie">
+<section class="planeten-typen">
 
-<div class="foto">
-<img src="bilder/planeten/jupiter.jpg" alt="Jupiter">
-<h3>Jupiter</h3>
+<div class="planeten-spalte">
+
+<h3>1. Gesteinsplaneten (terrestrische Planeten)</h3>
+
+<p>Sie befinden sich nahe der Sonne, sind relativ klein und besitzen eine feste Oberfläche aus Gestein.</p>
+
+<ul>
+<li><b>Merkur</b> – der kleinste und sonnennächste Planet.</li>
+<li><b>Venus</b> – ein sehr heißer Planet mit dichter Atmosphäre.</li>
+<li><b>Erde</b> – unser Heimatplanet mit flüssigem Wasser.</li>
+<li><b>Mars</b> – der rote Nachbarplanet der Erde.</li>
+</ul>
+
 </div>
 
-<div class="foto">
-<img src="bilder/planeten/saturn.jpg" alt="Saturn">
-<h3>Saturn</h3>
-</div>
+<div class="planeten-spalte">
 
-<div class="foto">
-<img src="bilder/planeten/mars.jpg" alt="Mars">
-<h3>Mars</h3>
-</div>
+<h3>2. Riesenplaneten (jovianische Planeten)</h3>
 
-<div class="foto">
-<img src="bilder/planeten/venus.jpg" alt="Venus">
-<h3>Venus</h3>
-</div>
+<p>Diese großen Planeten liegen in den äußeren Bereichen des Sonnensystems und haben keine feste Oberfläche.</p>
 
-<div class="foto">
-<img src="bilder/planeten/uranus.jpg" alt="Uranus">
-<h3>Uranus</h3>
-</div>
+<p class="untergruppe">Gasriesen:</p>
 
-<div class="foto">
-<img src="bilder/planeten/neptun.jpg" alt="Neptun">
-<h3>Neptun</h3>
+<ul class="unterliste">
+<li><b>Jupiter</b> – der größte Planet des Sonnensystems.</li>
+<li><b>Saturn</b> – bekannt für sein auffälliges Ringsystem.</li>
+</ul>
+
+<p class="untergruppe">Eisriesen:</p>
+
+<ul class="unterliste">
+<li><b>Uranus</b> – ein kalter Planet mit stark geneigter Achse.</li>
+<li><b>Neptun</b> – der äußerste Planet des Sonnensystems.</li>
+</ul>
+
 </div>
 
 </section>
+
+<section class="galerie-grid">
+
+<!-- =========================
+REIHE 1
+========================= -->
+
+<div class="galerie-item">
+<img src="Jupiter.png" alt="Jupiter">
+<a href="jupiter.html" class="galerie-button">
+Jupiter
+</a>
+</div>
+
+<div class="galerie-item">
+<img src="Saturn.png" alt="Saturn">
+<a href="saturn.html" class="galerie-button">
+Saturn
+</a>
+</div>
+
+</section>
+
+<div class="zurueck">
+
+<a href="galerie.html" class="galerie-button">
+← Zurück zur Galerie
+</a>
+
+</div>
 
 </main>
 
 <footer>
 
-<p>
+<div class="footer">
 
 © 2026 Kai Nimmrichter – Astrofotografie aus dem Saarland
 
-</p>
+</div>
 
 </footer>
 
