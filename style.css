@@ -2377,3 +2377,13 @@ SMARTPHONES
 
 }
 
+/*======================================================
+UNTERSEITE GALAXIEN - TEXT LINKSBÜNDIG
+======================================================*/
+
+.text-left,
+.text-left p{
+
+    text-align:left;
+
+}
