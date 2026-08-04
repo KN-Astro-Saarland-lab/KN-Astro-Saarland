@@ -2396,6 +2396,7 @@ UNTERSEITE GALAXIEN - TEXT LINKSBÜNDIG
     font-size:32px;
     padding-bottom:15px;
     border-bottom:2px solid #b49367;
+    display:inline-block;
 }
 
 .text-left p{
