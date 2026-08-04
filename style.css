@@ -2381,6 +2381,14 @@ SMARTPHONES
 UNTERSEITE GALAXIEN - TEXT LINKSBÜNDIG
 ======================================================*/
 
+.text-left{
+
+    width:100%;
+    max-width:none;
+    margin:45px 0 55px;
+
+}
+
 .text-left,
 .text-left p{
 
