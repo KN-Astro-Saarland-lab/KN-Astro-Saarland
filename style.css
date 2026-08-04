@@ -2395,3 +2395,16 @@ UNTERSEITE GALAXIEN - TEXT LINKSBÜNDIG
     text-align:left;
 
 }
+
+.text-left h1{
+
+    font-size:32px;
+
+}
+
+.text-left p{
+
+    font-size:17px;
+    line-height:1.6;
+
+}
