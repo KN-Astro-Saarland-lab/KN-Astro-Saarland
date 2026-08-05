@@ -2684,7 +2684,7 @@ OBJEKTDATEN - M31 ANDROMEDA
 
 /* 3 SPALTEN – neue Klasse */
 .objekt-daten-3{
-    width:1150px;
+    width:14000px;
     margin:0 auto 70px;
     display:grid;
     grid-template-columns:1fr 1fr 1fr; /* 3 Spalten */
