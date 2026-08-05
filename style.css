@@ -2551,7 +2551,7 @@ OBJEKTDATEN - M31 ANDROMEDA
 
 /* 3 SPALTEN – neue Klasse */
 .objekt-daten-3{
-    width:1150px; /* gleiche Breite wie 2 Spalten → Dark-Modus bleibt korrekt */
+    width:1150px; /* gleiche Breite wie 2 Spalten */
     margin:0 auto 70px;
     display:grid;
     grid-template-columns:1fr 1fr 1fr; /* 3 Spalten */
@@ -2757,7 +2757,6 @@ RESPONSIVE
     width:100%;
 }
 
-/* 2 UND 3 SPALTEN mobil */
 .objekt-daten,
 .objekt-daten-3{
     width:100%;
