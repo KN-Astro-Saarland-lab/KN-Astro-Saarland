@@ -66,13 +66,13 @@
 
 <h1>M31 Andromeda Galaxie</h1>
 
+<div class="gold-line"></div>
+
 <p class="objekt-sub">
 
 Die Andromedagalaxie ist die größte Galaxie der Lokalen Gruppe und unser nächster großer galaktischer Nachbar.
 
 </p>
-
-<div class="gold-line"></div>
 
 <div class="hero-image">
 
@@ -101,52 +101,6 @@ M31 ist eines der faszinierendsten Objekte des Herbsthimmels und zählt zu den b
 </p>
 
 </section>
-<!--======================================================
-BILDERGALERIE
-======================================================-->
-
-<section class="objekt-galerie">
-
-<div class="hauptbild">
-
-<img id="grossesBild"
-     src="M31 Andromeda.png"
-     alt="M31 Andromeda">
-
-</div>
-
-<div class="vorschaubilder">
-
-<img class="thumb active"
-     src="M31 Andromeda.png"
-     alt="M31"
-     onclick="bildWechsel(this)">
-
-<!-- Weitere Bilder später einfach ergänzen -->
-
-<!--
-
-<img class="thumb"
-     src="M31 Detail.png"
-     alt="Detail"
-     onclick="bildWechsel(this)">
-
-<img class="thumb"
-     src="M31 Kern.png"
-     alt="Kern"
-     onclick="bildWechsel(this)">
-
-<img class="thumb"
-     src="M31 Weitfeld.png"
-     alt="Weitfeld"
-     onclick="bildWechsel(this)">
-
--->
-
-</div>
-
-</section>
-
 
 <!--======================================================
 OBJEKTDATEN
@@ -157,8 +111,6 @@ OBJEKTDATEN
 <div class="info-card">
 
 <h2>
-
-<img src="icons/galaxy.svg" alt="">
 
 Astronomische Daten
 
@@ -227,8 +179,6 @@ Astronomische Daten
 <div class="info-card">
 
 <h2>
-
-<img src="icons/camera.svg" alt="">
 
 Meine Aufnahmedaten
 
@@ -317,6 +267,7 @@ Meine Aufnahmedaten
 </div>
 
 </section>
+
 <!--======================================================
 ZURÜCK
 ======================================================-->
@@ -344,29 +295,6 @@ ZURÜCK
 </div>
 
 </footer>
-
-
-<!--======================================================
-BILDWECHSEL
-======================================================-->
-
-<script>
-
-function bildWechsel(element){
-
-document.getElementById("grossesBild").src = element.src;
-
-document.querySelectorAll(".thumb").forEach(function(bild){
-
-bild.classList.remove("active");
-
-});
-
-element.classList.add("active");
-
-}
-
-</script>
 
 </body>
 
