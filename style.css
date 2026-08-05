@@ -2992,46 +2992,42 @@ KEINE ZEILENUMBRÜCHE
     overflow-wrap:break-word;
 }
 /* =========================================================
-   STERNHAUFEN – OPTIK IDENTISCH ZU M31
+   STERNHAUFEN – OPTIK IDENTISCH ZU M31 (ÜBERSCHREIBT ALLES)
    ========================================================= */
 
-.objekt-daten-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 40px;
-    flex-wrap: wrap;
+section.objekt-daten-2 {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 40px !important;
+    margin-top: 40px !important;
+    flex-wrap: wrap !important;
 }
 
-/* Karten-Optik wie M31 */
-.objekt-daten-2 .info-card {
-    background: rgba(0, 0, 0, 0.45);      /* gleiche Transparenz wie M31 */
-    padding: 30px;                        /* gleiche Innenabstände */
-    border-radius: 12px;                  /* gleiche Rundung */
-    box-shadow: 0 0 15px rgba(0,0,0,0.4); /* gleiche Schattenwirkung */
-    border: 1px solid rgba(255,255,255,0.15); /* feine Linie wie M31 */
-    flex: 1;
-    min-width: 360px;
-    max-width: 520px;
+section.objekt-daten-2 .info-card {
+    background: rgba(0, 0, 0, 0.45) !important;
+    padding: 30px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    flex: 1 !important;
+    min-width: 360px !important;
+    max-width: 520px !important;
 }
 
-/* Tabellenzeilen wie M31 */
-.objekt-daten-2 .info-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    font-size: 1rem;
+section.objekt-daten-2 .info-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-bottom: 12px !important;
+    font-size: 1rem !important;
 }
 
-/* Linke Spalte (Titel) wie M31 */
-.objekt-daten-2 .info-row span:first-child {
-    font-weight: 600;
-    color: #ffb347; /* M31 Orange */
+section.objekt-daten-2 .info-row span:first-child {
+    font-weight: 600 !important;
+    color: #ffb347 !important; /* M31 Orange */
 }
 
-/* Rechte Spalte (Werte) wie M31 */
-.objekt-daten-2 .info-row span:last-child {
-    color: #ffffff;
+section.objekt-daten-2 .info-row span:last-child {
+    color: #ffffff !important;
 }
