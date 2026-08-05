@@ -2886,7 +2886,7 @@ OBJEKTDATEN – 3 SPALTEN (NEU)
 ======================================================*/
 
 .objekt-daten-3{
-    width:1400px; 
+    width:1500px; 
     margin:0 auto 70px;
     display:grid;
     grid-template-columns:1fr 1fr 1fr; /* 3 Spalten */
