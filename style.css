@@ -2536,204 +2536,6 @@ UNTERSEITE PLANETEN - ZWEI SPALTEN
 
 }
 /*======================================================
-OBJEKTSEITE-M31 ANDROMEDA (DARK MODE)
-======================================================*/
-
-.dark-page{
-
-    background:#0f1115;
-
-    color:#ffffff;
-
-}
-
-.dark-page main{
-
-    width:1400px;
-
-    margin:40px auto 80px;
-
-}
-
-.objekt-dark{
-
-    width:100%;
-
-}
-
-.objekt-dark h1{
-
-    text-align:center;
-
-    font-size:48px;
-
-    font-weight:300;
-
-    color:#b49367;
-
-    letter-spacing:1px;
-
-    margin-bottom:18px;
-
-}
-
-.objekt-sub{
-
-    width:900px;
-
-    margin:0 auto;
-
-    text-align:center;
-
-    color:#b8b8b8;
-
-    font-size:18px;
-
-    line-height:1.8;
-
-}
-
-.gold-line{
-
-    width:140px;
-
-    height:2px;
-
-    background:#b49367;
-
-    margin:35px auto 55px;
-
-}
-
-/*======================================================
-HAUPTBILD
-======================================================*/
-
-.hero-image{
-
-    text-align:center;
-
-    margin-bottom:60px;
-
-}
-
-.hero-image img{
-
-    width:100%;
-
-    max-width:1150px;
-
-    border-radius:12px;
-
-    border:1px solid #3b3b3b;
-
-    box-shadow:0 15px 45px rgba(0,0,0,.55);
-
-}
-
-.objekt-text{
-
-    width:1100px;
-
-    margin:0 auto 70px;
-
-}
-
-.objekt-text p{
-
-    color:#cfcfcf;
-
-    font-size:18px;
-
-    line-height:2;
-
-    text-align:justify;
-
-    margin-bottom:24px;
-
-}
-/*======================================================
-BILDERGALERIE
-======================================================*/
-
-.objekt-galerie{
-
-    width:1150px;
-
-    margin:0 auto 70px;
-
-}
-
-.hauptbild{
-
-    text-align:center;
-
-}
-
-.hauptbild img{
-
-    width:100%;
-
-    border-radius:12px;
-
-    border:1px solid #2d2f35;
-
-    box-shadow:0 15px 45px rgba(0,0,0,.55);
-
-    transition:.35s;
-
-}
-
-.vorschaubilder{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:18px;
-
-    margin-top:25px;
-
-    flex-wrap:wrap;
-
-}
-
-.thumb{
-
-    width:150px;
-
-    height:95px;
-
-    object-fit:cover;
-
-    border-radius:8px;
-
-    border:2px solid #2f3138;
-
-    cursor:pointer;
-
-    transition:.30s;
-
-}
-
-.thumb:hover{
-
-    transform:translateY(-4px);
-
-    border-color:#b49367;
-
-}
-
-.thumb.active{
-
-    border-color:#b49367;
-
-    box-shadow:0 0 18px rgba(180,147,103,.55);
-
-}
-
-
-/*======================================================
 OBJEKTSEITE DUNKEL - M31 ANDROMEDA
 ======================================================*/
 
@@ -2749,22 +2551,18 @@ OBJEKTSEITE DUNKEL - M31 ANDROMEDA
 
 .objekt-dark{
     width:100%;
+    text-align:center;
 }
 
 .objekt-dark h1{
-    text-align:center;
+    display:inline-block;
     font-size:48px;
     font-weight:300;
     color:#b49367;
     letter-spacing:1px;
-    margin-bottom:18px;
-}
-
-.gold-line{
-    width:140px;
-    height:2px;
-    background:#b49367;
-    margin:0 auto 30px;
+    padding-bottom:18px;
+    border-bottom:2px solid #b49367;
+    margin-bottom:30px;
 }
 
 .objekt-sub{
@@ -2875,3 +2673,120 @@ OBJEKTSEITE-M31 ANDROMEDA (ABSCHLUSS)
 
 .objekt-back{
     width:340px;
+    margin:70px auto 30px;
+}
+
+.objekt-back a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:52px;
+    background:#b49367;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:500;
+    border-radius:8px;
+    border:1px solid #c7a77a;
+    transition:.30s;
+}
+
+.objekt-back a:hover{
+    background:#c7a77a;
+    color:#ffffff;
+    transform:translateY(-3px);
+    box-shadow:0 12px 28px rgba(180,147,103,.35);
+}
+
+/*======================================================
+FOOTER DARK
+======================================================*/
+
+.dark-page footer{
+    margin-top:80px;
+    background:#0b0d11;
+    border-top:1px solid #2b2f37;
+}
+
+.dark-page .footer{
+    width:1400px;
+    margin:0 auto;
+    padding:28px 0;
+    text-align:center;
+    color:#9f9f9f;
+    font-size:15px;
+    letter-spacing:.3px;
+}
+
+/*======================================================
+NAVIGATION DARK
+======================================================*/
+
+.dark-page .header{
+    border-bottom:1px solid #2b2f37;
+}
+
+.dark-page nav a{
+    color:#e6e6e6;
+}
+
+.dark-page nav a:hover{
+    color:#b49367;
+}
+
+.dark-page nav a.active{
+    color:#b49367;
+}
+
+.dark-page nav ul li{
+    color:#555555;
+}
+
+/*======================================================
+SCROLLBAR
+======================================================*/
+
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-track{
+    background:#12151b;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#b49367;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#c6a474;
+}
+
+/*======================================================
+RESPONSIVE
+======================================================*/
+
+@media (max-width:1200px){
+
+.dark-page main{
+    width:95%;
+}
+
+.objekt-text,
+.objekt-daten{
+    width:100%;
+}
+
+.objekt-daten{
+    grid-template-columns:1fr;
+}
+
+.objekt-sub{
+    width:95%;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+}
