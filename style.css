@@ -2544,20 +2544,27 @@ OBJEKTDATEN – M31 ANDROMEDA
     width:1150px;
     margin:0 auto 70px;
     display:grid;
-    grid-template-columns:1fr 1fr; /* 2 Spalten */
+    grid-template-columns:1fr 1fr;
     gap:34px;
-    align-items:stretch; /* gleiche Höhe */
+    align-items:stretch;
 }
 
 /* 3 SPALTEN – breiter & harmonisch */
 .objekt-daten-3{
     width:100%;
-    max-width:1400px; /* mehr Platz für 3 Karten */
+    max-width:1400px; /* gleiche Breite wie Footer */
     margin:0 auto 70px;
     display:grid;
-    grid-template-columns:repeat(3, 1fr); /* 3 Spalten */
+    grid-template-columns:repeat(3, 1fr);
     gap:34px;
     align-items:stretch;
+}
+
+/* WICHTIG: MAIN MUSS AUCH BREITER SEIN */
+.dark-page main{
+    width:100%;
+    max-width:1400px; /* damit Dark-Modus nicht kaputt geht */
+    margin:0 auto;
 }
 
 .info-card{
@@ -2597,14 +2604,13 @@ OBJEKTDATEN – M31 ANDROMEDA
     text-align:center;
 }
 
-
 /*==========================
 ZEILEN
 ==========================*/
 
 .info-row{
     display:grid;
-    grid-template-columns:170px 1fr; /* BÜNDIG & harmonisch */
+    grid-template-columns:170px 1fr; /* harmonisch & bündig */
     min-height:52px;
     border-bottom:1px solid #30343b;
 }
@@ -2612,7 +2618,6 @@ ZEILEN
 .info-row:last-child{
     border-bottom:none;
 }
-
 
 /*==========================
 LINKE SPALTE
@@ -2638,7 +2643,6 @@ LINKE SPALTE
     flex-shrink:0;
 }
 
-
 /*==========================
 RECHTE SPALTE
 ==========================*/
@@ -2652,7 +2656,6 @@ RECHTE SPALTE
     line-height:1.45;
 }
 
-
 /*==========================
 UMBRÜCHE
 ==========================*/
@@ -2662,9 +2665,8 @@ UMBRÜCHE
     overflow-wrap:anywhere;
 }
 
-
 /*======================================================
-OBJEKTSEITE – ABSCHLUSS
+ABSCHLUSS
 ======================================================*/
 
 .objekt-back{
@@ -2692,7 +2694,6 @@ OBJEKTSEITE – ABSCHLUSS
     box-shadow:0 12px 28px rgba(180,147,103,.35);
 }
 
-
 /*======================================================
 FOOTER DARK
 ======================================================*/
@@ -2711,7 +2712,6 @@ FOOTER DARK
     color:#9d9d9d;
     font-size:15px;
 }
-
 
 /*======================================================
 SCROLLBAR
@@ -2733,7 +2733,6 @@ SCROLLBAR
 .dark-page::-webkit-scrollbar-thumb:hover{
     background:#c7a77a;
 }
-
 
 /*======================================================
 RESPONSIVE
@@ -2758,11 +2757,10 @@ RESPONSIVE
     width:100%;
 }
 
-/* 2 UND 3 SPALTEN mobil */
 .objekt-daten,
 .objekt-daten-3{
     width:100%;
-    grid-template-columns:1fr; /* alles untereinander */
+    grid-template-columns:1fr;
     gap:25px;
 }
 
