@@ -2992,7 +2992,7 @@ KEINE ZEILENUMBRÜCHE
     overflow-wrap:break-word;
 }
 /* =========================================================
-   STERNHAUFEN – OPTIK WIE M31 (2 SPALTEN)
+   STERNHAUFEN – OPTIK IDENTISCH ZU M31
    ========================================================= */
 
 .objekt-daten-2 {
@@ -3005,17 +3005,19 @@ KEINE ZEILENUMBRÜCHE
     flex-wrap: wrap;
 }
 
+/* Karten-Optik wie M31 */
 .objekt-daten-2 .info-card {
-    background: rgba(0, 0, 0, 0.45); /* gleiche Transparenz wie M31 */
-    padding: 30px;                  /* gleiche Innenabstände */
-    border-radius: 12px;            /* gleiche Rundung */
+    background: rgba(0, 0, 0, 0.45);      /* gleiche Transparenz wie M31 */
+    padding: 30px;                        /* gleiche Innenabstände */
+    border-radius: 12px;                  /* gleiche Rundung */
     box-shadow: 0 0 15px rgba(0,0,0,0.4); /* gleiche Schattenwirkung */
-    flex: 1;
-    min-width: 360px;               /* gleiche Mindestbreite */
-    max-width: 520px;               /* gleiche Maximalbreite */
     border: 1px solid rgba(255,255,255,0.15); /* feine Linie wie M31 */
+    flex: 1;
+    min-width: 360px;
+    max-width: 520px;
 }
 
+/* Tabellenzeilen wie M31 */
 .objekt-daten-2 .info-row {
     display: flex;
     justify-content: space-between;
@@ -3023,11 +3025,13 @@ KEINE ZEILENUMBRÜCHE
     font-size: 1rem;
 }
 
+/* Linke Spalte (Titel) wie M31 */
 .objekt-daten-2 .info-row span:first-child {
     font-weight: 600;
-    color: #ffb347; /* gleiche orange Akzentfarbe wie M31 */
+    color: #ffb347; /* M31 Orange */
 }
 
+/* Rechte Spalte (Werte) wie M31 */
 .objekt-daten-2 .info-row span:last-child {
     color: #ffffff;
 }
