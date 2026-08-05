@@ -2682,12 +2682,12 @@ OBJEKTDATEN - M31 ANDROMEDA
     align-items:stretch; /* gleiche Höhe */
 }
 
-/* 3 SPALTEN – neue Klasse */
 .objekt-daten-3{
-    width:1400px;
+    width:100%;
+    max-width:1400px; /* maximale Breite */
     margin:0 auto 70px;
     display:grid;
-    grid-template-columns:1fr 1fr 1fr; /* 3 Spalten */
+    grid-template-columns:repeat(3, 1fr);
     gap:34px;
     align-items:stretch;
 }
