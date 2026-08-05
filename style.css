@@ -2596,6 +2596,7 @@ HAUPTBILD
 .objekt-text{
     width:1100px;
     margin:0 auto 70px;
+    text-align:left;
 }
 
 .objekt-text p{
@@ -2616,6 +2617,7 @@ OBJEKTDATEN-M31 ANDROMEDA
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:35px;
+    text-align:left;
 }
 
 .info-card{
@@ -2660,11 +2662,13 @@ OBJEKTDATEN-M31 ANDROMEDA
     font-weight:600;
     padding:15px 20px;
     background:#1d2026;
+    text-align:left;
 }
 
 .info-row span:last-child{
     color:#ececec;
     padding:15px 20px;
+    text-align:left;
 }
 
 .info-row span:first-child i,
