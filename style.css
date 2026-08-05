@@ -2540,265 +2540,579 @@ OBJEKTSEITE DUNKEL - M31 ANDROMEDA
 ======================================================*/
 
 .dark-page{
+
     background:#0f1115;
+
     color:#ffffff;
+
 }
 
 .dark-page main{
+
     width:1400px;
+
     margin:40px auto 80px;
+
 }
 
+
+/*======================================================
+NAVIGATION DARK
+======================================================*/
+
+.dark-page header{
+
+    background:#ffffff;
+
+}
+
+.dark-page .header{
+
+    border-bottom:1px solid #d9d9d9;
+
+}
+
+.dark-page nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.dark-page nav ul li{
+
+    color:#666666;
+
+}
+
+.dark-page nav a{
+
+    color:#2f2f2f;
+
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.dark-page nav a:hover{
+
+    color:#b49367;
+
+}
+
+.dark-page nav a.active{
+
+    color:#b49367;
+
+}
+
+
+/*======================================================
+SEITENKOPF
+======================================================*/
+
 .objekt-dark{
+
     width:100%;
+
     text-align:center;
+
 }
 
 .objekt-dark h1{
+
     display:inline-block;
-    font-size:48px;
+
+    font-size:52px;
+
     font-weight:300;
+
     color:#b49367;
+
     letter-spacing:1px;
+
     padding-bottom:18px;
+
     border-bottom:2px solid #b49367;
-    margin-bottom:30px;
+
+    margin-bottom:35px;
+
 }
 
 .objekt-sub{
-    width:900px;
-    margin:0 auto;
-    text-align:center;
-    color:#b8b8b8;
-    font-size:18px;
-    line-height:1.8;
-}
 
+    width:900px;
+
+    margin:0 auto;
+
+    color:#c4c4c4;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    text-align:center;
+
+}
 /*======================================================
 HAUPTBILD
 ======================================================*/
 
 .hero-image{
+
+    width:100%;
+
     text-align:center;
-    margin-top:55px;
-    margin-bottom:60px;
+
+    margin:60px auto;
+
 }
 
 .hero-image img{
+
     width:100%;
-    max-width:1150px;
-    border-radius:12px;
-    border:1px solid #3b3b3b;
-    box-shadow:0 15px 45px rgba(0,0,0,.55);
+
+    max-width:1180px;
+
+    display:block;
+
     margin:0 auto;
+
+    border:1px solid #363636;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 18px 50px rgba(0,0,0,.55),
+        0 0 25px rgba(180,147,103,.12);
+
+    transition:.35s;
+
 }
 
+.hero-image img:hover{
+
+    transform:scale(1.01);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.60),
+        0 0 35px rgba(180,147,103,.20);
+
+}
+
+
+/*======================================================
+OBJEKTBESCHREIBUNG
+======================================================*/
+
 .objekt-text{
-    width:1100px;
+
+    width:1120px;
+
     margin:0 auto 70px;
-    text-align:left;
+
 }
 
 .objekt-text p{
-    color:#cfcfcf;
+
+    color:#d2d2d2;
+
     font-size:18px;
+
     line-height:2;
+
     text-align:justify;
+
     margin-bottom:24px;
+
 }
 
+.objekt-text p:last-child{
+
+    margin-bottom:0;
+
+}
 /*======================================================
 OBJEKTDATEN-M31 ANDROMEDA
 ======================================================*/
 
 .objekt-daten{
+
     width:1150px;
+
     margin:0 auto 70px;
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
-    gap:35px;
-    text-align:left;
+
+    gap:34px;
+
+    align-items:start;
+
 }
 
 .info-card{
-    background:#181b21;
-    border:1px solid #2d3138;
-    border-radius:12px;
+
+    background:#1a1d23;
+
+    border:1px solid #353940;
+
+    border-radius:14px;
+
     overflow:hidden;
-    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.45);
+
     transition:.30s;
+
 }
 
 .info-card:hover{
-    transform:translateY(-5px);
+
     border-color:#b49367;
-    box-shadow:0 18px 40px rgba(0,0,0,.45);
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.55);
+
 }
 
 .info-card h2{
+
     display:flex;
+
     align-items:center;
+
     gap:12px;
-    background:#20242c;
+
+    height:64px;
+
+    padding:0 24px;
+
+    background:#22262d;
+
     color:#b49367;
-    font-size:24px;
+
+    font-size:20px;
+
     font-weight:500;
-    padding:18px 24px;
-    border-bottom:1px solid #2d3138;
+
+    border-bottom:1px solid #353940;
+
 }
 
+.info-card h2 i{
+
+    width:22px;
+
+    text-align:center;
+
+}
+
+
+/*==========================
+ZEILEN
+==========================*/
+
 .info-row{
+
     display:grid;
-    grid-template-columns:160px 1fr;
-    border-bottom:1px solid #2b2e35;
+
+    grid-template-columns:190px 1fr;
+
+    min-height:52px;
+
+    border-bottom:1px solid #30343b;
+
 }
 
 .info-row:last-child{
+
     border-bottom:none;
+
 }
+
+
+/*==========================
+LINKE SPALTE
+==========================*/
 
 .info-row span:first-child{
-    color:#b49367;
-    font-weight:600;
-    padding:15px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:0 18px;
+
     background:#1d2026;
-    text-align:left;
+
+    color:#b49367;
+
+    font-weight:600;
+
+    font-size:16px;
+
+    line-height:1.3;
+
 }
+
+.info-row span:first-child i{
+
+    width:20px;
+
+    min-width:20px;
+
+    text-align:center;
+
+    font-size:15px;
+
+    flex-shrink:0;
+
+}
+
+
+/*==========================
+RECHTE SPALTE
+==========================*/
 
 .info-row span:last-child{
-    color:#ececec;
-    padding:15px 20px;
-    text-align:left;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 22px;
+
+    color:#eeeeee;
+
+    font-size:16px;
+
+    line-height:1.45;
+
 }
 
-.info-row span:first-child i,
-.info-card h2 i{
-    color:#b49367;
-    margin-right:8px;
-    width:18px;
-    text-align:center;
-}
 
+/*==========================
+KEINE ZEILENUMBRÜCHE
+==========================*/
+
+.info-row span{
+
+    word-break:normal;
+
+    overflow-wrap:break-word;
+
+}
 /*======================================================
 OBJEKTSEITE-M31 ANDROMEDA (ABSCHLUSS)
 ======================================================*/
 
 .objekt-back{
-    width:340px;
-    margin:70px auto 30px;
+
+    width:360px;
+
+    margin:70px auto 40px;
+
 }
 
 .objekt-back a{
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    height:52px;
-    background:#b49367;
-    color:#ffffff;
-    font-size:17px;
-    font-weight:500;
+
+    height:50px;
+
     border-radius:8px;
-    border:1px solid #c7a77a;
+
+    background:#b49367;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    border:1px solid #c5a174;
+
     transition:.30s;
+
 }
 
 .objekt-back a:hover{
-    background:#c7a77a;
-    color:#ffffff;
+
+    background:#c6a474;
+
     transform:translateY(-3px);
+
     box-shadow:0 12px 28px rgba(180,147,103,.35);
+
 }
+
 
 /*======================================================
 FOOTER DARK
 ======================================================*/
 
 .dark-page footer{
-    margin-top:80px;
+
+    margin-top:90px;
+
     background:#0b0d11;
-    border-top:1px solid #2b2f37;
+
+    border-top:1px solid #2d3138;
+
 }
 
 .dark-page .footer{
+
     width:1400px;
+
     margin:0 auto;
-    padding:28px 0;
+
+    padding:26px 0;
+
     text-align:center;
-    color:#9f9f9f;
+
+    color:#9d9d9d;
+
     font-size:15px;
-    letter-spacing:.3px;
+
 }
 
-/*======================================================
-NAVIGATION DARK
-======================================================*/
-
-.dark-page .header{
-    border-bottom:1px solid #2b2f37;
-}
-
-.dark-page nav a{
-    color:#e6e6e6;
-}
-
-.dark-page nav a:hover{
-    color:#b49367;
-}
-
-.dark-page nav a.active{
-    color:#b49367;
-}
-
-.dark-page nav ul li{
-    color:#555555;
-}
 
 /*======================================================
 SCROLLBAR
 ======================================================*/
 
-::-webkit-scrollbar{
+.dark-page::-webkit-scrollbar{
+
     width:12px;
+
 }
 
-::-webkit-scrollbar-track{
+.dark-page::-webkit-scrollbar-track{
+
     background:#12151b;
+
 }
 
-::-webkit-scrollbar-thumb{
+.dark-page::-webkit-scrollbar-thumb{
+
     background:#b49367;
+
     border-radius:10px;
+
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background:#c6a474;
+.dark-page::-webkit-scrollbar-thumb:hover{
+
+    background:#c7a77a;
+
 }
+
 
 /*======================================================
 RESPONSIVE
 ======================================================*/
 
-@media (max-width:1200px){
+@media(max-width:1250px){
 
 .dark-page main{
+
     width:95%;
-}
 
-.objekt-text,
-.objekt-daten{
-    width:100%;
-}
-
-.objekt-daten{
-    grid-template-columns:1fr;
 }
 
 .objekt-sub{
+
     width:95%;
+
 }
 
 .hero-image img{
+
     width:100%;
+
+}
+
+.objekt-text{
+
+    width:100%;
+
+}
+
+.objekt-daten{
+
+    width:100%;
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+.info-card{
+
+    width:100%;
+
+}
+
+}
+
+
+@media(max-width:700px){
+
+.objekt-dark h1{
+
+    font-size:36px;
+
+}
+
+.objekt-sub{
+
+    font-size:16px;
+
+}
+
+.info-card h2{
+
+    font-size:18px;
+
+}
+
+.info-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.info-row span:first-child{
+
+    background:#20242b;
+
+}
+
+.info-row span:last-child{
+
+    padding-top:10px;
+
+    padding-bottom:14px;
+
+}
+
+.objekt-back{
+
+    width:100%;
+
 }
 
 }
