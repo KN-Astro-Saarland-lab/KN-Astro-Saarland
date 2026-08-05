@@ -2668,19 +2668,28 @@ OBJEKTBESCHREIBUNG
 .objekt-text p:last-child{
     margin-bottom:0;
 }
-
-
 /*======================================================
 OBJEKTDATEN - M31 ANDROMEDA
 ======================================================*/
 
+/* 2 SPALTEN – Standard */
 .objekt-daten{
     width:1150px;
     margin:0 auto 70px;
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr; /* 2 Spalten */
     gap:34px;
     align-items:stretch; /* gleiche Höhe */
+}
+
+/* 3 SPALTEN – neue Klasse */
+.objekt-daten-3{
+    width:1150px;
+    margin:0 auto 70px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr; /* 3 Spalten */
+    gap:34px;
+    align-items:stretch;
 }
 
 .info-card{
@@ -2870,7 +2879,7 @@ RESPONSIVE
 
 .objekt-sub{
     width:95%;
-    white-space:normal; /* mobil darf umbrechen */
+    white-space:normal;
 }
 
 .hero-image img{
@@ -2881,9 +2890,11 @@ RESPONSIVE
     width:100%;
 }
 
-.objekt-daten{
+/* 2 UND 3 SPALTEN mobil */
+.objekt-daten,
+.objekt-daten-3{
     width:100%;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr; /* alles untereinander */
     gap:25px;
 }
 
@@ -2892,7 +2903,6 @@ RESPONSIVE
 }
 
 }
-
 
 @media(max-width:700px){
 
@@ -2926,3 +2936,4 @@ RESPONSIVE
 }
 
 }
+
