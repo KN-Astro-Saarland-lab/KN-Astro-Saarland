@@ -2667,6 +2667,14 @@ OBJEKTDATEN-M31 ANDROMEDA
     padding:15px 20px;
 }
 
+.info-row span:first-child i,
+.info-card h2 i{
+    color:#b49367;
+    margin-right:8px;
+    width:18px;
+    text-align:center;
+}
+
 /*======================================================
 OBJEKTSEITE-M31 ANDROMEDA (ABSCHLUSS)
 ======================================================*/
