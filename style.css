@@ -2992,16 +2992,17 @@ KEINE ZEILENUMBRÜCHE
     overflow-wrap:break-word;
 }
 /* =========================================================
-   STERNHAUFEN – 2 SPALTEN LAYOUT
+   STERNHAUFEN – 2 SPALTEN LAYOUT (wie Galaxien)
    ========================================================= */
 
 .objekt-daten-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     gap: 30px;
     margin-top: 40px;
-    flex-wrap: wrap; /* sorgt dafür, dass es auf Handy untereinander geht */
+    flex-wrap: wrap; /* sorgt für sauberes Verhalten auf Handy */
 }
 
 .objekt-daten-2 .info-card {
@@ -3009,6 +3010,6 @@ KEINE ZEILENUMBRÜCHE
     padding: 25px;
     border-radius: 10px;
     flex: 1;
-    min-width: 320px; /* verhindert, dass die Karten zu schmal werden */
-    max-width: 500px;
+    min-width: 350px;   /* verhindert zu schmale Karten */
+    max-width: 500px;   /* gleiche Breite wie bei Galaxien */
 }
