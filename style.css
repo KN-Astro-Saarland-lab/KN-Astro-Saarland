@@ -3121,23 +3121,26 @@ KEINE ZEILENUMBRÜCHE
    SPEZIAL-CSS NUR FÜR BILDKOMPOSITION
    ========================================================= */
 
+.komposition-style .info-card {
+    max-width: 1100px; /* Karte wird breiter */
+}
+
+/* Jede Zeile: linke Spalte fix, rechte flexibel */
 .komposition-style .info-row {
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 300px 1fr; /* rechte Spalte sehr breit */
     align-items: center;
     gap: 20px;
-
-    /* verhindert Zeilenumbruch */
-    white-space: nowrap;
+    white-space: nowrap; /* verhindert Umbruch */
 }
 
-/* linke Spalte bleibt wie immer */
+/* Linke Spalte bleibt stabil */
 .komposition-style .info-row span:first-child {
-    width: 260px; /* etwas breiter, damit rechts mehr Platz entsteht */
-    flex-shrink: 0;
+    font-weight: 600;
 }
 
-/* rechte Spalte darf breit werden */
+/* Rechte Spalte darf maximal breit werden */
 .komposition-style .info-row span:last-child {
-    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis; /* falls es EXTREM lang wird */
 }
