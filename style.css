@@ -3117,3 +3117,19 @@ KEINE ZEILENUMBRÜCHE
     display: flex;
     align-items: center;
 }
+/* =========================================================
+   SPEZIAL-CSS NUR FÜR BILDKOMPOSITION
+   ========================================================= */
+
+.komposition-style .info-row {
+    display: grid;
+    grid-template-columns: 250px auto; /* linke Spalte fix, rechte flexibel */
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0;
+    white-space: nowrap; /* alles bleibt in einer Zeile */
+}
+
+.komposition-style .info-card {
+    max-width: 900px; /* mehr Platz für lange Zeilen */
+}
