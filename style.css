@@ -3122,14 +3122,22 @@ KEINE ZEILENUMBRÜCHE
    ========================================================= */
 
 .komposition-style .info-row {
-    display: grid;
-    grid-template-columns: 250px auto; /* linke Spalte fix, rechte flexibel */
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 12px;
-    margin: 10px 0;
-    white-space: nowrap; /* alles bleibt in einer Zeile */
+    gap: 20px;
+
+    /* verhindert Zeilenumbruch */
+    white-space: nowrap;
 }
 
-.komposition-style .info-card {
-    max-width: 900px; /* mehr Platz für lange Zeilen */
+/* linke Spalte bleibt wie immer */
+.komposition-style .info-row span:first-child {
+    width: 260px; /* etwas breiter, damit rechts mehr Platz entsteht */
+    flex-shrink: 0;
+}
+
+/* rechte Spalte darf breit werden */
+.komposition-style .info-row span:last-child {
+    flex-grow: 1;
 }
