@@ -113,7 +113,7 @@
 #page-mond .info-row {
     display:grid;
     grid-template-columns:160px 1fr; /* vorher 170px → schmaler */
-    min-height:30px; /* vorher 52px → 8px niedriger */
+    min-height:15px; /* vorher 52px → 8px niedriger */
     border-bottom:1px solid #30343b;
 }
 
