@@ -3144,3 +3144,59 @@ KEINE ZEILENUMBRÜCHE
     overflow: hidden;
     text-overflow: ellipsis; /* falls es EXTREM lang wird */
 }
+/* ============================================================
+   ASTRONOMISCHE DATEN – MOND (KOMPAKT & ZWEISPALTIG)
+   ============================================================ */
+
+.mond-daten {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.mond-daten h2 {
+    margin-bottom: 10px;
+}
+
+/* Überschrift-Stil wie im Beispielbild */
+.mond-daten::before {
+    content: "============================================================";
+    display: block;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}
+
+.mond-daten::after {
+    content: "============================================================";
+    display: block;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+.mond-daten-wrapper {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.mond-daten-col {
+    flex: 1;
+    min-width: 260px;
+}
+
+.mond-daten .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0; /* kompakter Abstand */
+    font-size: 0.95rem;
+}
+
+.mond-daten .row span:first-child {
+    font-weight: 600;
+    color: #ffb347; /* leichtes Orange wie M31 */
+}
+
+.mond-daten .row span:last-child {
+    color: #ffffff;
+}
