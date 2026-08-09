@@ -64,56 +64,56 @@
 }
 
 #page-mond .seitenkopf h1 {
-    font-size:2.4rem; /* etwas größer */
+    font-size:2.4rem;
     margin-bottom:10px;
     color:#b49367;
 }
 
 #page-mond .seitenkopf p {
     color:#c4c4c4;
-    font-size:20px;   /* vorher 18px */
+    font-size:20px;
     line-height:1.9;
 }
 
 /* ============================================================
-   OBJEKTDATEN – 2px SCHMALER
+   OBJEKTDATEN – SCHMALER + NIEDRIGER
 ============================================================ */
 
 #page-mond .objekt-daten {
-    width:1148px; /* vorher 1150px → 2px kleiner */
-    margin:40px auto 70px;
+    width:1144px; /* vorher 1150 → jetzt 6px schmaler */
+    margin:30px auto 60px; /* etwas kompakter */
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:34px;
+    gap:28px; /* vorher 34px → kompakter */
 }
 
 #page-mond .info-card {
     background:#1a1d23;
     border:1px solid #353940;
-    border-radius:14px;
+    border-radius:12px; /* vorher 14px → kompakter */
     overflow:hidden;
-    box-shadow:0 12px 35px rgba(0,0,0,.45);
+    box-shadow:0 10px 30px rgba(0,0,0,.40);
 }
 
-/* Kopfzeile der Karten – leicht schmaler */
+/* Kopfzeile der Karten – niedriger + schmaler */
 #page-mond .info-card h2 {
     display:flex;
     align-items:center;
-    gap:12px;
-    height:64px;
-    padding:0 22px; /* vorher 24px → 2px kleiner */
+    gap:10px;
+    height:54px; /* vorher 64px → 10px niedriger */
+    padding:0 20px; /* vorher 24px → schmaler */
     background:#22262d;
     color:#b49367;
-    font-size:20px;
+    font-size:19px;
     font-weight:500;
     border-bottom:1px solid #353940;
 }
 
-/* Zeilen */
+/* Zeilen – niedriger + kompakter */
 #page-mond .info-row {
     display:grid;
-    grid-template-columns:170px 1fr;
-    min-height:52px;
+    grid-template-columns:160px 1fr; /* vorher 170px → schmaler */
+    min-height:44px; /* vorher 52px → 8px niedriger */
     border-bottom:1px solid #30343b;
 }
 
@@ -121,13 +121,13 @@
     background:#1d2026;
     color:#b49367;
     font-weight:600;
-    padding:0 18px;
+    padding:0 16px; /* vorher 18px → schmaler */
     font-size:16px;
 }
 
 #page-mond .info-row span:last-child {
     color:#eeeeee;
-    padding:0 20px; /* vorher 22px → 2px kleiner */
+    padding:0 18px; /* vorher 22px → schmaler */
     font-size:16px;
 }
 
