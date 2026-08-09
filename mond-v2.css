@@ -80,7 +80,7 @@
 ============================================================ */
 
 #page-mond .objekt-daten {
-    width:1144px; /* vorher 1150 → jetzt 6px schmaler */
+    width:1400px; /* vorher 1150 → jetzt 6px schmaler */
     margin:30px auto 60px; /* etwas kompakter */
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -100,7 +100,7 @@
     display:flex;
     align-items:center;
     gap:10px;
-    height:54px; /* vorher 64px → 10px niedriger */
+    height:40px; /* vorher 64px → 10px niedriger */
     padding:0 20px; /* vorher 24px → schmaler */
     background:#22262d;
     color:#b49367;
