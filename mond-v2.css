@@ -1,12 +1,12 @@
 /* ============================================================
-   HEADER + NAVIGATION
+   MOND-SEITE – SCHUTZ GEGEN style.css
 ============================================================ */
 
-header {
+#page-mond header {
     background:#ffffff;
 }
 
-.header {
+#page-mond .header {
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -14,40 +14,27 @@ header {
     border-bottom:1px solid #d9d9d9;
 }
 
-.logo img {
-    height:55px;
-}
-
-nav ul {
+#page-mond nav ul {
     list-style:none;
     display:flex;
     gap:12px;
     align-items:center;
 }
 
-nav ul li {
-    color:#666666;
-}
-
-nav a {
+#page-mond nav a {
     color:#2f2f2f;
     font-weight:500;
-    transition:.25s;
 }
 
-nav a:hover {
-    color:#b49367;
-}
-
-nav a.active {
+#page-mond nav a.active {
     color:#b49367;
 }
 
 /* ============================================================
-   GALERIE-NAV BUTTONS
+   GALERIE-NAV
 ============================================================ */
 
-.galerie-nav {
+#page-mond .galerie-nav {
     display:flex;
     justify-content:center;
     gap:12px;
@@ -55,7 +42,7 @@ nav a.active {
     flex-wrap:wrap;
 }
 
-.galerie-nav-btn {
+#page-mond .galerie-nav-btn {
     background-color:#222;
     padding:10px 18px;
     border-radius:6px;
@@ -66,70 +53,55 @@ nav a.active {
     transition:0.2s;
 }
 
-.galerie-nav-btn:hover {
-    background-color:#333;
-}
-
-.nav-icon {
-    font-size:18px;
-}
-
 /* ============================================================
-   SEITENKOPF
+   SEITENKOPF – TEXT OBEN GRÖSSER
 ============================================================ */
 
-.seitenkopf {
+#page-mond .seitenkopf {
     max-width:900px;
     margin:auto;
     padding:0 20px;
 }
 
-.seitenkopf h1 {
-    font-size:2.2rem;
+#page-mond .seitenkopf h1 {
+    font-size:2.4rem; /* etwas größer */
     margin-bottom:10px;
     color:#b49367;
 }
 
-.seitenkopf p {
+#page-mond .seitenkopf p {
     color:#c4c4c4;
-    font-size:18px;
+    font-size:20px;   /* vorher 18px */
     line-height:1.9;
 }
 
 /* ============================================================
-   OBJEKTDATEN – 2 SPALTEN
+   OBJEKTDATEN – 2px SCHMALER
 ============================================================ */
 
-.objekt-daten{
-    width:1150px;
-    margin:0 auto 70px;
+#page-mond .objekt-daten {
+    width:1148px; /* vorher 1150px → 2px kleiner */
+    margin:40px auto 70px;
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:34px;
-    align-items:start;
 }
 
-.info-card{
+#page-mond .info-card {
     background:#1a1d23;
     border:1px solid #353940;
     border-radius:14px;
     overflow:hidden;
     box-shadow:0 12px 35px rgba(0,0,0,.45);
-    transition:.30s;
 }
 
-.info-card:hover{
-    border-color:#b49367;
-    transform:translateY(-4px);
-    box-shadow:0 18px 45px rgba(0,0,0,.55);
-}
-
-.info-card h2{
+/* Kopfzeile der Karten – leicht schmaler */
+#page-mond .info-card h2 {
     display:flex;
     align-items:center;
     gap:12px;
     height:64px;
-    padding:0 24px;
+    padding:0 22px; /* vorher 24px → 2px kleiner */
     background:#22262d;
     color:#b49367;
     font-size:20px;
@@ -137,41 +109,33 @@ nav a.active {
     border-bottom:1px solid #353940;
 }
 
-.info-row{
+/* Zeilen */
+#page-mond .info-row {
     display:grid;
     grid-template-columns:170px 1fr;
     min-height:52px;
     border-bottom:1px solid #30343b;
 }
 
-.info-row:last-child{
-    border-bottom:none;
-}
-
-.info-row span:first-child{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:0 18px;
+#page-mond .info-row span:first-child {
     background:#1d2026;
     color:#b49367;
     font-weight:600;
+    padding:0 18px;
     font-size:16px;
 }
 
-.info-row span:last-child{
-    display:flex;
-    align-items:center;
-    padding:0 22px;
+#page-mond .info-row span:last-child {
     color:#eeeeee;
+    padding:0 20px; /* vorher 22px → 2px kleiner */
     font-size:16px;
 }
 
 /* ============================================================
-   GALERIE GRID
+   GALERIE
 ============================================================ */
 
-.galerie-grid {
+#page-mond .galerie-grid {
     max-width:1100px;
     margin:40px auto;
     padding:0 20px;
@@ -180,50 +144,35 @@ nav a.active {
     gap:25px;
 }
 
-.galerie-item {
+#page-mond .galerie-item {
     background-color:#111;
     padding:12px;
     border-radius:8px;
     text-align:center;
 }
 
-.galerie-item img {
+#page-mond .galerie-item img {
     width:100%;
     border-radius:6px;
 }
 
-.galerie-button {
+#page-mond .galerie-button {
     display:inline-block;
     margin-top:10px;
     padding:8px 14px;
     background-color:#222;
     border-radius:6px;
     font-weight:600;
-    transition:0.2s;
-}
-
-.galerie-button:hover {
-    background-color:#333;
-}
-
-/* ============================================================
-   ZURÜCK BUTTON
-============================================================ */
-
-.zurueck {
-    text-align:center;
-    margin:40px 0;
 }
 
 /* ============================================================
    FOOTER
 ============================================================ */
 
-.footer {
+#page-mond .footer {
     text-align:center;
     padding:20px;
     background-color:#111;
     margin-top:40px;
-    font-size:0.9rem;
     color:#ffffff;
 }
