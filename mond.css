@@ -1,52 +1,159 @@
 /* ============================================================
-   MOND-SEITE – SPEZIAL-CSS (wirkt NUR hier)
-   ============================================================ */
+   MOND – Objektseite 
+============================================================ */
 
-.mond-daten {
-    margin-top: 35px;
-    margin-bottom: 35px;
+.dark-page{
+    background:#0f1115;
+    color:#ffffff;
 }
 
-/* Dezente Linie */
-.mond-daten::before,
-.mond-daten::after {
-    content: "──────────────────────────────────────────────";
-    display: block;
+.dark-page main{
+    width:1400px;
+    margin:40px auto 80px;
+}
+
+/* ============================
+   SEITENKOPF
+============================ */
+
+.objekt-dark{
+    width:100%;
+    text-align:center;
+}
+
+.objekt-dark h1{
+    display:inline-block;
+    font-size:52px;
+    font-weight:300;
+    color:#b49367;
+    letter-spacing:1px;
+    padding-bottom:18px;
+    border-bottom:2px solid #b49367;
+    margin-bottom:35px;
+}
+
+.objekt-sub{
+    width:900px;
+    margin:0 auto;
+    color:#c4c4c4;
+    font-size:18px;
+    line-height:1.9;
+    text-align:center;
+}
+
+/* ============================
+   OBJEKTDATEN – 2 SPALTEN
+============================ */
+
+.objekt-daten{
+    width:1150px;
+    margin:0 auto 70px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:34px;
+    align-items:start;
+}
+
+.info-card{
+    background:#1a1d23;
+    border:1px solid #353940;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.45);
+    transition:.30s;
+}
+
+.info-card:hover{
+    border-color:#b49367;
+    transform:translateY(-4px);
+    box-shadow:0 18px 45px rgba(0,0,0,.55);
+}
+
+.info-card h2{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    height:64px;
+    padding:0 24px;
+    background:#22262d;
+    color:#b49367;
+    font-size:20px;
+    font-weight:500;
+    border-bottom:1px solid #353940;
+}
+
+.info-row{
+    display:grid;
+    grid-template-columns:170px 1fr;
+    min-height:52px;
+    border-bottom:1px solid #30343b;
+}
+
+.info-row:last-child{
+    border-bottom:none;
+}
+
+.info-row span:first-child{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:0 18px;
+    background:#1d2026;
+    color:#b49367;
+    font-weight:600;
+    font-size:16px;
+}
+
+.info-row span:last-child{
+    display:flex;
+    align-items:center;
+    padding:0 22px;
+    color:#eeeeee;
+    font-size:16px;
+}
+
+/* ============================
+   GALERIE
+============================ */
+
+.galerie-grid {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.galerie-item {
+    background-color: #111;
+    padding: 12px;
+    border-radius: 8px;
     text-align: center;
-    color: rgba(255,255,255,0.28);
-    font-size: 0.9rem;
-    margin: 10px 0;
 }
 
-.mond-daten h2 {
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-/* Zweispaltige kompakte Tabelle */
-.mond-daten-wrapper {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.mond-daten-col {
-    flex: 1;
-    min-width: 260px;
-}
-
-.mond-daten .row {
-    display: flex;
-    justify-content: space-between;
-    padding: 4px 0;
-    font-size: 0.95rem;
-}
-
-.mond-daten .row span:first-child {
+.galerie-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #222;
+    border-radius: 6px;
     font-weight: 600;
-    color: #ffb347;
+    transition: 0.2s;
 }
 
-.mond-daten .row span:last-child {
-    color: #ffffff;
+.galerie-button:hover {
+    background-color: #333;
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
