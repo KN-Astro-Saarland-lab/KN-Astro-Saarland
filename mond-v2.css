@@ -100,7 +100,7 @@
     display:flex;
     align-items:center;
     gap:10px;
-    height:40px; /* vorher 64px → 10px niedriger */
+    height:30px; /* vorher 64px → 10px niedriger */
     padding:0 20px; /* vorher 24px → schmaler */
     background:#22262d;
     color:#b49367;
@@ -113,7 +113,7 @@
 #page-mond .info-row {
     display:grid;
     grid-template-columns:160px 1fr; /* vorher 170px → schmaler */
-    min-height:44px; /* vorher 52px → 8px niedriger */
+    min-height:30px; /* vorher 52px → 8px niedriger */
     border-bottom:1px solid #30343b;
 }
 
