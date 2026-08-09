@@ -1,0 +1,52 @@
+/* ============================================================
+   MOND-SEITE – SPEZIAL-CSS (wirkt NUR hier)
+   ============================================================ */
+
+.mond-daten {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* Dezente Linie */
+.mond-daten::before,
+.mond-daten::after {
+    content: "──────────────────────────────────────────────";
+    display: block;
+    text-align: center;
+    color: rgba(255,255,255,0.28);
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.mond-daten h2 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Zweispaltige kompakte Tabelle */
+.mond-daten-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.mond-daten-col {
+    flex: 1;
+    min-width: 260px;
+}
+
+.mond-daten .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 0.95rem;
+}
+
+.mond-daten .row span:first-child {
+    font-weight: 600;
+    color: #ffb347;
+}
+
+.mond-daten .row span:last-child {
+    color: #ffffff;
+}
