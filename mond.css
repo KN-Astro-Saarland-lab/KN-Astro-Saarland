@@ -1,49 +1,104 @@
 /* ============================================================
-   MOND – Objektseite 
+   HEADER + NAVIGATION
 ============================================================ */
 
-.dark-page{
-    background:#0f1115;
-    color:#ffffff;
+header {
+    background:#ffffff;
 }
 
-.dark-page main{
-    width:1400px;
-    margin:40px auto 80px;
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+    border-bottom:1px solid #d9d9d9;
 }
 
-/* ============================
-   SEITENKOPF
-============================ */
-
-.objekt-dark{
-    width:100%;
-    text-align:center;
+.logo img {
+    height:55px;
 }
 
-.objekt-dark h1{
-    display:inline-block;
-    font-size:52px;
-    font-weight:300;
+nav ul {
+    list-style:none;
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+nav ul li {
+    color:#666666;
+}
+
+nav a {
+    color:#2f2f2f;
+    font-weight:500;
+    transition:.25s;
+}
+
+nav a:hover {
     color:#b49367;
-    letter-spacing:1px;
-    padding-bottom:18px;
-    border-bottom:2px solid #b49367;
-    margin-bottom:35px;
 }
 
-.objekt-sub{
-    width:900px;
-    margin:0 auto;
+nav a.active {
+    color:#b49367;
+}
+
+/* ============================================================
+   GALERIE-NAV BUTTONS
+============================================================ */
+
+.galerie-nav {
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin:25px 0;
+    flex-wrap:wrap;
+}
+
+.galerie-nav-btn {
+    background-color:#222;
+    padding:10px 18px;
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-weight:600;
+    transition:0.2s;
+}
+
+.galerie-nav-btn:hover {
+    background-color:#333;
+}
+
+.nav-icon {
+    font-size:18px;
+}
+
+/* ============================================================
+   SEITENKOPF
+============================================================ */
+
+.seitenkopf {
+    max-width:900px;
+    margin:auto;
+    padding:0 20px;
+}
+
+.seitenkopf h1 {
+    font-size:2.2rem;
+    margin-bottom:10px;
+    color:#b49367;
+}
+
+.seitenkopf p {
     color:#c4c4c4;
     font-size:18px;
     line-height:1.9;
-    text-align:center;
 }
 
-/* ============================
+/* ============================================================
    OBJEKTDATEN – 2 SPALTEN
-============================ */
+============================================================ */
 
 .objekt-daten{
     width:1150px;
@@ -112,48 +167,63 @@
     font-size:16px;
 }
 
-/* ============================
-   GALERIE
-============================ */
+/* ============================================================
+   GALERIE GRID
+============================================================ */
 
 .galerie-grid {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+    max-width:1100px;
+    margin:40px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:25px;
 }
 
 .galerie-item {
-    background-color: #111;
-    padding: 12px;
-    border-radius: 8px;
-    text-align: center;
+    background-color:#111;
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+}
+
+.galerie-item img {
+    width:100%;
+    border-radius:6px;
 }
 
 .galerie-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 14px;
-    background-color: #222;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.2s;
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 14px;
+    background-color:#222;
+    border-radius:6px;
+    font-weight:600;
+    transition:0.2s;
 }
 
 .galerie-button:hover {
-    background-color: #333;
+    background-color:#333;
 }
 
-/* ============================
+/* ============================================================
+   ZURÜCK BUTTON
+============================================================ */
+
+.zurueck {
+    text-align:center;
+    margin:40px 0;
+}
+
+/* ============================================================
    FOOTER
-============================ */
+============================================================ */
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #111;
-    margin-top: 40px;
-    font-size: 0.9rem;
+    text-align:center;
+    padding:20px;
+    background-color:#111;
+    margin-top:40px;
+    font-size:0.9rem;
+    color:#ffffff;
 }
