@@ -3150,7 +3150,7 @@ KEINE ZEILENUMBRÜCHE
 
 /* Überschrift "Mond" mittig */
 body.mond-main .seitenkopf h1 {
-    text-align:center !important;
+    text-align:center;
     font-size:2.8rem;
     margin-bottom:20px;
     color:#b49367;
@@ -3160,7 +3160,7 @@ body.mond-main .seitenkopf h1 {
 body.mond-main .seitenkopf p {
     max-width:700px;
     margin:0 auto;
-    text-align:center !important;   /* text-left überschreiben */
+    text-align:center;
     font-size:26px;
     line-height:1.35;
     color:#c4c4c4;
