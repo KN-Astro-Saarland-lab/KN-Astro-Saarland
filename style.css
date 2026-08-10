@@ -3152,13 +3152,13 @@ KEINE ZEILENUMBRÜCHE
 body.mond-main .seitenkopf h1 {
     text-align:center;
     font-size:2.8rem;
-    margin-bottom:20px;
+    margin-bottom:16px;
     color:#b49367;
 }
 
 /* Beschreibungstext mittig + 2 Zeilen */
 body.mond-main .seitenkopf p {
-    max-width:1300px;
+    max-width:1400px;
     margin:0 auto;
     text-align:center;
     font-size:26px;
