@@ -3225,14 +3225,3 @@ body.mond-main .info-row span:last-child {
     mix-blend-mode: lighten;
     opacity: 0.95;
 }
-/* ============================================================
-   MOND – BLEND-MODE BILDANPASSUNG
-   ============================================================ */
-
-.mond-blend img {
-    width: 100%;
-    height: auto;
-    display: block;
-    mix-blend-mode: lighten;
-    opacity: 0.95;
-}
