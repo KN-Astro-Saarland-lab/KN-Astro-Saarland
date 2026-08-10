@@ -3148,6 +3148,12 @@ KEINE ZEILENUMBRÜCHE
    MOND-HAUPTSEITE – isoliert & sicher
 ============================================================ */
 
+/* Container breiter machen (wichtig für 2-zeiligen Text) */
+body.mond-main .seitenkopf {
+    max-width:1400px !important;
+    margin:0 auto;
+}
+
 /* Überschrift "Mond" mittig */
 body.mond-main .seitenkopf h1 {
     text-align:center;
@@ -3169,11 +3175,11 @@ body.mond-main .seitenkopf h1::after {
 
 /* Beschreibungstext mittig + 2 Zeilen */
 body.mond-main .seitenkopf p {
-    max-width:1400px;
-    margin:0 auto;
-    text-align:center;
-    font-size:26px;
-    line-height:1.35;
+    max-width:1400px;     /* breiter → 2 Zeilen */
+    margin:0 auto;        /* mittig */
+    text-align:center;    /* zentriert */
+    font-size:26px;       /* größer */
+    line-height:1.35;     /* kompakter */
     color:#c4c4c4;
 }
 
