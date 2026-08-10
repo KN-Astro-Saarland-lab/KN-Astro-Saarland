@@ -2873,7 +2873,7 @@ OBJEKTDATEN – 2 SPALTEN
 ======================================================*/
 
 .objekt-daten{
-    width:1150px;
+    width:1300px;
     margin:0 auto 70px;
     display:grid;
     grid-template-columns:1fr 1fr;
