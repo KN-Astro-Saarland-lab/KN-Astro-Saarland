@@ -80,7 +80,7 @@
 ============================================================ */
 
 #page-mond .objekt-daten {
-    width:1400px;
+    width:1400px !important;
     margin:30px auto 60px;
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -100,8 +100,8 @@
     display:flex;
     align-items:center;
     gap:10px;
-    height:34px;
-    padding:0 18px;
+    height:34px !important;
+    padding:0 18px !important;
     background:#22262d;
     color:#b49367;
     font-size:19px;
@@ -113,8 +113,8 @@
 #page-mond .info-row {
     display:grid;
     grid-template-columns:160px 1fr;
-    min-height:26px;
-    padding:3px 0;
+    min-height:26px !important;
+    padding:3px 0 !important;
     border-bottom:1px solid #30343b;
 }
 
