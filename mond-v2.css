@@ -76,32 +76,32 @@
 }
 
 /* ============================================================
-   OBJEKTDATEN – SCHMALER + NIEDRIGER
+   OBJEKTDATEN – 1400px + KÜRZER
 ============================================================ */
 
 #page-mond .objekt-daten {
-    width:1400px; /* vorher 1150 → jetzt 6px schmaler */
-    margin:30px auto 60px; /* etwas kompakter */
+    width:1400px;
+    margin:30px auto 60px;
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:28px; /* vorher 34px → kompakter */
+    gap:28px;
 }
 
 #page-mond .info-card {
     background:#1a1d23;
     border:1px solid #353940;
-    border-radius:12px; /* vorher 14px → kompakter */
+    border-radius:12px;
     overflow:hidden;
     box-shadow:0 10px 30px rgba(0,0,0,.40);
 }
 
-/* Kopfzeile der Karten – niedriger + schmaler */
+/* Kopfzeile – kompakter */
 #page-mond .info-card h2 {
     display:flex;
     align-items:center;
     gap:10px;
-    height:30px; /* vorher 64px → 10px niedriger */
-    padding:0 20px; /* vorher 24px → schmaler */
+    height:34px;
+    padding:0 18px;
     background:#22262d;
     color:#b49367;
     font-size:19px;
@@ -109,11 +109,12 @@
     border-bottom:1px solid #353940;
 }
 
-/* Zeilen – niedriger + kompakter */
+/* Zeilen – deutlich niedriger */
 #page-mond .info-row {
     display:grid;
-    grid-template-columns:160px 1fr; /* vorher 170px → schmaler */
-    min-height:15px; /* vorher 52px → 8px niedriger */
+    grid-template-columns:160px 1fr;
+    min-height:26px;
+    padding:3px 0;
     border-bottom:1px solid #30343b;
 }
 
@@ -121,13 +122,13 @@
     background:#1d2026;
     color:#b49367;
     font-weight:600;
-    padding:0 16px; /* vorher 18px → schmaler */
+    padding:0 12px;
     font-size:16px;
 }
 
 #page-mond .info-row span:last-child {
     color:#eeeeee;
-    padding:0 18px; /* vorher 22px → schmaler */
+    padding:0 14px;
     font-size:16px;
 }
 
