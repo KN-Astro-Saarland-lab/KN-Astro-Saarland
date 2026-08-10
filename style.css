@@ -336,8 +336,8 @@ main{
 
 /* Bild links – breiter + feste Höhe */
 .ueber-bild {
-    flex: 0 0 450px;           /* Bildspalte breiter */
-    height: 520px;             /* feste Höhe für Gleichheit */
+    flex: 0 0 520px;           /* Bildspalte breiter */
+    height: 600px;             /* feste Höhe für Gleichheit */
 }
 
 .ueber-bild img {
@@ -350,7 +350,7 @@ main{
 /* Text rechts – gleiche Höhe wie Bild */
 .ueber-text {
     flex: 1;
-    height: 520px;             /* gleiche Höhe wie Bild */
+    height: 600px;             /* gleiche Höhe wie Bild */
     display: flex;
     flex-direction: column;
     justify-content: center;   /* Text mittig */
