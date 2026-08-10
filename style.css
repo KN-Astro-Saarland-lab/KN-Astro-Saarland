@@ -3225,3 +3225,16 @@ body.mond-main .info-row span:last-child {
     mix-blend-mode: lighten;
     opacity: 0.95;
 }
+/* ============================================================
+   NEBEL – ASTRONOMISCHE + AUFNAHMEDATEN (NEBENEINANDER)
+   ============================================================ */
+.daten-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.daten-wrapper .info-card {
+    flex: 1;
+}
