@@ -3156,6 +3156,17 @@ body.mond-main .seitenkopf h1 {
     color:#b49367;
 }
 
+/* Unterstrich unter "Mond" */
+body.mond-main .seitenkopf h1::after {
+    content:"";
+    display:block;
+    width:180px;          /* Länge der Linie */
+    height:3px;           /* Dicke der Linie */
+    background:#b49367;   /* Farbe wie Überschrift */
+    margin:12px auto 0;   /* mittig */
+    border-radius:2px;
+}
+
 /* Beschreibungstext mittig + 2 Zeilen */
 body.mond-main .seitenkopf p {
     max-width:1400px;
