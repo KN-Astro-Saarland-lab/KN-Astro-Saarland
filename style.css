@@ -3214,3 +3214,14 @@ body.mond-main .info-row span:last-child {
     padding:0 14px;
     font-size:16px;
 }
+/* ============================================================
+   MOND – BLEND-MODE BILDANPASSUNG
+   ============================================================ */
+
+.mond-blend img {
+    width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: lighten;
+    opacity: 0.95;
+}
