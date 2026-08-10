@@ -3158,7 +3158,7 @@ body.mond-main .seitenkopf h1 {
 
 /* Beschreibungstext mittig + 2 Zeilen */
 body.mond-main .seitenkopf p {
-    max-width:700px;
+    max-width:1100px;
     margin:0 auto;
     text-align:center;
     font-size:26px;
