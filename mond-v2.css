@@ -1,20 +1,12 @@
 /* ============================================================
-   TESTBLOCK – Prüfen ob mond.css überhaupt geladen wird
-============================================================ */
-
-#page-mond {
-    background:red !important;
-}
-
-/* ============================================================
    MOND-SEITE – SCHUTZ GEGEN style.css
 ============================================================ */
 
-#page-mond header {
+header {
     background:#ffffff;
 }
 
-#page-mond .header {
+.header {
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -22,19 +14,19 @@
     border-bottom:1px solid #d9d9d9;
 }
 
-#page-mond nav ul {
+nav ul {
     list-style:none;
     display:flex;
     gap:12px;
     align-items:center;
 }
 
-#page-mond nav a {
+nav a {
     color:#2f2f2f;
     font-weight:500;
 }
 
-#page-mond nav a.active {
+nav a.active {
     color:#b49367;
 }
 
@@ -42,7 +34,7 @@
    GALERIE-NAV
 ============================================================ */
 
-#page-mond .galerie-nav {
+.galerie-nav {
     display:flex;
     justify-content:center;
     gap:12px;
@@ -50,7 +42,7 @@
     flex-wrap:wrap;
 }
 
-#page-mond .galerie-nav-btn {
+.galerie-nav-btn {
     background-color:#222;
     padding:10px 18px;
     border-radius:6px;
@@ -65,19 +57,19 @@
    SEITENKOPF – TEXT OBEN GRÖSSER
 ============================================================ */
 
-#page-mond .seitenkopf {
+.seitenkopf {
     max-width:900px;
     margin:auto;
     padding:0 20px;
 }
 
-#page-mond .seitenkopf h1 {
+.seitenkopf h1 {
     font-size:2.4rem;
     margin-bottom:10px;
     color:#b49367;
 }
 
-#page-mond .seitenkopf p {
+.seitenkopf p {
     color:#c4c4c4;
     font-size:20px;
     line-height:1.9;
@@ -87,15 +79,15 @@
    OBJEKTDATEN – 1400px + KÜRZER
 ============================================================ */
 
-#page-mond .objekt-daten {
-    width:1400px;
+.objekt-daten {
+    width:1400px !important;
     margin:30px auto 60px;
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:28px;
 }
 
-#page-mond .info-card {
+.info-card {
     background:#1a1d23;
     border:1px solid #353940;
     border-radius:12px;
@@ -104,12 +96,12 @@
 }
 
 /* Kopfzeile – kompakter */
-#page-mond .info-card h2 {
+.info-card h2 {
     display:flex;
     align-items:center;
     gap:10px;
-    height:34px;
-    padding:0 18px;
+    height:34px !important;
+    padding:0 18px !important;
     background:#22262d;
     color:#b49367;
     font-size:19px;
@@ -118,15 +110,15 @@
 }
 
 /* Zeilen – deutlich niedriger */
-#page-mond .info-row {
+.info-row {
     display:grid;
     grid-template-columns:160px 1fr;
-    min-height:26px;
-    padding:3px 0;
+    min-height:26px !important;
+    padding:3px 0 !important;
     border-bottom:1px solid #30343b;
 }
 
-#page-mond .info-row span:first-child {
+.info-row span:first-child {
     background:#1d2026;
     color:#b49367;
     font-weight:600;
@@ -134,7 +126,7 @@
     font-size:16px;
 }
 
-#page-mond .info-row span:last-child {
+.info-row span:last-child {
     color:#eeeeee;
     padding:0 14px;
     font-size:16px;
@@ -144,7 +136,7 @@
    GALERIE
 ============================================================ */
 
-#page-mond .galerie-grid {
+.galerie-grid {
     max-width:1100px;
     margin:40px auto;
     padding:0 20px;
@@ -153,19 +145,19 @@
     gap:25px;
 }
 
-#page-mond .galerie-item {
+.galerie-item {
     background-color:#111;
     padding:12px;
     border-radius:8px;
     text-align:center;
 }
 
-#page-mond .galerie-item img {
+.galerie-item img {
     width:100%;
     border-radius:6px;
 }
 
-#page-mond .galerie-button {
+.galerie-button {
     display:inline-block;
     margin-top:10px;
     padding:8px 14px;
@@ -178,28 +170,10 @@
    FOOTER
 ============================================================ */
 
-#page-mond .footer {
+.footer {
     text-align:center;
     padding:20px;
     background-color:#111;
     margin-top:40px;
     color:#ffffff;
-}
-
-/* ============================================================
-   OVERRIDE – DAMIT SICH ENDLICH WAS ÄNDERT
-============================================================ */
-
-body #page-mond .objekt-daten {
-    width:1400px !important;
-}
-
-body #page-mond .info-card h2 {
-    height:34px !important;
-    padding:0 18px !important;
-}
-
-body #page-mond .info-row {
-    min-height:26px !important;
-    padding:3px 0 !important;
 }
