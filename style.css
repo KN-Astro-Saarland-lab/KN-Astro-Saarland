@@ -3148,7 +3148,7 @@ KEINE ZEILENUMBRÜCHE
    MOND-HAUPTSEITE – isoliert & sicher
 ============================================================ */
 
-/* Überschrift mittig */
+/* Überschrift "Mond" mittig */
 body.mond-main .seitenkopf h1 {
     text-align:center;
     font-size:2.8rem;
@@ -3156,13 +3156,13 @@ body.mond-main .seitenkopf h1 {
     color:#b49367;
 }
 
-/* Beschreibungstext mittig + 2 Zeilen + größer */
+/* Beschreibungstext mittig + 2 Zeilen */
 body.mond-main .seitenkopf p {
-    max-width:700px;
-    margin:0 auto;
-    text-align:center;
-    font-size:28px;
-    line-height:1.4;
+    max-width:700px;      /* Text wird schmaler → 2 Zeilen */
+    margin:0 auto;        /* mittig */
+    text-align:center;    /* zentriert */
+    font-size:26px;       /* größer */
+    line-height:1.35;     /* kompakter → 2 Zeilen */
     color:#c4c4c4;
 }
 
