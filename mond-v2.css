@@ -80,7 +80,7 @@
 ============================================================ */
 
 #page-mond .objekt-daten {
-    width:1400px !important;
+    width:1400px;
     margin:30px auto 60px;
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -100,8 +100,8 @@
     display:flex;
     align-items:center;
     gap:10px;
-    height:34px !important;
-    padding:0 18px !important;
+    height:34px;
+    padding:0 18px;
     background:#22262d;
     color:#b49367;
     font-size:19px;
@@ -113,8 +113,8 @@
 #page-mond .info-row {
     display:grid;
     grid-template-columns:160px 1fr;
-    min-height:26px !important;
-    padding:3px 0 !important;
+    min-height:26px;
+    padding:3px 0;
     border-bottom:1px solid #30343b;
 }
 
@@ -176,4 +176,22 @@
     background-color:#111;
     margin-top:40px;
     color:#ffffff;
+}
+
+/* ============================================================
+   OVERRIDE – DAMIT SICH ENDLICH WAS ÄNDERT
+============================================================ */
+
+body #page-mond .objekt-daten {
+    width:1400px !important;
+}
+
+body #page-mond .info-card h2 {
+    height:34px !important;
+    padding:0 18px !important;
+}
+
+body #page-mond .info-row {
+    min-height:26px !important;
+    padding:3px 0 !important;
 }
