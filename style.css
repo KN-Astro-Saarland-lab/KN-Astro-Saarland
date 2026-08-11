@@ -2958,6 +2958,7 @@ LINKE SPALTE
     font-weight:600;
     font-size:16px;
     line-height:1.3;
+    text-align:left;     (Neu) 
 }
 
 .info-row span:first-child i{
@@ -2980,6 +2981,7 @@ RECHTE SPALTE
     color:#eeeeee;
     font-size:16px;
     line-height:1.45;
+    text-align:left;       (neu) 
 }
 
 
