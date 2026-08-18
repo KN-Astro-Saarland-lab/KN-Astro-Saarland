@@ -3226,3 +3226,43 @@ body.mond-main .info-row span:last-child {
     mix-blend-mode: lighten;
     opacity: 0.95;
 }
+
+
+/*======================================================
+SPRACH-FLAGGEN-BUTTONS OBEN RECHTS (NUR STARTSEITE)
+======================================================*/
+
+.header{
+    position:relative;
+}
+
+.lang-flags{
+    position:absolute;
+    top:50%;
+    right:30px;
+    transform:translateY(-50%);
+    z-index:10;
+    display:flex;
+    gap:8px;
+}
+
+.lang-flag-btn{
+    background:none;
+    border:2px solid transparent;
+    border-radius:6px;
+    font-size:22px;
+    line-height:1;
+    padding:4px 6px;
+    cursor:pointer;
+    opacity:.55;
+    transition:.2s;
+}
+
+.lang-flag-btn:hover{
+    opacity:1;
+}
+
+.lang-flag-btn.active{
+    opacity:1;
+    border-color:#b49367;
+}
