@@ -3376,9 +3376,10 @@ MOBILE FIX 2 – STARTSEITE, NAV, GALERIE-BUTTONS, TABELLEN
 
 @media (max-width:768px){
 
-    /* --- 1. Titelbild nicht mehr abgeschnitten --- */
+    /* --- 1. Titelbild komplett sichtbar, nichts mehr abgeschnitten --- */
     .hero img{
-        height:200px !important;
+        height:auto !important;
+        object-fit:contain !important;
     }
 
     /* --- 1. Kategorien-Kacheln: 2 statt 6 Spalten --- */
@@ -3479,6 +3480,7 @@ MOBILE FIX 2 – STARTSEITE, NAV, GALERIE-BUTTONS, TABELLEN
     }
 
     .hero img{
-        height:160px !important;
+        height:auto !important;
+        object-fit:contain !important;
     }
 }
