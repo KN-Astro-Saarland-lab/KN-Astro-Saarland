@@ -3393,28 +3393,31 @@ MOBILE FIX 2 – STARTSEITE, NAV, GALERIE-BUTTONS, TABELLEN
         padding:10px 6px !important;
     }
 
-    /* --- 1. + 2. Header/Nav kompakter, alles nebeneinander in einer Zeile --- */
+    /* --- 1. + 2. Header/Nav kompakter, alles nebeneinander, Nav wirklich mittig --- */
     .header{
-        padding:12px 14px !important;
-        position:relative !important;
-        flex-direction:row !important;
+        display:grid !important;
+        grid-template-columns:40px 1fr 40px !important;
         align-items:flex-start !important;
-        justify-content:space-between !important;
-        gap:8px;
+        padding:12px 10px !important;
+        gap:6px;
+        position:relative !important;
     }
 
     .logo{
+        grid-column:1 !important;
+        justify-self:start !important;
         margin:0 !important;
         flex-shrink:0;
     }
 
     .logo img{
-        width:38px !important;
+        width:36px !important;
     }
 
     nav{
+        grid-column:2 !important;
+        justify-self:stretch !important;
         padding-bottom:0 !important;
-        flex:1 1 auto;
         min-width:0;
     }
 
@@ -3434,10 +3437,12 @@ MOBILE FIX 2 – STARTSEITE, NAV, GALERIE-BUTTONS, TABELLEN
     }
 
     .lang-flags{
+        grid-column:3 !important;
+        justify-self:end !important;
         position:static !important;
         transform:none !important;
         flex-shrink:0;
-        margin-top:2px;
+        margin:2px 0 0 !important;
         gap:4px !important;
     }
 
