@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kai-nimmrichter-astro-saarland.github.io/KN/sitemap.xml
